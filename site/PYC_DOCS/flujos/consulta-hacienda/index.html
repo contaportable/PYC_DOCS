@@ -751,9 +751,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pasos" class="md-nav__link">
+  <a href="#alcance-de-la-consulta" class="md-nav__link">
     <span class="md-ellipsis">
-      Pasos
+      Alcance de la consulta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modalidades-en-pyconta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modalidades en PyConta
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modalidades en PyConta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-consulta-individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      1) Consulta individual
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-consulta-masiva-por-categoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      2) Consulta masiva por categoria
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persistencia-de-datos-recuperados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persistencia de datos recuperados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estado-protegido-despues-de-consulta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estado protegido despues de consulta
     </span>
   </a>
   
@@ -1376,9 +1427,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pasos" class="md-nav__link">
+  <a href="#alcance-de-la-consulta" class="md-nav__link">
     <span class="md-ellipsis">
-      Pasos
+      Alcance de la consulta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modalidades-en-pyconta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modalidades en PyConta
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modalidades en PyConta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-consulta-individual" class="md-nav__link">
+    <span class="md-ellipsis">
+      1) Consulta individual
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-consulta-masiva-por-categoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      2) Consulta masiva por categoria
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persistencia-de-datos-recuperados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Persistencia de datos recuperados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estado-protegido-despues-de-consulta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estado protegido despues de consulta
     </span>
   </a>
   
@@ -1420,23 +1522,37 @@
 
 <h1 id="consulta-en-hacienda">Consulta en Hacienda</h1>
 <h2 id="objetivo">Objetivo</h2>
-<p>Consultar estado de DTE y recuperar sello de recepcion cuando aplique.</p>
-<h2 id="pasos">Pasos</h2>
-<ol>
-<li>Seleccionar documentos pendientes de verificacion.</li>
-<li>Ejecutar consulta al Ministerio de Hacienda.</li>
-<li>Confirmar actualizacion de sello en JSON.</li>
-</ol>
-<div class="admonition info">
-<p class="admonition-title">Espacio para imagen</p>
-<p>Imagen pendiente: resultado de consulta con estado del sello.
-Ruta sugerida: assets/img/flujos/consulta-hacienda-estado.png
-Nota: incluir ejemplo con y sin sello.</p>
-</div>
+<p>Verificar el estado oficial de DTE directamente contra la consulta del Ministerio de Hacienda y actualizar metadata interna para trazabilidad y proteccion de reprocesamiento.</p>
+<h2 id="alcance-de-la-consulta">Alcance de la consulta</h2>
+<p>La consulta de DTE permite obtener:</p>
+<ul>
+<li>Observaciones</li>
+<li>DTE ajustados</li>
+<li>DTE invalidados</li>
+<li>Recuperacion de sello de recepcion</li>
+</ul>
+<h2 id="modalidades-en-pyconta">Modalidades en PyConta</h2>
+<h3 id="1-consulta-individual">1) Consulta individual</h3>
+<p>Puede ejecutarse sobre un DTE puntual desde las acciones del listado.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/flujos/consulta-hacienda-01-consulta-individual.png" data-desc-position="bottom"><img align="center" alt="Consulta individual de DTE" src="../../assets/img/flujos/consulta-hacienda-01-consulta-individual.png" title="Consulta individual desde acciones del DTE"></a></p>
+<h3 id="2-consulta-masiva-por-categoria">2) Consulta masiva por categoria</h3>
+<p>Tambien puede ejecutarse de forma masiva por categoria para consultar varios DTE en una sola corrida.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/flujos/consulta-hacienda-02-consulta-masiva-inicio.png" data-desc-position="bottom"><img align="center" alt="Consulta masiva - inicio" src="../../assets/img/flujos/consulta-hacienda-02-consulta-masiva-inicio.png" title="Ejecución de consulta masiva por categoría"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/flujos/consulta-hacienda-03-consulta-masiva-resultado.png" data-desc-position="bottom"><img align="center" alt="Consulta masiva - resultado" src="../../assets/img/flujos/consulta-hacienda-03-consulta-masiva-resultado.png" title="Resultados de la consulta masiva en Hacienda"></a></p>
+<h2 id="persistencia-de-datos-recuperados">Persistencia de datos recuperados</h2>
+<p>Los datos de la consulta se guardan en metadata interna de PyConta dentro del DTE procesado:</p>
+<ul>
+<li><code>_pyconta["mh_status"]</code></li>
+</ul>
+<p>Este bloque conserva estado, detalles y mensajes devueltos por Hacienda.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/flujos/consulta-hacienda-04-metadata-mh-status.png" data-desc-position="bottom"><img align="center" alt="Metadata mh_status en JSON" src="../../assets/img/flujos/consulta-hacienda-04-metadata-mh-status.png" title="Campo _pyconta mh_status en el JSON"></a></p>
+<h2 id="estado-protegido-despues-de-consulta">Estado protegido despues de consulta</h2>
+<p>Una vez consultados, los DTE quedan con estado protegido. Si se reinsertan posteriormente, no son sobreescritos, optimizando el procesamiento y evitando perdida de trazabilidad.</p>
 <h2 id="verificacion">Verificacion</h2>
 <ul>
-<li>Estado sincronizado con fuente oficial.</li>
-<li>JSON actualizado cuando corresponde.</li>
+<li>Estado sincronizado con fuente oficial de Hacienda.</li>
+<li>Metadata <code>_pyconta["mh_status"]</code> presente en el JSON procesado.</li>
+<li>DTE ya consultados no se sobreescriben al reinsertar.</li>
 </ul>
 <h2 id="relacionados">Relacionados</h2>
 <ul>

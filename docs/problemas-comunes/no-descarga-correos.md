@@ -20,8 +20,3 @@ No se descargan nuevos DTE desde la cuenta configurada.
 
 ## Cuando escalar
 Si persiste tras reconfiguracion, usar [Soporte con PIN](../suscripcion-y-soporte/solicitar-soporte-con-pin.md).
-
-!!! info "Espacio para imagen"
-    Imagen pendiente: mensaje de error de autenticacion o permisos.
-    Ruta sugerida: assets/img/incidencias/no-descarga-correos-error.png
-    Nota: mostrar texto completo del error.

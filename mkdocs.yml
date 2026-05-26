@@ -72,7 +72,7 @@ nav:
     - Importación JSON: flujos/importacion-json.md
     - Lector JSON: flujos/lector-json.md
     - Consulta en Hacienda: flujos/consulta-hacienda.md
-    - Exportación CSV y Excel: flujos/exportacion-csv-excel.md
+    - Anexos de Impuestos F07: flujos/anexos-de-impuestos-f07.md
   - Problemas Comunes:
     - No Descarga Correos: problemas-comunes/no-descarga-correos.md
     - DTE No Aparece: problemas-comunes/dte-no-aparece.md

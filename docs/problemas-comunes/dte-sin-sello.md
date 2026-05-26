@@ -11,8 +11,3 @@ El DTE aparece sin sello de recepcion.
 1. Reintentar consulta.
 2. Confirmar actualizacion del JSON.
 3. Escalar si el estado oficial no coincide.
-
-!!! info "Espacio para imagen"
-    Imagen pendiente: comparativo de DTE sin sello y con sello.
-    Ruta sugerida: assets/img/incidencias/dte-sin-sello-comparativo.png
-    Nota: incluir campo exacto donde cambia el estado.
