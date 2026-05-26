@@ -1,0 +1,95 @@
+site_name: PYCONTA DOCS
+site_description: Documentación de PyConta. Python 3.11.12
+site_url: http://localhost:8006/PYC_DOCS/
+site_dir: site/PYC_DOCS
+theme:
+  name: material
+  language: es
+  palette:
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+      primary: "blue"
+      accent: "cyan"
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+      primary: "blue grey"
+      accent: "light blue"
+  font:
+    text: Inter
+    code: JetBrains Mono
+markdown_extensions:
+  - admonition
+  - def_list
+  - footnotes
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - attr_list
+  - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.keys
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format 
+
+  - pymdownx.tabbed:
+      alternate_style: true   
+  - pymdownx.critic
+plugins:
+  - glightbox  # Images with zoom
+  - search # Search functionality
+
+nav:
+  - Inicio: index.md
+  - Información Importante:
+    - Certificación de Seguridad CASA nivel 2: informacion-importante/certificacion-seguridad-casa-nivel-2.md
+    - Límites del Sistema: informacion-importante/limites-del-sistema.md
+    - Requisitos y Rendimiento: informacion-importante/requisitos-hardware-rendimiento.md
+    - Buenas Prácticas Operativas: informacion-importante/buenas-practicas-operativas.md
+  - Primeros Pasos:
+    - Instalación, Acceso y Requisitos: primeros-pasos/instalacion-acceso.md
+    - Registro de Usuario: primeros-pasos/registro-usuario.md
+    - Registro de Empresa: primeros-pasos/registro-empresa.md
+    - Licencias y Planes: primeros-pasos/licencias-y-planes.md
+  - Flujo de Trabajo:
+    - Flujo Completo DTE: flujos/flujo-completo-dte.md
+    - Descarga Desde Correo: flujos/descarga-desde-correo.md
+    - Sincronización: flujos/sincronizacion.md
+    - Importación JSON: flujos/importacion-json.md
+    - Lector JSON: flujos/lector-json.md
+    - Consulta en Hacienda: flujos/consulta-hacienda.md
+    - Exportación CSV y Excel: flujos/exportacion-csv-excel.md
+  - Problemas Comunes:
+    - No Descarga Correos: problemas-comunes/no-descarga-correos.md
+    - DTE No Aparece: problemas-comunes/dte-no-aparece.md
+    - DTE Sin Sello: problemas-comunes/dte-sin-sello.md
+    - Lentitud en Tablas: problemas-comunes/lentitud-tablas.md
+    - Duplicados o Faltantes: problemas-comunes/duplicados-faltantes.md
+  - Suscripción y Soporte:
+    - Membresía VIP: suscripcion-y-soporte/membresia-vip.md
+    - Renovación, Finalización y Upgrade: suscripcion-y-soporte/renovacion-finalizacion-upgrade.md
+    - Soporte con PIN: suscripcion-y-soporte/solicitar-soporte-con-pin.md
+  - Políticas:
+    - Redención: politicas/redencion.md
+    - Devolución: politicas/devolucion.md
+  - FAQ y Glosario:
+    - FAQ: faq-glosario/faq.md
+    - Glosario: faq-glosario/glosario.md
+  - Novedades:
+    - Release Notes: novedades/release-notes.md
+
+copyright: Copyright &copy; 2025 ContaPortable - Yuri Ernesto Calderón Rodríguez
