@@ -10,8 +10,3 @@ Registrar cambios funcionales y operativos por version.
 - Corregido:
 - Impacto operativo:
 - Acciones recomendadas:
-
-!!! info "Espacio para imagen"
-    Imagen pendiente: evidencia visual del cambio principal.
-    Ruta sugerida: assets/img/modulos/release-notes-cambio-principal.png
-    Nota: capturar antes y despues cuando aplique.

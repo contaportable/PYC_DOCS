@@ -20,11 +20,6 @@ Registrar y activar la primera empresa para comenzar a procesar DTE.
 - PyConta0: al crear la primera empresa se aplican límites demo automáticamente (pocas empresas permitidas, límite bajo de DTE). No requiere clave.
 - Plan pago: la cantidad de empresas permitidas y otros límites dependen del plan activado; ingresar la clave de activación habilita los límites del plan.
 
-!!! info "Espacio para captura"
-	Captura pendiente: formulario de creación de empresa con campos obligatorios.
-	Ruta sugerida: assets/img/primeros-pasos/crear-primera-empresa.png
-	Nota: mostrar el selector de empresa y la confirmación de guardado.
-
 ## Errores frecuentes
 - Identificación fiscal inválida: revisar formato y caracteres.
 - Campos obligatorios vacíos: el sistema marcará los campos faltantes.

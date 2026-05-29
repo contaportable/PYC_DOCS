@@ -10,8 +10,3 @@
 
 ## Conectividad
 Se sugiere internet de 100 Mbps para volumen alto de descargas.
-
-!!! info "Espacio para imagen"
-    Imagen pendiente: comparativa de rendimiento en lotes grandes.
-    Ruta sugerida: assets/img/incidencias/requisitos-rendimiento-comparativa.png
-    Nota: mostrar diferencia entre minimo y recomendado.

@@ -27,7 +27,7 @@ Las funciones de PyConta se concentran en tareas muy concretas:
 - Mostrar DTE en vista grafica, incluyendo lectura JSON y PDF.
 - Generacion de CSV para anexos.
 - Extraccion de datos a Excel.
-- Categorizacion de DTEs por contribuyente, periodo y tipo.
+- Categorizacion de DTEs por empresa, mes y categoria.
 - Consulta del estado de DTE en Ministerio de Hacienda.
 - Personalización de parámetros de validación y preferencias.
 - Reglas de descarga para correos.
@@ -56,18 +56,3 @@ Dar a conocer que es PyConta y guiarte en su uso operativo diario con enfoque en
 3. **Problemas comunes**: resolución por síntoma.
 4. **Suscripción y políticas**: reglas de servicio y soporte.
 5. **Funciones por modulo**: empresas, lector JSON, DTE grafico, anexos F07 y exportaciones.
-
-## Convención de espacios para imágenes
-
-En cada página clave se dejan tres espacios para insertar capturas posteriormente:
-
-- Captura del paso principal.
-- Captura del resultado esperado.
-- Captura del error frecuente (si aplica).
-
-Formato utilizado en esta documentación:
-
-!!! info "Espacio para imagen"
-	Imagen pendiente: describe qué debe mostrarse.
-	Ruta sugerida: assets/img/<seccion>/<archivo>.png
-	Nota: indicar campos o estados que deben quedar visibles.

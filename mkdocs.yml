@@ -66,6 +66,7 @@ nav:
     - Registro de Empresa: primeros-pasos/registro-empresa.md
     - Licencias y Planes: primeros-pasos/licencias-y-planes.md
   - Flujo de Trabajo:
+    - Parámetros de Validación: flujos/parametros-validacion.md
     - Flujo Completo DTE: flujos/flujo-completo-dte.md
     - Descarga Desde Correo: flujos/descarga-desde-correo.md
     - Sincronización: flujos/sincronizacion.md
@@ -77,8 +78,6 @@ nav:
     - No Descarga Correos: problemas-comunes/no-descarga-correos.md
     - DTE No Aparece: problemas-comunes/dte-no-aparece.md
     - DTE Sin Sello: problemas-comunes/dte-sin-sello.md
-    - Lentitud en Tablas: problemas-comunes/lentitud-tablas.md
-    - Duplicados o Faltantes: problemas-comunes/duplicados-faltantes.md
   - Suscripción y Soporte:
     - Membresía VIP: suscripcion-y-soporte/membresia-vip.md
     - Renovación, Finalización y Upgrade: suscripcion-y-soporte/renovacion-finalizacion-upgrade.md

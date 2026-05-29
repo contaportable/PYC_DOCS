@@ -14,8 +14,3 @@ Solicitar soporte tecnico premium siguiendo el flujo oficial.
 3. Sesion remota (Zoom, Google Meet o AnyDesk) si es necesario.
 
 Correo de contacto: soporte@contaportable.com
-
-!!! info "Espacio para imagen"
-    Imagen pendiente: pantalla de generacion de PIN.
-    Ruta sugerida: assets/img/soporte/solicitar-soporte-pin.png
-    Nota: mostrar pasos y ubicacion del PIN.

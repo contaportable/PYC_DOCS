@@ -40,13 +40,6 @@ La prioridad es responder tres preguntas:
 - Como se usa PyConta.
 - Que hacer cuando algo falla.
 
-## Enfoque editorial
-
-- Lenguaje claro y operativo.
-- Pocas vueltas, pasos directos y verificables.
-- Contenido organizado por tareas, no por tecnicismos.
-- Espacios reservados para capturas en los puntos donde el usuario necesita orientacion visual.
-
 ## Secciones de la documentacion
 
 - Primeros pasos: acceso, configuracion y puesta en marcha.
@@ -57,36 +50,13 @@ La prioridad es responder tres preguntas:
 - Politicas: redencion y devolucion.
 - FAQ y glosario: respuestas breves y terminos clave.
 - Novedades: actualizaciones, mejoras y cambios importantes.
-## Estructura base
 
-- `docs/primeros-pasos/`
-- `docs/flujos/`
-- `docs/informacion-importante/`
-- `docs/problemas-comunes/`
-- `docs/suscripcion-y-soporte/`
-- `docs/politicas/`
-- `docs/faq-glosario/`
-- `docs/novedades/`
-- `docs/assets/img/`
-
-## Convencion de imagenes
-
-- Formato recomendado: `png`.
-- Nombre recomendado: `seccion-tema-paso-contexto.png`.
-- Rutas por tipo:
-   - `docs/assets/img/flujos/`
-   - `docs/assets/img/modulos/`
-   - `docs/assets/img/incidencias/`
-   - `docs/assets/img/soporte/`
-
-## Acceso rapido a la documentacion local
+<!--
+INSTRUCCIONES DE DESPLIEGUE LOCAL CON DOCKER:
 
 Si levantas el sitio con Docker, la documentacion queda disponible en:
 
 http://localhost:8008/PYC_DOCS/
-
-<!--
-INSTRUCCIONES DE DESPLIEGUE LOCAL CON DOCKER:
 
 1) Requisitos:
    - Tener instalado Docker y Docker Compose (CLI v2).

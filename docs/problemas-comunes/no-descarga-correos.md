@@ -6,7 +6,8 @@ No se descargan nuevos DTE desde la cuenta configurada.
 ## Causas probables
 - IMAP deshabilitado o restringido.
 - Credenciales invalidas.
-- Carpeta no autorizada o no visible.
+- Configuración de conexión incorrecta.
+- Requiere selección de buzon específico.
 
 ## Diagnostico rapido
 1. Validar cuenta y carpeta seleccionadas.
@@ -16,7 +17,7 @@ No se descargan nuevos DTE desde la cuenta configurada.
 ## Solucion
 1. Reconfigurar cuenta.
 2. Habilitar permisos necesarios.
-3. Reintentar sincronizacion.
+3. Reintentar descarga.
 
 ## Cuando escalar
 Si persiste tras reconfiguracion, usar [Soporte con PIN](../suscripcion-y-soporte/solicitar-soporte-con-pin.md).
