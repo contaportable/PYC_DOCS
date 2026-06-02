@@ -1,10 +1,12 @@
 site_name: PYCONTA DOCS
 site_description: Documentación de PyConta. Python 3.11.12
-site_url: http://localhost:8006/PYC_DOCS/
+site_url: https://docs.pyconta.com/PYC_DOCS/
 site_dir: site/PYC_DOCS
 theme:
   name: material
   language: es
+  icon:
+    repo: fontawesome/brands/github
   palette:
     # Light Mode
     - scheme: default
@@ -23,6 +25,8 @@ theme:
   font:
     text: Inter
     code: JetBrains Mono
+repo_url: https://github.com/contaportable/PYC_DOCS
+repo_name: contaportable/PYC_DOCS
 markdown_extensions:
   - admonition
   - def_list

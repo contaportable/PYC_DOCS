@@ -3,7 +3,6 @@
 ## Proposito
 Registrar cambios funcionales y operativos por version.
 
-## Plantilla
 ### Versión 1.0.0.9.3 - 2026-06-02
 
 - **Nuevo:**
