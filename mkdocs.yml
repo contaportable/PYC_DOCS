@@ -1,5 +1,5 @@
 site_name: PYCONTA DOCS
-site_description: Documentación de PyConta. Python 3.11.12
+site_description: Documentación de PyConta.
 site_url: https://docs.pyconta.com/PYC_DOCS/
 site_dir: site/PYC_DOCS
 theme:
