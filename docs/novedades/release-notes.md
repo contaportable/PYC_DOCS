@@ -35,9 +35,9 @@ Registrar cambios funcionales y operativos por version.
   - Se aconseja utilizar el nuevo sistema de filtros e inserción de archivos para agilizar el procesamiento mensual de los DTEs retenidos en carpetas locales.
   - Validar las sumatorias automáticas en las plantillas de los Anexos F07 generados para verificar la correcta consistencia de los totales consolidados.
 
-### Version X.Y.Z - AAAA-MM-DD
+<!-- ### Version X.Y.Z - AAAA-MM-DD
 - Nuevo:
 - Mejorado:
 - Corregido:
 - Impacto operativo:
-- Acciones recomendadas:
+- Acciones recomendadas: -->
