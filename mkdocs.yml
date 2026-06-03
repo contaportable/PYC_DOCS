@@ -7,7 +7,7 @@ theme:
   language: es
   icon:
     repo: fontawesome/brands/github
-  favicon: docs/assets/img/favicon.svg
+  favicon: assets/img/favicon.svg
   palette:
     # Light Mode
     - scheme: default
