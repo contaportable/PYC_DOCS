@@ -1,83 +1,104 @@
-# Registro de Usuario
+---
+description: Guía paso a paso para el registro inicial de usuario, configuración de cuenta, seguridad y preferencias en PyConta.
+---
 
-## Objetivo
-Crear y activar la cuenta de usuario que permitirá iniciar sesión en PyConta.
+# **Registro de Usuario**
 
-## Antes de empezar
-- Tener conexión a internet.
-- Disponer de una dirección de correo válida para el registro.
-- Preparar las capturas del flujo completo de registro para documentar cada paso.
+El proceso de registro te permite configurar tu cuenta principal de acceso a **PyConta**, estableciendo tus credenciales, parámetros operativos, preguntas de recuperación y preferencias visuales.
 
-## Flujo de registro de usuario
+---
 
-### 1) Configuración de cuenta
-En esta sección se configura la base del usuario y parámetros de operación.
+## **Antes de Empezar**
+- Disponer de conexión a internet para la activación inicial.
+- Contar con una dirección de correo electrónico válida.
 
-Índice rápido de este paso:
-- Parámetros de validaciones de contraseña y reglas activas.
-- Regla **"Usar la fecha del correo para insertar en BD"** (activar solo cuando aplique al flujo del cliente).
-- Intervalo de consulta de DTE (segundos): definir un rango operativo estable.
-- Preferencias del asistente: habilitar o deshabilitar recordatorios de incorporación.
+---
+
+## **Flujo de Registro Paso a Paso**
+
+### 1. Configuración de Cuenta
+En este primer paso se configuran las reglas base de operación del usuario:
+
+- **Contraseña y validación**: Establece una contraseña segura.
+- **Usar fecha del correo para compras**: Permite registrar las compras con la fecha de recepción del correo cuando corresponda a tu flujo de trabajo.
+- **Intervalo de consulta en Hacienda**: Define el tiempo de espera entre peticiones durante consultas masivas.
+- **Preferencias del asistente**: Habilita o deshabilita los mensajes guiados de bienvenida.
 
 ![Configuración de cuenta](../assets/img/primeros-pasos/registro-usuario-01-configuracion-cuenta.png "Configuración de cuenta y parámetros iniciales"){ align=center }
 
-### 2) Preguntas de seguridad
-Estas preguntas deben ser seguras y fáciles de recordar para el titular de la cuenta.
+---
+
+### 2. Preguntas de Seguridad
+Las preguntas de seguridad son el método exclusivo para recuperar el acceso a tu cuenta en caso de olvido de credenciales:
+
+- Selecciona preguntas claras con respuestas precisas que puedas recordar.
+- Resguarda las respuestas en un medio interno seguro.
 
 !!! warning "Importante"
-	Este será el único método de verificación para recuperación de acceso.
-	Las respuestas deben resguardarse en un medio interno seguro y con acceso restringido.
+    Si se extravían las respuestas a las preguntas de seguridad, la recuperación del acceso a tu usuario no será posible.
 
 ![Preguntas de seguridad](../assets/img/primeros-pasos/registro-usuario-02-preguntas-seguridad.png "Preguntas de seguridad para recuperación"){ align=center }
 
-### 3) Configuración de descargas
-Aquí se define la ruta donde se descargarán los DTE.
+---
 
-- Por defecto, la ruta corresponde a la ubicación de instalación.
-- Si el cliente lo requiere, se puede cambiar a otra ruta autorizada.
-- Si el usuario necesita los DTE sueltos en esa carpeta, debe activar **"Exportar descargas sin cifrado"**.
+### 3. Configuración de Descargas
+Define la ubicación en tu computadora donde se almacenarán los archivos descargados:
+
+- Por defecto, se asigna la carpeta de trabajo de la aplicación.
+- Puedes seleccionar una ruta personalizada en tu disco si lo requieres.
+- **Exportar descargas sin cifrado**: Activa esta opción si necesitas disponer de los archivos individuales directamente en dicha carpeta.
 
 ![Configuración de descargas](../assets/img/primeros-pasos/registro-usuario-03-configuracion-descargas.png "Ruta de descarga y exportación sin cifrado"){ align=center }
 
-### 4) Datos personales
-Completar los campos obligatorios con información real y vigente.
+---
 
-- Validar nombres y apellidos.
-- Registrar un correo real de uso del usuario.
-- Verificar formato de fecha y datos de contacto.
+### 4. Datos Personales
+Ingresa tu información de contacto:
+
+- Nombres y apellidos completos.
+- Correo electrónico principal.
+- Número de teléfono o contacto.
 
 ![Datos personales](../assets/img/primeros-pasos/registro-usuario-04-datos-personales.png "Campos obligatorios de datos personales"){ align=center }
 
-### 5) Llenar ubicación
-Completar la ubicación y dirección según los datos reales de la empresa o del usuario.
+---
+
+### 5. Ubicación
+Completa los datos de ubicación geográfica:
 
 - País, departamento, municipio y distrito.
-- Dirección exacta para mantener consistencia documental.
+- Dirección para mantener coherencia en los registros.
 
 ![Ubicación según empresa](../assets/img/primeros-pasos/registro-usuario-05-ubicacion-empresa.png "Ubicación del usuario según empresa"){ align=center }
 
-### 6) Extra: configuración de fuente
-Opcionalmente, se puede ajustar la fuente para mejorar legibilidad según preferencia del usuario.
+---
 
-![Configuración de fuente](../assets/img/primeros-pasos/registro-usuario-06-configuracion-fuente.png "Ajuste opcional de tipografía"){ align=center }
+### 6. Preferencias: Configuración de Fuente y Abreviaturas
+Este panel te permite personalizar la apariencia visual y la visualización de datos en las tablas de DTEs:
 
-### Confirmación de registro
-Al finalizar el formulario, guardar cambios y confirmar el mensaje de éxito.
+- **Configuración de Fuente**: Permite seleccionar una tipografía personalizada para toda la aplicación.
+- **Configuración de Abreviaturas**:
+  - **Abreviar Código de Generación**: Permite compactar la visualización del código en las tablas eligiendo entre mostrar los *Primeros dígitos* o *Últimos dígitos*, y estableciendo la cantidad de caracteres visibles (por ejemplo, 8).
+  - **Abreviar Número de Control**: Permite acortar el número de control mostrando únicamente los últimos dígitos (por ejemplo, 5), ahorrando espacio horizontal en las columnas del visor.
+
+![Preferencias y configuración de abreviaturas](../assets/img/primeros-pasos/registro-usuario-08-preferencias-configuracion-abreviaturas.png "Panel de Preferencias y configuración de abreviaturas"){ align=center }
+
+---
+
+### 7. Confirmación de Registro
+Al finalizar el formulario, presiona **Guardar Cambios** para completar la creación de tu usuario:
 
 ![Usuario registrado con éxito](../assets/img/primeros-pasos/registro-usuario-07-registro-exitoso.png "Confirmación final de registro"){ align=center }
 
-## Verificación
-- Ingresar sin error y visualizar el panel principal.
-- Comprobar versión en "Acerca de" (muestra plan y límites).
+---
 
-## Errores frecuentes
-- Correo ya registrado: usar recuperación de contraseña o contactar soporte.
-- No llega correo de verificación: revisar spam y filtros.
+## **Verificación Posterior**
+- Inicia sesión con tu nuevo usuario y accede al panel principal de PyConta.
+- Comprueba tu estado de suscripción y límites en la ventana **Acerca de**.
 
-## Diferencias Demo vs Plan pago
-- PyConta0: no se solicita clave de activación; límites reducidos aplican automáticamente (ver "Acerca de").
-- Plan pago: tras ingresar la clave de activación el usuario obtiene los límites y permisos del plan contratado.
+---
 
-## Relacionados
-- [Instalación, Acceso y Requisitos](instalacion-acceso.md)
+## **Enlaces Relacionados**
+- [Instalación y Primer Acceso](instalacion-acceso.md)
+- [Crear Primera Empresa](crear-primera-empresa.md)
 - [Licencias y Planes](licencias-y-planes.md)

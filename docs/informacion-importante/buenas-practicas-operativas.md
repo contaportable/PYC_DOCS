@@ -1,92 +1,92 @@
-# Buenas Practicas Operativas
+---
+description: Recomendaciones y buenas prácticas para la operación segura, ordenada y eficiente de PyConta.
+---
 
-## Objetivo
-Definir practicas recomendadas para operar PyConta de forma segura, ordenada y eficiente, minimizando errores en descarga, validacion y generacion de anexos.
+# **Buenas Prácticas Operativas**
 
-## 1) Operacion en despachos con multiples empresas
-Cuando un despacho administra varias empresas desde un mismo correo, se recomienda separar el flujo por buzones o carpetas desde el webmail.
+A continuación se presentan las pautas y recomendaciones clave para optimizar el uso de **PyConta**, asegurar la correcta captura de documentos y agilizar la generación de libros de IVA y declaraciones tributarias.
 
-### Recomendacion
-1. Crear reglas en el webmail para enrutar correos de cada empresa a carpetas especificas.
-2. En PyConta, configurar cada empresa para que lea unicamente su carpeta asignada.
-3. Evitar usar una sola carpeta general para todas las empresas.
+---
 
-### Beneficio
-- Reduce cruces de documentos entre empresas.
-- Mejora la trazabilidad de cada descarga.
-- Disminuye errores de clasificacion.
+## 1. Operación en Despachos con Múltiples Empresas
+Cuando administras varias empresas utilizando una misma cuenta de correo principal, se recomienda organizar el flujo mediante carpetas o etiquetas desde tu proveedor de correo (webmail):
 
-## 2) Consulta de DTE antes de generar anexos
-Antes de generar anexos, ejecutar la consulta de DTE para detectar estados relevantes.
+1. **Crear reglas en el correo**: Enruta los mensajes de cada empresa hacia carpetas o etiquetas específicas.
+2. **Asignar carpetas en PyConta**: Configura cada empresa en PyConta para que lea únicamente su carpeta o buzón asignado.
+3. **Evitar carpetas compartidas**: No utilices una sola carpeta general para múltiples empresas con el fin de evitar cruces de información y facilitar la conciliación.
 
-### Verificar especialmente
-- DTE ajustado.
-- DTE invalidado.
-- Observaciones relevantes en el estado del documento.
+---
 
-### Recomendacion operativa
-1. Ejecutar consulta de DTE por el periodo a reportar.
-2. Corregir o depurar casos observados.
-3. Generar anexos solo cuando el lote este validado.
+## 2. Consulta de DTEs antes de Generar Anexos y Libros
+Antes de cerrar el periodo y generar tus Anexos F07 o Libros de IVA, realiza la consulta oficial de DTEs ante el servicio de consulta del Ministerio de Hacienda:
 
-## 3) Uso de reglas de descarga por correo
-Configurar reglas de descarga por correo para automatizar la captura y reducir intervencion manual.
+- **Detectar DTEs Invalidados o Retornados**: Identifica a tiempo cualquier DTE que haya sido invalidado o sujeto a eventos de retorno.
+- **Recuperar Sellos Faltantes**: Asegura que los documentos recibidos en contingencia incorporen su sello oficial de recepción.
+- **Verificar Observaciones**: Revisa cualquier notificación tributaria registrada antes de proceder con las salidas finales.
 
-### Recomendacion
-- Definir reglas por remitente, asunto o patron util.
-- Mantener reglas simples y auditables.
-- Revisar periodicamente reglas obsoletas o duplicadas.
+---
 
-### Servidores de correo personalizados
-Para servidores de correo personalizados, es estrictamente importante validar los requisitos de conexión antes de configurar la descarga automatizada:
+## 3. Configuración y Reglas de Descarga por Correo
+Para optimizar el proceso de descarga y reducir intervenciones manuales, verifica los siguientes puntos en la configuración:
+
+- **Tipos de DTE a procesar**: Verifica que estén activados únicamente los tipos de DTE deseados (Compras y/o Ventas) según el rol de la cuenta vinculada.
+- **Buzones y carpetas activas**: Comprueba que los buzones o etiquetas donde se reciben las facturas se encuentren debidamente marcados.
+- **Extracción de DTEs desde enlaces**: Si cuentas con proveedores que envían enlaces web en lugar de adjuntar directamente el archivo `.json` o los `.pdf`, configura los remitentes correspondientes para habilitar la extracción automática de DTEs desde enlaces externos seguros.
+
+### Servidores de Correo Personalizados (IMAP)
+Para servidores de correo corporativos o personalizados, valida previamente los parámetros de conexión requeridos:
 - Servidor IMAP (host)
 - Puerto y método de cifrado (SSL/TLS)
 - Credenciales / contraseña (por lo general la autenticación usa la misma contraseña del correo)
 
-## 4) Resguardo de preguntas de seguridad
-Las preguntas de seguridad son el mecanismo principal para recuperar el usuario.
+## 4. Resguardo de Preguntas de Seguridad
+Las preguntas de seguridad son el mecanismo principal para la recuperación de tu usuario en caso de olvido de credenciales:
 
-### Recomendacion critica
-- Resguardar preguntas y respuestas en un medio seguro interno del despacho.
-- Evitar respuestas ambiguas o que puedan olvidarse.
-- Limitar acceso a esta informacion solo a personal autorizado.
+- Resguarda las preguntas y respuestas en un gestor o medio seguro interno.
+- Utiliza respuestas claras y precisas que puedas recordar fácilmente.
+- Limita el acceso a esta información únicamente al personal administrativo autorizado.
 
 !!! warning "Importante"
-    Si se pierden las respuestas de seguridad, la recuperacion del usuario puede quedar bloqueada.
+    Si se extravían las respuestas a las preguntas de seguridad, la recuperación del acceso a tu usuario no será posible.
 
-## 5) Gestion correcta de archivos en Downloads
-No mover manualmente archivos de la carpeta Downloads utilizada por PyConta durante el flujo normal.
+---
 
-### Si necesitas extraer archivos
-- Usar extraccion individual desde Lector JSON.
-- Usar extraccion masiva desde Lector JSON.
-- Conservar intacta la estructura de trabajo usada para sincronizacion y trazabilidad.
+## 5. Gestión de Archivos en la Carpeta de Trabajo
+Evita mover, renombrar o eliminar manualmente los archivos dentro de las carpetas internas de descarga mientras PyConta se encuentra en ejecución:
 
-## Checklist rapido de operacion
-1. Confirmar reglas de correo activas por empresa.
-2. Verificar carpeta asignada por empresa en PyConta.
-3. Ejecutar consulta de DTE antes de anexos.
-4. Revisar estados ajustado/invalidado/observaciones.
-5. Generar anexos solo con lote validado.
-6. No mover archivos de Downloads fuera del flujo.
+- Utiliza las funciones de **Extraer DTEs** o **Exportar a Excel** desde el **Lector JSON** para generar copias en tus carpetas personales de trabajo.
+- Conserva la estructura de directorios generada por el sistema para garantizar la trazabilidad y sincronización continua.
 
-## 6) Primera descarga ilimitada (Planes premium)
+---
 
-Si tu suscripción corresponde a un plan premium, dispones de una primera descarga ilimitada: puedes descargar todos los DTE dentro del rango de fechas que necesites sin que se consuma tu cuota. El consumo de los límites del plan comenzará a contabilizarse a partir de la descarga siguiente a esa operación inicial.
+## 6. Primera Descarga en Planes Premium
+Al activar una cuenta en un Plan Premium, dispones de una descarga inicial sugerida con un rango amplio (por ejemplo, 1 año) para construir tu historial base:
 
-### Recomendación
-- Planificar la primera descarga para incluir todo el histórico o el rango necesario al activar el plan.
-- Verificar la integridad y clasificación después de esa descarga inicial y antes de generar anexos.
-- Tener en cuenta que cualquier descarga posterior consumirá cuota según lo definido por el plan.
+- Planifica la primera descarga para capturar todo el periodo histórico que necesites conciliar.
+- Tras la primera sincronización, el sistema recordará el historial y sugerirá automáticamente los periodos pendientes en las descargas sucesivas.
 
-## Relacionados
+---
+
+## **Checklist Rápido de Operación Mensual**
+1. Confirmar que las cuentas de correo y carpetas asignadas a la empresa estén activas.
+2. Ejecutar la descarga del periodo y realizar la sincronización en el Lector JSON.
+3. Consultar el estado de los DTEs ante el servicio de consulta de Hacienda para validar sellos y vigencia.
+4. Revisar el resumen financiero y corroborar compras y ventas en el panel principal.
+5. Exportar los Libros de IVA en formato Excel y PDF.
+6. Preparar y validar la tabla de Anexos de Impuestos F07 antes de generar el archivo CSV oficial.
+
+---
+
+## **Enlaces Relacionados**
 - [Descarga Desde Correo](../flujos/descarga-desde-correo.md)
-- [Consulta en Hacienda](../flujos/consulta-hacienda.md)
 - [Lector JSON](../flujos/lector-json.md)
-- [Licencias y Planes](../primeros-pasos/licencias-y-planes.md)
+- [Consulta en Hacienda](../flujos/consulta-hacienda.md)
+- [Generación de Libros de IVA](../flujos/libros-iva.md)
+- [Anexos de Impuestos F07](../flujos/anexos-de-impuestos-f07.md)
 
-## Enlaces útiles para reglas de descarga en webmails con proveedores comunes
+---
 
-- **Outlook:** [Administrar mensajes y reglas en Outlook](https://support.microsoft.com/es-es/office/administrar-mensajes-de-correo-electr%C3%B3nico-mediante-reglas-en-outlook-c24f5dea-9465-4df4-ad17-a50704d66c59)
-- **Gmail:** [Filtros y reglas en Gmail](https://support.google.com/mail/answer/6579?hl=es)
-- **Yahoo:** [Reglas de filtrado en Yahoo Mail](https://es.ayuda.yahoo.com/kb/SLN28071.html)
+## **Guías Externas para Reglas en Webmail**
+- **Microsoft Outlook:** [Administrar mensajes mediante reglas en Outlook](https://support.microsoft.com/es-es/office/administrar-mensajes-de-correo-electr%C3%B3nico-mediante-reglas-en-outlook-c24f5dea-9465-4df4-ad17-a50704d66c59)
+- **Google Gmail:** [Crear reglas para filtrar correos en Gmail](https://support.google.com/mail/answer/6579?hl=es)
+- **Yahoo Mail:** [Configuración de filtros y reglas en Yahoo Mail](https://es.ayuda.yahoo.com/kb/SLN28071.html)

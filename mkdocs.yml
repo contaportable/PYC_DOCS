@@ -76,7 +76,9 @@ nav:
     - Descarga Desde Correo: flujos/descarga-desde-correo.md
     - Sincronización: flujos/sincronizacion.md
     - Importación JSON: flujos/importacion-json.md
+    - Visor de DTE: flujos/visor-dte.md
     - Lector JSON: flujos/lector-json.md
+    - Libros de IVA: flujos/libros-iva.md
     - Consulta en Hacienda: flujos/consulta-hacienda.md
     - Anexos de Impuestos F07: flujos/anexos-de-impuestos-f07.md
   - Problemas Comunes:

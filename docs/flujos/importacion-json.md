@@ -1,31 +1,51 @@
-# Importacion JSON
+---
+description: Procedimiento para la carga e inserción directa de archivos y carpetas de DTEs en formato JSON en PyConta.
+---
 
-## Objetivo
-Insertar DTE localmente desde archivos del equipo cuando no se requiere sincronizacion por correo.
+# **Inserción Local de JSON**
 
-## Flujo de insercion local
-Este proceso funciona de forma similar a sincronizacion, pero de forma libre con archivos del equipo.
+La inserción local permite cargar DTEs directamente desde los archivos o carpetas de tu computadora hacia la base de datos de PyConta, sin requerir conexión a buzones de correo.
 
-PyConta ofrece dos opciones para ejecutar este flujo:
+---
 
-- **Insertar JSON desde Archivos**: seleccion manual de uno o mas archivos.
-- **Insertar JSON desde Directorio**: seleccion de carpeta con busqueda recursiva en subniveles.
+## **Opciones de Inserción Local**
 
-### 1) Panel de insercion local
-Vista inicial del panel para iniciar la carga local de JSON desde archivos o desde directorio.
+PyConta ofrece dos modalidades para cargar archivos locales:
+
+- **Insertar JSON desde Archivos**: Permite seleccionar manualmente uno o varios archivos `.json` específicos.
+- **Insertar JSON desde Directorio**: Permite seleccionar una carpeta completa, realizando una búsqueda recursiva automática en todos sus subdirectorios.
+
+---
+
+## **Flujo de Inserción Paso a Paso**
+
+### 1. Panel de Inserción Local
+Desde la pantalla de carga, selecciona la modalidad deseada (por archivos o directorio) para iniciar el procesamiento:
 
 ![Panel de inserción local](../assets/img/flujos/insercion-local-01-panel.png "Panel de inserción local"){ align=center }
 
-### 2) Insercion local completada
-Resultado final del proceso con el resumen de cargados con exito, errores, descartados y total procesado.
+---
+
+### 2. Resultados de la Inserción
+Al completar la lectura, la ventana presenta el consolidado de documentos procesados con éxito, descartados o con observaciones:
 
 ![Inserción local completada](../assets/img/flujos/insercion-local-02-completada.png "Inserción local completada"){ align=center }
 
-## Recomendacion operativa
-- Usar **Insertar JSON desde Directorio** para cargas masivas o historicas.
-- Usar **Insertar JSON desde Archivos** para casos puntuales de correccion o reingreso.
-- Verificar al cierre: cargados con exito, con errores, descartados y total de archivos.
+---
 
-## Verificacion
-- Documentos visibles en listado con estado **Exito** cuando corresponde.
-- Totales de resultados coherentes con los archivos insertados.
+!!! tip "Menú de Acciones y Visor de DTE"
+    Al hacer clic derecho sobre cualquier fila en la tabla de resultados, puedes acceder a opciones directas para copiar el nombre, el estado o inspeccionar el contenido completo del documento en el [Visor de DTE](visor-dte.md).
+
+---
+
+## **Recomendaciones Operativas**
+- Utiliza **Insertar JSON desde Directorio** para cargas históricas o migraciones masivas.
+- Utiliza **Insertar JSON desde Archivos** para reingresos puntuales o corrección de documentos específicos.
+- Tras la inserción, los documentos quedan clasificados automáticamente en el **Lector JSON**.
+
+---
+
+## **Enlaces Relacionados**
+- [Lector JSON](lector-json.md)
+- [Descarga Desde Correo](descarga-desde-correo.md)
+- [Sincronización de DTEs](sincronizacion.md)
