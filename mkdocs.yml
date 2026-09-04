@@ -26,8 +26,6 @@ theme:
   font:
     text: Inter
     code: JetBrains Mono
-repo_url: https://github.com/contaportable/PYC_DOCS
-repo_name: contaportable/PYC_DOCS
 markdown_extensions:
   - admonition
   - def_list
