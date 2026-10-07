@@ -1,0 +1,2036 @@
+<!DOCTYPE html><html lang="es" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Historial de actualizaciones, mejoras operativas y nuevas funcionalidades incorporadas en cada versión de PyConta.">
+      
+      
+      
+        <link rel="canonical" href="https://docs.pyconta.com/novedades/release-notes/">
+      
+      
+        <link rel="prev" href="../../faq-glosario/glosario/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/img/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Release Notes - PYCONTA DOCS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#novedades-y-release-notes" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="PYCONTA DOCS" class="md-header__button md-logo" aria-label="PYCONTA DOCS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PYCONTA DOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Release Notes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan" aria-label="Dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="light-blue" aria-label="Light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="PYCONTA DOCS" class="md-nav__button md-logo" aria-label="PYCONTA DOCS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    PYCONTA DOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Información Importante
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Información Importante
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../informacion-importante/certificacion-seguridad-casa-nivel-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Certificación de Seguridad CASA nivel 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../informacion-importante/limites-del-sistema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Límites del Sistema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../informacion-importante/requisitos-hardware-rendimiento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos y Rendimiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../informacion-importante/buenas-practicas-operativas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Buenas Prácticas Operativas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Primeros Pasos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Primeros Pasos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../primeros-pasos/instalacion-acceso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instalación, Acceso y Requisitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../primeros-pasos/registro-usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Registro de Usuario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../primeros-pasos/registro-empresa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Registro de Empresa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../primeros-pasos/licencias-y-planes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licencias y Planes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flujo de Trabajo
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Flujo de Trabajo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/parametros-validacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parámetros de Validación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/flujo-completo-dte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flujo Completo DTE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/descarga-desde-correo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Descarga Desde Correo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/sincronizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sincronización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/importacion-json/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Importación JSON
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/visor-dte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visor de DTE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/lector-json/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lector JSON
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/libros-iva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Libros de IVA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/consulta-hacienda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Consulta en Hacienda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/anexos-de-impuestos-f07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos de Impuestos F07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas Comunes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas Comunes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas-comunes/no-descarga-correos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    No Descarga Correos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas-comunes/dte-no-aparece/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DTE No Aparece
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problemas-comunes/dte-sin-sello/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DTE Sin Sello
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Suscripción y Soporte
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Suscripción y Soporte
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../suscripcion-y-soporte/membresia-vip/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Membresía VIP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../suscripcion-y-soporte/renovacion-finalizacion-upgrade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Renovación, Finalización y Upgrade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../suscripcion-y-soporte/solicitar-soporte-con-pin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Soporte con PIN
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Políticas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Políticas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../politicas/redencion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Redención
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../politicas/devolucion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Devolución
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8">
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ y Glosario
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    FAQ y Glosario
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq-glosario/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq-glosario/glosario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Novedades
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Novedades
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#version-114-2026-10-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión 1.1.4 - 2026-10-05
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-113-2026-10-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión 1.1.3 - 2026-10-02
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-112-2026-09-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión 1.1.2 - 2026-09-16
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-111-2026-09-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión 1.1.1 - 2026-09-09
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-1100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión 1.1.0.0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-10094" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión 1.0.0.9.4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-10093" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión 1.0.0.9.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#version-114-2026-10-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión 1.1.4 - 2026-10-05
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-113-2026-10-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión 1.1.3 - 2026-10-02
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-112-2026-09-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión 1.1.2 - 2026-09-16
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-111-2026-09-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión 1.1.1 - 2026-09-09
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-1100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión 1.1.0.0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-10094" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión 1.0.0.9.4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-10093" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versión 1.0.0.9.3
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="novedades-y-release-notes"><strong>Novedades y Release Notes</strong></h1>
+<p>En esta página se registran los cambios funcionales, mejoras operativas y nuevas características incorporadas en las diferentes versiones de <strong>PyConta</strong>.</p>
+<!--
+### Versión X.Y.Z - AAAA-MM-DD
+- **Nuevo:**
+- **Mejorado:**
+- **Corregido:**
+- **Impacto operativo:**
+- **Acciones recomendadas:**
+-->
+
+<h3 id="version-114-2026-10-05"><strong>Versión 1.1.4</strong> - 2026-10-05</h3>
+<ul>
+<li><strong>Nuevo:</strong></li>
+<li><strong>Mover Compras Masivo en Menú de Selección Múltiple</strong>: Posibilidad de seleccionar uno o múltiples DTEs de compras (Comprobante de Crédito Fiscal) y trasladarlos a otro periodo fiscal dentro de la ventana legal de 3 meses permitida por el Código Tributario de El Salvador para deducir compras.</li>
+<li><strong>Control de Ventana Única por Empresa</strong>: Prevención de duplicación de ventanas de una misma empresa; al intentar abrir una empresa que ya está en uso, el sistema enfoca y trae al frente la ventana activa existente.</li>
+<li>
+<p><strong>Protección contra Eliminación Accidental</strong>: Bloqueo preventivo que impide eliminar una empresa si tiene ventanas abiertas o tareas activas en ejecución.</p>
+</li>
+<li>
+<p><strong>Mejorado:</strong></p>
+</li>
+<li><strong>Gestión de Errores en Traslados</strong>: Notificación detallada indicando la cantidad de DTEs trasladados exitosamente y advertencias cuando el periodo fiscal de destino se encuentra bloqueado.</li>
+<li>
+<p><strong>Validación de Selección Múltiple</strong>: Guardas de seguridad al ejecutar acciones de eliminación con múltiples registros seleccionados en tablas.</p>
+</li>
+<li>
+<p><strong>Corregido:</strong></p>
+</li>
+<li>Corrección en la persistencia y actualización del listado de DTEs pendientes con eventos de retorno.</li>
+<li>
+<p>Ajuste en la sincronización de etiquetas tras consultas individuales o masivas de DTEs.</p>
+</li>
+<li>
+<p><strong>Impacto Operativo:</strong></p>
+</li>
+<li>Flexibilidad contable para diferir compras de Crédito Fiscal a periodos fiscales posteriores dentro del plazo legalmente autorizado.</li>
+<li>Mayor seguridad operativa al evitar colisiones e inconsistencias de datos por apertura duplicada de ventanas.</li>
+</ul>
+<hr>
+<h3 id="version-113-2026-10-02"><strong>Versión 1.1.3</strong> - 2026-10-02</h3>
+<ul>
+<li><strong>Nuevo:</strong></li>
+<li><strong>Soporte Avanzado de Factura de Exportación (FEXE 11)</strong>: Tratamiento y categorización inteligente de facturas de exportación en importaciones e internaciones, con actualización del catálogo de países para compatibilidad con códigos de versiones anteriores.</li>
+<li><strong>Ventana de Progreso y Bloqueo Dinámico de Interfaz</strong>: Incorporación de indicador de progreso visual que desactiva temporalmente las acciones durante procesos asíncronos para evitar ejecuciones accidentales.</li>
+<li>
+<p><strong>Restablecer Tamaño de Columnas</strong>: Opción en el menú contextual de tablas para restaurar instantáneamente el ancho predeterminado de las columnas tras modificaciones manuales.</p>
+</li>
+<li>
+<p><strong>Mejorado:</strong></p>
+</li>
+<li><strong>Maquetación Continua en PDF</strong>: Optimización de saltos de página y diseño continuo en PDF para Facturas de Exportación extensas, evitando resúmenes o firmas huérfanas al final del documento.</li>
+<li>
+<p><strong>Prioridad de Columnas Críticas</strong>: Optimización del ancho y visibilidad preferente para el número de control y código de generación en las tablas.</p>
+</li>
+<li>
+<p><strong>Corregido:</strong></p>
+</li>
+<li>Corrección en la asignación de campos para tributos e impuestos en DTEs.</li>
+<li>
+<p>Prevención de desbordamientos visuales en diálogos informativos al utilizar fuentes de gran tamaño.</p>
+</li>
+<li>
+<p><strong>Impacto Operativo:</strong></p>
+</li>
+<li>Conciliación y registro confiable de operaciones de exportación bajo la normativa tributaria vigente.</li>
+<li>Experiencia visual estable y mayor control sobre las vistas de datos en tablas extensas.</li>
+</ul>
+<hr>
+<h3 id="version-112-2026-09-16"><strong>Versión 1.1.2</strong> - 2026-09-16</h3>
+<ul>
+<li><strong>Nuevo:</strong></li>
+<li><strong>Desglose Independiente de NRC y NIT</strong>: Separación explícita de los campos de NRC y NIT en columnas dedicadas tanto en la tabla visual como en las exportaciones a Excel, sustituyendo la columna única anterior de identificación.</li>
+<li>
+<p><strong>Almacenamiento Local Seguro</strong>: Mecanismo de guardado con archivos temporales y protección ante cortes de energía o cierres imprevistos, previniendo la corrupción de los registros locales.</p>
+</li>
+<li>
+<p><strong>Mejorado:</strong></p>
+</li>
+<li>
+<p><strong>Persistencia de Metadatos de Anexos</strong>: Inicialización y resguardo de datos auxiliares para declaraciones tributarias.</p>
+</li>
+<li>
+<p><strong>Corregido:</strong></p>
+</li>
+<li>
+<p>Corrección de anomalías causadas por caracteres nulos o formatos no válidos en archivos JSON importados.</p>
+</li>
+<li>
+<p><strong>Impacto Operativo:</strong></p>
+</li>
+<li>Identificación inmediata de contribuyentes y simplificación en cruces contables gracias al desglose individual de NRC y NIT.</li>
+<li>Máxima fiabilidad en el almacenamiento local de DTEs y registros fiscales.</li>
+</ul>
+<hr>
+<h3 id="version-111-2026-09-09"><strong>Versión 1.1.1</strong> - 2026-09-09</h3>
+<ul>
+<li><strong>Nuevo:</strong></li>
+<li><strong>Protección y Bloqueo de Periodos Fiscales</strong>: Restricción de acciones modificadoras (inserción, consulta o eliminación) en periodos fiscales cerrados, junto con un diálogo de confirmación interactiva para autorizar su desbloqueo.</li>
+<li><strong>Consulta Inteligente en el Servicio de Hacienda</strong>: Descarte automático en consultas masivas de DTEs que ya fueron validados previamente o que cuentan con evento de invalidación, optimizando el tiempo de respuesta.</li>
+<li><strong>Consulta Selectiva de DTEs</strong>: Posibilidad de seleccionar varios DTEs y consultar su estado en el Ministerio de Hacienda directamente desde el menú contextual.</li>
+<li><strong>Apertura Directa por Doble Clic</strong>: Doble clic sobre cualquier fila de la tabla para visualizar el DTE en modo PDF por defecto.</li>
+<li>
+<p><strong>Descarga Directa desde Menú Contextual</strong>: Acción para descargar y ubicar el archivo del DTE seleccionado en el equipo.</p>
+</li>
+<li>
+<p><strong>Mejorado:</strong></p>
+</li>
+<li><strong>Escalabilidad Visual y Fuentes Adaptativas</strong>: Ajuste dinámico de diálogos, tablas y botones para tamaños de letra grandes (hasta 20 puntos) sin truncamiento de información.</li>
+<li><strong>Diseño de Libros de IVA en Excel</strong>: Formato y anchos de columna adaptados para evitar saltos del código de generación, con totalizadores dinámicos optimizados.</li>
+<li><strong>Independencia del Entorno</strong>: Estandarización de textos y mensajes operativos con independencia del idioma o configuración regional del sistema operativo.</li>
+<li>
+<p><strong>Compatibilidad con macOS</strong>: Optimización en la navegación entre periodos fiscales y centrado geométrico de diálogos modales.</p>
+</li>
+<li>
+<p><strong>Corregido:</strong></p>
+</li>
+<li>Corrección en la idempotencia del estado de bloqueo de periodo frente a consultas de estado.</li>
+<li>
+<p>Prevención de excepciones en tablas al interactuar con filas deseleccionadas o selecciones vacías.</p>
+</li>
+<li>
+<p><strong>Impacto Operativo:</strong></p>
+</li>
+<li>Blindaje de la información contable contra modificaciones accidentales en periodos ya declarados.</li>
+<li>Consultas tributarias ágiles y eficientes sin saturar el servicio de consulta del Ministerio de Hacienda.</li>
+</ul>
+<hr>
+<h3 id="version-1100"><strong>Versión 1.1.0.0</strong></h3>
+<ul>
+<li><strong>Nuevo:</strong></li>
+<li><strong>Visor Estandarizado y Conmutador PDF / JSON</strong>: Apertura homogénea de DTEs desde la carga de archivos, visualización directa en PDF y alternancia instantánea a la estructura de datos JSON.</li>
+<li><strong>Eventos de Retorno e Invalidadas</strong>: Gestión completa para eventos de retorno (disminución contable en DTEs 01, 11 y 14) y eventos de invalidación con control de periodos fiscales cerrados.</li>
+<li><strong>Libros de IVA con Tablas Secundarias</strong>: Exportación con fórmulas dinámicas y estilos avanzados en Excel, diseño continuo en PDF y restricción de marcas de agua para planes Demo.</li>
+<li><strong>Asignación Automática de DUI</strong>: Reconocimiento y ubicación automática del DUI en su columna correspondiente para Anexos F07 y libros de IVA.</li>
+<li><strong>Consulta en Hacienda Integrada</strong>: Validación implícita durante sincronización/inserción y recuperación inteligente de sellos desde la metadata.</li>
+<li><strong>Normativa 2.0 y Contingencia</strong>: Compatibilidad integral con esquemas v2 (Sujeto Excluido tipo 14, retenciones, percepciones, autoconsumos) y soporte para DTEs en contingencia.</li>
+<li><strong>Extracción de Archivos Comprimidos</strong>: Soporte ampliado en descarga de correos para archivos, <code>.zip</code>, <code>.rar</code>, <code>.7z</code>, documentos <code>.txt</code> y gestión de enlaces externos seguros.</li>
+<li>
+<p><strong>Preferencias y Estados Visuales</strong>: Configuración de abreviaturas para códigos de control, panel de preferencias y sistema de estados con emojis informativos en tablas.</p>
+</li>
+<li>
+<p><strong>Mejorado:</strong></p>
+</li>
+<li><strong>Rendimiento e Inserción Masiva</strong>: Procesamiento por lotes fluido sin saturación de la interfaz gráfica y algoritmo de ordenamiento por fecha, hora y correlativo.</li>
+<li><strong>Edición en Anexos Tributarios</strong>: Mayor precisión en la edición y visualización de columnas de NIT, NRC y DUI en modelos de Anexos F07.</li>
+<li><strong>Autenticación y Conectividad OAuth2</strong>: Flujo renovado para cuentas de correo con cambio dinámico de credenciales y renovación de tokens.</li>
+<li>
+<p><strong>Seguridad y Registro</strong>: Empaquetado optimizado con control defensivo de ventanas y sistema de logs adaptativo según el entorno.</p>
+</li>
+<li>
+<p><strong>Corregido:</strong></p>
+</li>
+<li>Corrección en la clasificación de DTEs y cálculo de totales en tablas secundarias de libros de IVA.</li>
+<li>Corrección en el tratamiento de valores negativos para notas de crédito en los libros de IVA.</li>
+<li>Exclusión estricta de DTEs invalidados en todas las secciones de los Anexos F07.</li>
+<li>Corrección en la captura y cálculo de retenciones de IVA del 1% y 13% en anexos.</li>
+<li>Corrección de reconexión para clientes IMAP / Gmail API y prevención de conflictos multisesión.</li>
+<li>Manejo defensivo de conversiones numéricas y caracteres especiales en DTEs.</li>
+<li>
+<p>Prevención de bloqueos durante la actualización del sistema mediante bloqueos de ejecución (<em>locks</em>).</p>
+</li>
+<li>
+<p><strong>Impacto Operativo:</strong></p>
+</li>
+<li>Flujo contable continuo con visualización gráfica en PDF y alternancia técnica a JSON.</li>
+<li>Automatización total en el tratamiento de retornos, invalidaciones y normativa tributaria 2.0.</li>
+<li>Mayor precisión y calidad profesional en la exportación de libros de IVA y Anexos F07.</li>
+</ul>
+<hr>
+<h3 id="version-10094"><strong>Versión 1.0.0.9.4</strong></h3>
+<ul>
+<li><strong>Nuevo:</strong></li>
+<li><strong>Descarga Inteligente por Cuenta</strong>: Detección automática del último mes descargado y sugerencia del periodo pendiente en el panel de descargas.</li>
+<li><strong>Precarga de 1 Año en Descarga Inicial</strong>: Sugerencia de un rango anual en la primera conexión de una cuenta para construir el historial completo.</li>
+<li><strong>Validación en Bloque de Anexos</strong>: Verificación automática de datos y formato antes de generar los archivos finales de declaración F07.</li>
+<li>
+<p><strong>Reutilización de Cupos de Correo</strong>: Flexibilidad para actualizar o cambiar cuentas de correo manteniendo el cupo asignado a la empresa.</p>
+</li>
+<li>
+<p><strong>Mejorado:</strong></p>
+</li>
+<li>Mensajes de validación y orientación visual más claros durante el registro de usuarios y empresas.</li>
+<li>
+<p>Rendimiento y estabilidad al extraer DTEs desde archivos comprimidos.</p>
+</li>
+<li>
+<p><strong>Corregido:</strong></p>
+</li>
+<li>Corrección de cálculo en valores de retenciones y percepciones en tablas secundarias de anexos.</li>
+<li>Mejora en la captura de logs operativos para soporte técnico asistido.</li>
+</ul>
+<hr>
+<h3 id="version-10093"><strong>Versión 1.0.0.9.3</strong></h3>
+<ul>
+<li><strong>Nuevo:</strong></li>
+<li>Implementación de la primera sincronización inteligente para lectura de historial descargado.</li>
+<li>Integración de filtros de búsqueda avanzados en el panel de inserción manual.</li>
+<li>Flujo guiado de bienvenida (<em>onboarding</em>) para nuevos usuarios.</li>
+<li>
+<p>Paneles redimensionables en la pantalla de carga de archivos.</p>
+</li>
+<li>
+<p><strong>Mejorado:</strong></p>
+</li>
+<li>Optimización en el motor de búsqueda del visor de DTEs y carga progresiva por lotes.</li>
+<li>Transiciones y velocidad visual en formularios de empresas y usuarios.</li>
+<li>Mejoras en el algoritmo de limpieza y codificación de archivos JSON.</li>
+<li>
+<p>Autocompletado de operaciones de ventas a consumidores y facturas de exportación en la tabla de Anexos F07.</p>
+</li>
+<li>
+<p><strong>Corregido:</strong></p>
+</li>
+<li>Corrección en sumatorias automáticas en columnas de totales de Anexos F07.</li>
+<li>Corrección de comportamiento al usar Deshacer (Ctrl + Z) en el registro de ventas del anexo.</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 ContaPortable - Yuri Ernesto Calderón Rodríguez
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
