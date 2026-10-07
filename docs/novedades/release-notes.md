@@ -15,6 +15,89 @@ En esta página se registran los cambios funcionales, mejoras operativas y nueva
 - **Acciones recomendadas:**
 -->
 
+### **Versión 1.1.4** - 2026-10-05
+
+- **Nuevo:**
+  - **Mover Compras Masivo en Menú de Selección Múltiple**: Posibilidad de seleccionar uno o múltiples DTEs de compras (Comprobante de Crédito Fiscal) y trasladarlos a otro periodo fiscal dentro de la ventana legal de 3 meses permitida por el Código Tributario de El Salvador para deducir compras.
+  - **Control de Ventana Única por Empresa**: Prevención de duplicación de ventanas de una misma empresa; al intentar abrir una empresa que ya está en uso, el sistema enfoca y trae al frente la ventana activa existente.
+  - **Protección contra Eliminación Accidental**: Bloqueo preventivo que impide eliminar una empresa si tiene ventanas abiertas o tareas activas en ejecución.
+
+- **Mejorado:**
+  - **Gestión de Errores en Traslados**: Notificación detallada indicando la cantidad de DTEs trasladados exitosamente y advertencias cuando el periodo fiscal de destino se encuentra bloqueado.
+  - **Validación de Selección Múltiple**: Guardas de seguridad al ejecutar acciones de eliminación con múltiples registros seleccionados en tablas.
+
+- **Corregido:**
+  - Corrección en la persistencia y actualización del listado de DTEs pendientes con eventos de retorno.
+  - Ajuste en la sincronización de etiquetas tras consultas individuales o masivas de DTEs.
+
+- **Impacto Operativo:**
+  - Flexibilidad contable para diferir compras de Crédito Fiscal a periodos fiscales posteriores dentro del plazo legalmente autorizado.
+  - Mayor seguridad operativa al evitar colisiones e inconsistencias de datos por apertura duplicada de ventanas.
+
+---
+
+### **Versión 1.1.3** - 2026-10-02
+
+- **Nuevo:**
+  - **Soporte Avanzado de Factura de Exportación (FEXE 11)**: Tratamiento y categorización inteligente de facturas de exportación en importaciones e internaciones, con actualización del catálogo de países para compatibilidad con códigos de versiones anteriores.
+  - **Ventana de Progreso y Bloqueo Dinámico de Interfaz**: Incorporación de indicador de progreso visual que desactiva temporalmente las acciones durante procesos asíncronos para evitar ejecuciones accidentales.
+  - **Restablecer Tamaño de Columnas**: Opción en el menú contextual de tablas para restaurar instantáneamente el ancho predeterminado de las columnas tras modificaciones manuales.
+
+- **Mejorado:**
+  - **Maquetación Continua en PDF**: Optimización de saltos de página y diseño continuo en PDF para Facturas de Exportación extensas, evitando resúmenes o firmas huérfanas al final del documento.
+  - **Prioridad de Columnas Críticas**: Optimización del ancho y visibilidad preferente para el número de control y código de generación en las tablas.
+
+- **Corregido:**
+  - Corrección en la asignación de campos para tributos e impuestos en DTEs.
+  - Prevención de desbordamientos visuales en diálogos informativos al utilizar fuentes de gran tamaño.
+
+- **Impacto Operativo:**
+  - Conciliación y registro confiable de operaciones de exportación bajo la normativa tributaria vigente.
+  - Experiencia visual estable y mayor control sobre las vistas de datos en tablas extensas.
+
+---
+
+### **Versión 1.1.2** - 2026-09-16
+
+- **Nuevo:**
+  - **Desglose Independiente de NRC y NIT**: Separación explícita de los campos de NRC y NIT en columnas dedicadas tanto en la tabla visual como en las exportaciones a Excel, sustituyendo la columna única anterior de identificación.
+  - **Almacenamiento Local Seguro**: Mecanismo de guardado con archivos temporales y protección ante cortes de energía o cierres imprevistos, previniendo la corrupción de los registros locales.
+
+- **Mejorado:**
+  - **Persistencia de Metadatos de Anexos**: Inicialización y resguardo de datos auxiliares para declaraciones tributarias.
+
+- **Corregido:**
+  - Corrección de anomalías causadas por caracteres nulos o formatos no válidos en archivos JSON importados.
+
+- **Impacto Operativo:**
+  - Identificación inmediata de contribuyentes y simplificación en cruces contables gracias al desglose individual de NRC y NIT.
+  - Máxima fiabilidad en el almacenamiento local de DTEs y registros fiscales.
+
+---
+
+### **Versión 1.1.1** - 2026-09-09
+
+- **Nuevo:**
+  - **Protección y Bloqueo de Periodos Fiscales**: Restricción de acciones modificadoras (inserción, consulta o eliminación) en periodos fiscales cerrados, junto con un diálogo de confirmación interactiva para autorizar su desbloqueo.
+  - **Consulta Inteligente en el Servicio de Hacienda**: Descarte automático en consultas masivas de DTEs que ya fueron validados previamente o que cuentan con evento de invalidación, optimizando el tiempo de respuesta.
+  - **Consulta Selectiva de DTEs**: Posibilidad de seleccionar varios DTEs y consultar su estado en el Ministerio de Hacienda directamente desde el menú contextual.
+  - **Apertura Directa por Doble Clic**: Doble clic sobre cualquier fila de la tabla para visualizar el DTE en modo PDF por defecto.
+  - **Descarga Directa desde Menú Contextual**: Acción para descargar y ubicar el archivo del DTE seleccionado en el equipo.
+
+- **Mejorado:**
+  - **Escalabilidad Visual y Fuentes Adaptativas**: Ajuste dinámico de diálogos, tablas y botones para tamaños de letra grandes (hasta 20 puntos) sin truncamiento de información.
+  - **Diseño de Libros de IVA en Excel**: Formato y anchos de columna adaptados para evitar saltos del código de generación, con totalizadores dinámicos optimizados.
+  - **Independencia del Entorno**: Estandarización de textos y mensajes operativos con independencia del idioma o configuración regional del sistema operativo.
+  - **Compatibilidad con macOS**: Optimización en la navegación entre periodos fiscales y centrado geométrico de diálogos modales.
+
+- **Corregido:**
+  - Corrección en la idempotencia del estado de bloqueo de periodo frente a consultas de estado.
+  - Prevención de excepciones en tablas al interactuar con filas deseleccionadas o selecciones vacías.
+
+- **Impacto Operativo:**
+  - Blindaje de la información contable contra modificaciones accidentales en periodos ya declarados.
+  - Consultas tributarias ágiles y eficientes sin saturar el servicio de consulta del Ministerio de Hacienda.
+
 ---
 
 ### **Versión 1.1.0.0**

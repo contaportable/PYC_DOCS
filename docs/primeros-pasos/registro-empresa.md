@@ -119,6 +119,20 @@ Selecciona el tema visual de tu preferencia para adaptar los colores de la inter
 
 ---
 
+## **Control y Protección de Empresas**
+
+### Control de Ventana Única por Empresa
+Para evitar inconsistencias o bloqueos en la base de datos local por accesos simultáneos, PyConta aplica un control de instancia única por empresa:
+- Si una empresa ya se encuentra abierta en el sistema y vuelves a seleccionarla en la lista principal, el sistema no abrirá una segunda ventana duplicada.
+- En su lugar, enfocará y traerá automáticamente al frente la ventana de trabajo que ya está activa.
+
+### Protección contra Eliminación Accidental
+Para preservar la integridad de los datos contables:
+- No se permite eliminar una empresa del sistema mientras tenga ventanas abiertas o procesos en curso (como descargas de correo o sincronizaciones activas).
+- Para poder eliminar una empresa, debes cerrar previamente todas sus ventanas de trabajo asociadas.
+
+---
+
 ## **Verificación**
 - La empresa aparece en la lista principal con su estado activo.
 - Los datos fiscales (NIT y NRC) coinciden con los DTEs a procesar.

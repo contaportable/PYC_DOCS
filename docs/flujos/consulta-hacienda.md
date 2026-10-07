@@ -37,7 +37,7 @@ Permite validar todos los DTEs de un periodo (Compras o Ventas) en un solo proce
 
 1. Selecciona la categoría del periodo en el árbol lateral.
 2. Presiona el botón de **Consulta Masiva en Hacienda**.
-3. **Optimización Inteligente**: El sistema detecta y omite automáticamente los documentos que ya fueron validados previamente, consultando únicamente los DTEs nuevos o pendientes. Esto agiliza el proceso y optimiza el uso de la conexión.
+3. **Optimización Inteligente y Descarte Preventivo**: El sistema detecta y omite automáticamente los documentos que ya cuentan con validación oficial previa, así como aquellos que registran eventos oficiales de invalidación o eventos de retorno. Esto evita reconsultas innecesarias, acelera significativamente el tiempo de procesamiento y previene la saturación del servicio de consulta del Ministerio de Hacienda.
 
 ![Consulta masiva - inicio](../assets/img/flujos/consulta-hacienda-02-consulta-masiva-inicio.png "Ejecución de consulta masiva por categoría"){ align=center }
 
@@ -48,7 +48,17 @@ Al finalizar el proceso, se presenta un panel detallado con el resumen de estado
 ---
 
 ### 3. Consulta de Filas Seleccionadas
-Si deseas consultar únicamente un subconjunto de DTEs, marca las filas correspondientes en la tabla, haz clic derecho y selecciona consultar los elementos seleccionados.
+Si necesitas verificar el estado tributario de un grupo específico de documentos sin procesar toda la categoría:
+
+1. Marca las filas deseadas en la tabla utilizando ++shift++ o ++ctrl++ para selección continua o alterna.
+2. Haz clic derecho sobre cualquiera de las filas marcadas.
+3. Selecciona la opción **Consultar DTEs (seleccionados)**.
+4. El sistema procesará exclusivamente los documentos indicados, actualizando su sello y estado en pantalla.
+
+![Consulta de filas seleccionadas](../assets/img/flujos/consulta-hacienda-seleccionados.png "Opción para consultar DTEs seleccionados en el menú contextual"){ align=center }
+
+!!! note "Protección en Periodos Bloqueados"
+    Si el periodo fiscal consultado se encuentra bloqueado (cerrado contablemente), el sistema restringe la ejecución de consultas que modifiquen la metadata de los documentos para preservar la integridad histórica. Para consultar documentos en un periodo protegido, este debe ser desbloqueado previamente con confirmación interactiva.
 
 ---
 

@@ -62,8 +62,10 @@ Evita mover, renombrar o eliminar manualmente los archivos dentro de las carpeta
 ## 6. Primera Descarga en Planes Premium
 Al activar una cuenta en un Plan Premium, dispones de una descarga inicial sugerida con un rango amplio (por ejemplo, 1 año) para construir tu historial base:
 
-- Planifica la primera descarga para capturar todo el periodo histórico que necesites conciliar.
-- Tras la primera sincronización, el sistema recordará el historial y sugerirá automáticamente los periodos pendientes en las descargas sucesivas.
+- **Sin Consumo de Límites Mensuales**: Esta primera descarga inicial histórica no resta ni consume de tus límites mensuales contratados.
+- **Inicio del Conteo Mensual**: El consumo de tus límites mensuales comenzará a contabilizarse hasta la siguiente descarga efectiva en la que se encuentren nuevos DTEs.
+- **Captura Integral del Historial**: Aprovecha esta primera ejecución para abarcar todo el periodo histórico que necesites conciliar y auditar.
+- **Sugerencia Automática de Periodos**: Tras completar la primera sincronización, el sistema registrará el historial procesado y sugerirá de forma automática únicamente los periodos pendientes en las descargas sucesivas.
 
 ---
 

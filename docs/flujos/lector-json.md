@@ -22,6 +22,23 @@ El panel izquierdo organiza automáticamente tus documentos por **Año**, **Mes*
 
 ![Separación por año, mes y categorías](../assets/img/flujos/lector-json-01-separacion-anio-mes-categorias.png "Navegación por año, mes y categorías"){ align=center }
 
+#### Protección y Bloqueo de Periodos Fiscales
+PyConta permite proteger los periodos fiscales que ya han sido declarados o cerrados contablemente para prevenir modificaciones accidentales:
+
+- **Indicador Visual de Bloqueo**: Los periodos protegidos se identifican en el árbol lateral con el icono de un candado cerrado, indicando que sus registros se encuentran blindados.
+- **Restricción de Acciones Modificadoras**: En un periodo bloqueado no se permite insertar nuevos DTEs, eliminar registros existentes ni realizar consultas que alteren el estado tributario de los documentos.
+- **Desbloqueo Supervisado**: Si necesitas realizar un ajuste justificado, el sistema solicita una confirmación interactiva para advertirte del riesgo antes de liberar el periodo.
+
+=== "Periodos Bloqueados en el Árbol"
+    Visualización de los meses protegidos con candado en el panel lateral:
+
+    ![Periodos bloqueados en el panel lateral](../assets/img/flujos/lector-json-14-periodos-bloqueados.png "Identificación de periodos fiscales bloqueados en el panel lateral"){ align=center }
+
+=== "Advertencia de Bloqueo"
+    Mensaje preventivo desplegado ante cualquier intento de modificación sobre un periodo cerrado:
+
+    ![Advertencia de periodo bloqueado](../assets/img/flujos/periodo-bloqueado-advertencia.png "Advertencia de seguridad al intentar operar sobre un periodo fiscal bloqueado"){ align=center }
+
 ---
 
 ### 2. Visor Dual de DTEs (PDF y JSON)
@@ -40,17 +57,36 @@ PyConta ofrece una experiencia de visualización cómoda tanto para usuarios con
 
     ![Vista detallada en JSON](../assets/img/flujos/lector-json-06-vista-detallada-modo-json.png "Vista detallada en modo JSON"){ align=center }
 
+#### Desglose Independiente de NRC y NIT
+La tabla de visualización presenta en columnas separadas e independientes el **NRC** (Número de Registro de Contribuyente) y el **NIT** (o DUI en personas naturales), simplificando el cotejo fiscal y agilizando la conciliación frente a los reportes de proveedores y clientes:
+
+![Columnas separadas de NRC y NIT](../assets/img/flujos/lector-json-columnas-nrc-nit.png "Desglose independiente de columnas NRC y NIT en la tabla de DTEs"){ align=center }
+
 ---
 
 ### 3. Menú Contextual (Clic Derecho) y Acciones Rápidas
 Al hacer clic derecho sobre una o varias filas seleccionadas en la tabla, accedes a un menú con herramientas especializadas:
 
-- **Consultar DTE**: Valida en tiempo real el estado del DTE con el servicio de consulta del Ministerio de Hacienda.
+- **Consultar DTE / Consultar DTEs (seleccionados)**: Valida en tiempo real el estado de los documentos ante el servicio de consulta del Ministerio de Hacienda.
 - **Copiar Datos Fiscales**: Copia rápidamente el Código de Generación, Número de Control, Sello de Recepción o NIT del proveedor al portapapeles.
-- **Descargar / Guardar Archivo**: Guarda una copia local del archivo original en la carpeta que elijas.
-- **Mover DTE**: Reclasifica el DTE a otro mes o año (con validación para evitar alterar periodos cerrados).
+- **Descargar Archivo**: Guarda una copia del archivo original del DTE en la ubicación que elijas de tu equipo.
+- **Restablecer Columnas**: Si ajustaste manualmente el ancho de las columnas de la tabla, esta opción restaura instantáneamente la distribución y anchos predeterminados:
+
+![Restablecer tamaño de columnas](../assets/img/flujos/menu-contextual-restablecer-columnas.png "Opción para restablecer columnas en el menú contextual"){ align=center }
+
+- **Mover DTE / Mover DTEs (seleccionados)**: Permite reasignar compras a otro periodo fiscal.
 
 ![Consulta de DTE y acciones](../assets/img/flujos/lector-json-03-consultar-dte-y-acciones.png "Menú de acciones para consultar DTE"){ align=center }
+
+#### Traslado de Compras a Otro Periodo Fiscal
+Esta función está disponible exclusivamente para la categoría de **Compras** (Comprobante de Crédito Fiscal) y responde a la normativa tributaria de El Salvador (Art. 65 del Código Tributario), que faculta a los contribuyentes a deducir el IVA Crédito Fiscal dentro de los **3 meses** siguientes a la fecha de emisión del documento:
+
+1. **Selección Individual o Múltiple**: Puedes seleccionar un solo DTE o utilizar ++shift++ o ++ctrl++ para marcar múltiples compras simultáneamente.
+2. **Cálculo de Periodos Válidos**: Al elegir `Mover DTE`, el sistema calcula automáticamente la ventana legal de 3 meses permitida a partir de la fecha de emisión. En traslados masivos, PyConta calcula el rango común legalmente aplicable a todos los documentos seleccionados.
+3. **Selección de Destino**: Elige el Año y Mes de destino en el diálogo modal. El sistema valida que el periodo seleccionado no sea el periodo actual y que el periodo de destino no se encuentre bloqueado.
+4. **Confirmación del Traslado**: Al confirmar, el sistema traslada los DTEs al periodo seleccionado y los retira de la vista del periodo actual, notificando el resultado exitoso en pantalla.
+
+![Mover compras a otro periodo](../assets/img/flujos/mover-compras-periodo-modal.png "Ventana modal para reasignar compras a otro periodo fiscal"){ align=center }
 
 ---
 

@@ -15,8 +15,12 @@ Durante la [Descarga Desde Correo](descarga-desde-correo.md), la [Sincronizació
 
 ### Opciones del Menú Contextual:
 - **Abrir Archivo**: Abre la ventana del **Visor de DTE** para examinar el contenido JSON formateado del documento.
+- **Descargar Archivo**: Descarga y guarda una copia local del archivo original del DTE en la carpeta seleccionada de tu equipo.
 - **Copiar Nombre de Archivo**: Copia el nombre del archivo seleccionado directamente al portapapeles.
 - **Copiar Estado**: Copia el estado de procesamiento del documento para facilitar auditorías o consultas de soporte.
+
+!!! tip "Apertura Rápida con Doble Clic"
+    En las tablas del sistema puedes hacer **doble clic** sobre cualquier fila para abrir de forma directa la vista previa gráfica en PDF del DTE, con la opción de alternar al visor JSON técnico en cualquier momento.
 
 ---
 
