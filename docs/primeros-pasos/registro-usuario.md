@@ -21,6 +21,7 @@ En este primer paso se configuran las reglas base de operación del usuario:
 
 - **Contraseña y validación**: Establece una contraseña segura.
 - **Usar fecha del correo para compras**: Permite registrar las compras con la fecha de recepción del correo cuando corresponda a tu flujo de trabajo.
+- **Corrección inteligente de IVA (DTEs con inconsistencias)**: Habilita el tratamiento tolerante para DTEs donde el IVA difiere de la base gravada por redondeos o fallas del emisor. El sistema admite el documento con estado de advertencia preventiva (`⚠️`) para no interrumpir la ingesta contable.
 - **Intervalo de consulta en Hacienda**: Define el tiempo de espera entre peticiones durante consultas masivas.
 - **Preferencias del asistente**: Habilita o deshabilita los mensajes guiados de bienvenida.
 

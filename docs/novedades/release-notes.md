@@ -15,6 +15,32 @@ En esta página se registran los cambios funcionales, mejoras operativas y nueva
 - **Acciones recomendadas:**
 -->
 
+### **Versión 1.1.5** - 2026-10-22
+
+- **Nuevo:**
+  - **Módulo de Bitácora de Actividades**: Sistema centralizado de auditoría y trazabilidad operativa para registrar eventos críticos del sistema (consultas masivas, descargas de correo, sincronizaciones MH, importaciones y traslados de compras). Incluye timeline interactivo, inspección de evidencia técnica y exportación de reportes ejecutivos en PDF.
+  - **Certificación de Cuotas con Sello de Seguridad**: Historial inalterable con sello digital de integridad para auditar el balance y consumo de la Consulta DTE ante Hacienda.
+  - **Estado Operativo DTE con Inconsistencias (`⚠️`)**: Nuevo estado de validación preventiva (`DTE_WARNING`) que admite e identifica DTEs con discrepancias normativas (IVA reconstruido, sello ausente o esquema no estándar) sin interrumpir el flujo ni alterar cálculos contables.
+  - **Diálogo Pedagógico de Consentimiento para Enlaces de Correo**: Advertencia y confirmación interactiva para usuarios sobre la exploración segura de hipervínculos externos en correos de proveedores frente a la descarga directa de archivos adjuntos.
+  - **Soporte FSEE 14 en Anexo de Documentos Invalidados (F07)**: Incorporación de Factura de Sujeto Excluido (tipo 14) en la generación y exportación del anexo de documentos invalidados para declaración mensual de IVA.
+
+- **Mejorado:**
+  - **Optimización y Descarte Inmediato de Enlaces**: Descarte automático en memoria de enlaces irrelevantes y prefiltrado estricto por extensiones válidas de DTE (`.json`, `.zip`, `.pdf`).
+  - **Corrección Inteligente de IVA Configurable**: Parámetro configurable en el registro de usuario y preferencias de validación para admitir o recalcular DTEs donde el IVA difiere de la base gravada por redondeos del emisor.
+  - **Explicación Contextual de Advertencias**: Menú contextual ("¿Por qué tiene advertencia?") en tablas para consultar de inmediato las anomalías detectadas en cualquier DTE marcado con `⚠️`.
+
+- **Corregido:**
+  - Prevención de descargas redundantes y cuellos de botella por reintentos sobre enlaces externos descartados.
+  - Saneamiento y formato limpio de variables dinámicas en plantillas de observaciones y reportes PDF de auditoría.
+  - Validación de consistencia en el balance de cuotas de consultas MH al reiniciar sesiones.
+
+- **Impacto Operativo:**
+  - Seguridad jurídica y trazabilidad completa ante auditorías internas o fiscalizaciones tributarias.
+  - Mayor resiliencia en la ingesta masiva de DTEs de diversos proveedores sin bloqueos por inconsistencias menores de cálculo.
+  - Reducción drástica del consumo de ancho de banda y tiempo de procesamiento en descargas desde correo electrónico.
+
+---
+
 ### **Versión 1.1.4** - 2026-10-05
 
 - **Nuevo:**

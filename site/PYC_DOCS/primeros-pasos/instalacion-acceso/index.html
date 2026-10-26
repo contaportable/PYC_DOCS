@@ -3,11 +3,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentación de PyConta. Python 3.11.12">
+        <meta name="description" content="Guía de instalación, requisitos previos y primer acceso a PyConta en Windows y macOS.">
       
       
       
-        <link rel="canonical" href="http://localhost:8006/PYC_DOCS/primeros-pasos/instalacion-acceso/">
+        <link rel="canonical" href="https://docs.pyconta.com/primeros-pasos/instalacion-acceso/">
       
       
         <link rel="prev" href="../../informacion-importante/buenas-practicas-operativas/">
@@ -16,8 +16,11 @@
         <link rel="next" href="../registro-usuario/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+        
+      
+      
+      <link rel="icon" href="../../assets/img/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -25,10 +28,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -41,7 +44,7 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
@@ -51,7 +54,6 @@
     
       
 
-    
     
     
   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
@@ -134,7 +136,7 @@
     
     <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan" aria-label="Dark mode" type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden="">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
       </label>
     
@@ -144,7 +146,7 @@
     
     <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="light-blue" aria-label="Light mode" type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden="">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
       </label>
     
@@ -167,7 +169,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
@@ -184,7 +186,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Inicializando búsqueda
@@ -232,7 +234,7 @@
     PYCONTA DOCS
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -246,9 +248,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Inicio
+  
+
     
   </span>
+  
   
 
       </a>
@@ -279,9 +286,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Información Importante
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -290,9 +302,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Información Importante
+            
+  
+    Información Importante
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -306,9 +322,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Certificación de Seguridad CASA nivel 2
+  
+
     
   </span>
+  
   
 
       </a>
@@ -329,9 +350,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Límites del Sistema
+  
+
     
   </span>
+  
   
 
       </a>
@@ -352,9 +378,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Requisitos y Rendimiento
+  
+
     
   </span>
+  
   
 
       </a>
@@ -375,9 +406,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Buenas Prácticas Operativas
+  
+
     
   </span>
+  
   
 
       </a>
@@ -410,7 +446,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked="">
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -418,9 +454,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Primeros Pasos
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -429,9 +470,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Primeros Pasos
+            
+  
+    Primeros Pasos
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -454,9 +499,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Instalación, Acceso y Requisitos
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -467,9 +517,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Instalación, Acceso y Requisitos
+  
+
     
   </span>
+  
   
 
       </a>
@@ -487,49 +542,59 @@
       <span class="md-nav__icon md-icon"></span>
       Tabla de contenidos
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objetivo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objetivo
-    </span>
-  </a>
-  
-</li>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#antes-de-empezar" class="md-nav__link">
     <span class="md-ellipsis">
-      Antes de empezar
+      
+        Antes de Empezar
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pasos" class="md-nav__link">
+  <a href="#instalacion-segun-tu-sistema-operativo" class="md-nav__link">
     <span class="md-ellipsis">
-      Pasos
+      
+        Instalación según tu Sistema Operativo
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Pasos">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primer-acceso-a-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primer Acceso a la Aplicación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primer Acceso a la Aplicación">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pantalla-de-carga" class="md-nav__link">
+  <a href="#1-pantalla-de-carga-inicial" class="md-nav__link">
     <span class="md-ellipsis">
-      Pantalla de carga
+      
+        1. Pantalla de Carga Inicial
+      
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pantalla-de-login" class="md-nav__link">
+  <a href="#2-pantalla-de-inicio-de-sesion" class="md-nav__link">
     <span class="md-ellipsis">
-      Pantalla de login
+      
+        2. Pantalla de Inicio de Sesión
+      
     </span>
   </a>
   
@@ -541,27 +606,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#siguientes-pasos" class="md-nav__link">
+  <a href="#siguientes-pasos-recomendados" class="md-nav__link">
     <span class="md-ellipsis">
-      Siguientes pasos
+      
+        Siguientes Pasos Recomendados
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#errores-frecuentes" class="md-nav__link">
+  <a href="#resolucion-de-problemas-frecuentes" class="md-nav__link">
     <span class="md-ellipsis">
-      Errores frecuentes
-    </span>
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#relacionados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Relacionados
+        Resolución de Problemas Frecuentes
+      
     </span>
   </a>
   
@@ -588,9 +648,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Registro de Usuario
+  
+
     
   </span>
+  
   
 
       </a>
@@ -611,9 +676,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Registro de Empresa
+  
+
     
   </span>
+  
   
 
       </a>
@@ -634,9 +704,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Licencias y Planes
+  
+
     
   </span>
+  
   
 
       </a>
@@ -675,9 +750,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Flujo de Trabajo
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -686,9 +766,41 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Flujo de Trabajo
+            
+  
+    Flujo de Trabajo
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/parametros-validacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parámetros de Validación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -702,9 +814,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Flujo Completo DTE
+  
+
     
   </span>
+  
   
 
       </a>
@@ -725,9 +842,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Descarga Desde Correo
+  
+
     
   </span>
+  
   
 
       </a>
@@ -748,9 +870,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Sincronización
+  
+
     
   </span>
+  
   
 
       </a>
@@ -771,9 +898,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Importación JSON
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/visor-dte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visor de DTE
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -794,9 +954,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Lector JSON
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/libros-iva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Libros de IVA
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -817,9 +1010,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Consulta en Hacienda
+  
+
     
   </span>
+  
   
 
       </a>
@@ -835,14 +1033,47 @@
   
   
     <li class="md-nav__item">
-      <a href="../../flujos/exportacion-csv-excel/" class="md-nav__link">
+      <a href="../../flujos/bitacora-actividades/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Exportación CSV y Excel
+    
+  
+    Bitácora de Actividades
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/anexos-de-impuestos-f07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos de Impuestos F07
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -881,9 +1112,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Problemas Comunes
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -892,9 +1128,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Problemas Comunes
+            
+  
+    Problemas Comunes
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -908,9 +1148,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     No Descarga Correos
+  
+
     
   </span>
+  
   
 
       </a>
@@ -931,9 +1176,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     DTE No Aparece
+  
+
     
   </span>
+  
   
 
       </a>
@@ -954,55 +1204,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     DTE Sin Sello
+  
+
     
   </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../problemas-comunes/lentitud-tablas/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Lentitud en Tablas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../problemas-comunes/duplicados-faltantes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Duplicados o Faltantes
-    
-  </span>
   
 
       </a>
@@ -1041,9 +1250,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Suscripción y Soporte
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1052,9 +1266,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Suscripción y Soporte
+            
+  
+    Suscripción y Soporte
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1068,9 +1286,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Membresía VIP
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1091,9 +1314,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Renovación, Finalización y Upgrade
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1114,9 +1342,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Soporte con PIN
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1155,9 +1388,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Políticas
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1166,9 +1404,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            Políticas
+            
+  
+    Políticas
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1182,9 +1424,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Redención
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1205,9 +1452,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Devolución
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1246,9 +1498,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     FAQ y Glosario
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1257,9 +1514,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            FAQ y Glosario
+            
+  
+    FAQ y Glosario
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1273,9 +1534,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1296,9 +1562,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Glosario
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1337,9 +1608,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Novedades
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1348,9 +1624,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            Novedades
+            
+  
+    Novedades
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1364,9 +1644,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Release Notes
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1406,49 +1691,59 @@
       <span class="md-nav__icon md-icon"></span>
       Tabla de contenidos
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objetivo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objetivo
-    </span>
-  </a>
-  
-</li>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#antes-de-empezar" class="md-nav__link">
     <span class="md-ellipsis">
-      Antes de empezar
+      
+        Antes de Empezar
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pasos" class="md-nav__link">
+  <a href="#instalacion-segun-tu-sistema-operativo" class="md-nav__link">
     <span class="md-ellipsis">
-      Pasos
+      
+        Instalación según tu Sistema Operativo
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Pasos">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primer-acceso-a-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primer Acceso a la Aplicación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primer Acceso a la Aplicación">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#pantalla-de-carga" class="md-nav__link">
+  <a href="#1-pantalla-de-carga-inicial" class="md-nav__link">
     <span class="md-ellipsis">
-      Pantalla de carga
+      
+        1. Pantalla de Carga Inicial
+      
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pantalla-de-login" class="md-nav__link">
+  <a href="#2-pantalla-de-inicio-de-sesion" class="md-nav__link">
     <span class="md-ellipsis">
-      Pantalla de login
+      
+        2. Pantalla de Inicio de Sesión
+      
     </span>
   </a>
   
@@ -1460,27 +1755,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#siguientes-pasos" class="md-nav__link">
+  <a href="#siguientes-pasos-recomendados" class="md-nav__link">
     <span class="md-ellipsis">
-      Siguientes pasos
+      
+        Siguientes Pasos Recomendados
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#errores-frecuentes" class="md-nav__link">
+  <a href="#resolucion-de-problemas-frecuentes" class="md-nav__link">
     <span class="md-ellipsis">
-      Errores frecuentes
-    </span>
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#relacionados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Relacionados
+        Resolución de Problemas Frecuentes
+      
     </span>
   </a>
   
@@ -1496,51 +1786,65 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
 
 
-<h1 id="instalacion-y-acceso">Instalacion y Acceso</h1>
-<h2 id="objetivo">Objetivo</h2>
-<p>Dejar PyConta listo para iniciar sesion, instalarlo a nivel de usuario y comenzar procesamiento de DTE.</p>
-<h2 id="antes-de-empezar">Antes de empezar</h2>
+<h1 id="instalacion-y-acceso"><strong>Instalación y Acceso</strong></h1>
+<p>Esta guía te orientará en el proceso de instalación y primer inicio de sesión en <strong>PyConta</strong>, dejándolo listo para comenzar a gestionar tus documentos tributarios electrónicos (DTE).</p>
+<hr>
+<h2 id="antes-de-empezar"><strong>Antes de Empezar</strong></h2>
+<p>Asegúrate de contar con:</p>
 <ul>
-<li>Instalacion a nivel de usuario: PyConta se instala y ejecuta sin requerir permisos de administrador.</li>
-<li>Internet: conexion estable para sincronizacion, correo y activacion.</li>
-<li>Información exacta de empresa según tarjeta de IVA para registro.</li>
-<li>Emails a conectar con PyConta.</li>
+<li><strong>Instalador oficial</strong>: Descarga el instalador correspondiente a tu sistema operativo (Windows o macOS) desde nuestro portal oficial.</li>
+<li><strong>Conexión a internet</strong>: Necesaria para la validación inicial, vinculación de correos y activación de licencias.</li>
+<li><strong>Datos fiscales de tu empresa</strong>: Información según tarjeta de IVA (Nombre Legal, NIT, NRC) para el registro de tu primera empresa.</li>
+<li><strong>Cuentas de correo</strong>: Credenciales de los correos donde recibes o emites tus DTEs.</li>
 </ul>
-<h2 id="pasos">Pasos</h2>
+<hr>
+<h2 id="instalacion-segun-tu-sistema-operativo"><strong>Instalación según tu Sistema Operativo</strong></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">macOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ol>
-<li>Confirmar que la instalacion fue realizada para el usuario actual.</li>
-<li>Abrir PyConta y validar pantalla de inicio.</li>
-<li>Crear tu primer usuario local.</li>
+<li><strong>Ejecutar el instalador</strong>: Haz doble clic sobre el archivo de instalación descargado (<code>Setup_PyConta1.1_COMMON.exe</code>).</li>
+<li><strong>Instalación automática</strong>: El sistema se instalará a nivel de tu usuario actual sin requerir permisos avanzados de administrador.</li>
+<li><strong>Acceso directo</strong>: Se creará automáticamente un acceso directo en tu escritorio y en el menú de inicio.</li>
 </ol>
-<h3 id="pantalla-de-carga">Pantalla de carga</h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/primeros-pasos/instalacion-acceso-panel-principal.png" data-desc-position="bottom"><img align="center" alt="Inicio de sesión y pantalla principal" src="../../assets/img/primeros-pasos/instalacion-acceso-panel-principal.png" title="Pantalla de carga - mostrar estado de inicio"></a></p>
-<h3 id="pantalla-de-login">Pantalla de login</h3>
+</div>
+<div class="tabbed-block">
+<ol>
+<li><strong>Abrir la imagen de disco</strong>: Haz doble clic sobre el archivo descargado (<code>PyConta1.0-macos.dmg</code>).</li>
+<li><strong>Arrastrar a Aplicaciones</strong>: Arrastra el icono de <strong>PyConta</strong> a la carpeta <strong>Aplicaciones</strong> de tu Mac.</li>
+<li><strong>Primer inicio seguro</strong>: Abre la aplicación desde el Launchpad o tu carpeta Aplicaciones. Si el sistema te solicita confirmación de seguridad para abrir la aplicación por primera vez, selecciona <strong>Abrir</strong>.</li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<h2 id="primer-acceso-a-la-aplicacion"><strong>Primer Acceso a la Aplicación</strong></h2>
+<h3 id="1-pantalla-de-carga-inicial">1. Pantalla de Carga Inicial</h3>
+<p>Al iniciar PyConta, se mostrará una pantalla de carga mientras se inicializan los servicios locales y la base de datos de trabajo:</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/primeros-pasos/instalacion-acceso-panel-principal.png" data-desc-position="bottom"><img align="center" alt="Inicio de sesión y pantalla principal" src="../../assets/img/primeros-pasos/instalacion-acceso-panel-principal.png" title="Pantalla de carga - estado de inicio"></a></p>
+<h3 id="2-pantalla-de-inicio-de-sesion">2. Pantalla de Inicio de Sesión</h3>
+<p>Si es tu primera vez utilizando la aplicación, podrás crear tu usuario local o iniciar sesión con tus credenciales registradas:</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/primeros-pasos/instalacion-acceso-login.png" data-desc-position="bottom"><img align="center" alt="Pantalla de login con campos obligatorios" src="../../assets/img/primeros-pasos/instalacion-acceso-login.png" title="Pantalla de login"></a></p>
-<h2 id="siguientes-pasos">Siguientes pasos</h2>
+<hr>
+<h2 id="siguientes-pasos-recomendados"><strong>Siguientes Pasos Recomendados</strong></h2>
 <ol>
-<li>Ir a <a href="../registro-usuario/">Registro de Usuario</a>.</li>
-<li>Continuar con <a href="../configuracion-inicial/">Configuracion Inicial</a>.</li>
-<li>Si ya conoces el plan, revisar <a href="../licencias-y-planes/">Licencias y Planes</a>.</li>
-<li>Revisar <a href="../../informacion-importante/certificacion-seguridad-casa-nivel-2/">Información Importante</a> para ver el cumplimiento CASA y otros requisitos.</li>
+<li><strong><a href="../registro-usuario/">Registro de Usuario</a></strong>: Configura tu usuario, preguntas de seguridad para recuperación y preferencias generales.</li>
+<li><strong><a href="../registro-empresa/">Registro de Empresa</a></strong>: Registra tu empresa con sus datos fiscales y conecta tus cuentas de correo.</li>
+<li><strong><a href="../licencias-y-planes/">Licencias y Planes</a></strong>: Conoce las diferencias entre el plan Demo y los planes Premium.</li>
 </ol>
-<h2 id="errores-frecuentes">Errores frecuentes</h2>
+<hr>
+<h2 id="resolucion-de-problemas-frecuentes"><strong>Resolución de Problemas Frecuentes</strong></h2>
 <ul>
-<li>Instalacion hecha fuera del perfil de usuario: reinstalar para el usuario correcto.</li>
-<li>Credenciales invalidas.</li>
-<li>Conexion de red inestable.</li>
-</ul>
-<h2 id="relacionados">Relacionados</h2>
-<ul>
-<li><a href="../registro-usuario/">Registro de Usuario</a></li>
-<li><a href="../configuracion-inicial/">Configuracion Inicial</a></li>
-<li><a href="../licencias-y-planes/">Licencias y Planes</a></li>
-<li><a href="../../suscripcion-y-soporte/solicitar-soporte-con-pin/">Soporte con PIN</a></li>
+<li><strong>Credenciales no válidas</strong>: Utiliza la opción de recuperación de contraseña respondiendo a tus preguntas de seguridad registradas.</li>
+<li><strong>Conexión inestable</strong>: Verifica que tu equipo tenga salida a internet para completar el proceso de autenticación.</li>
+<li><strong>Soporte asistido</strong>: Si requieres ayuda de nuestro equipo técnico, consulta cómo <a href="../../suscripcion-y-soporte/solicitar-soporte-con-pin/">Solicitar Soporte con PIN</a>.</li>
 </ul>
 
 
@@ -1548,6 +1852,9 @@
 
 
 
+
+  
+  
 
 
 
@@ -1594,10 +1901,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   

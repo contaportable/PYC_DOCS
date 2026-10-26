@@ -3,21 +3,24 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentación de PyConta. Python 3.11.12">
+        <meta name="description" content="Procedimiento para identificar y recuperar el sello oficial de recepción de Hacienda en DTEs sin sello.">
       
       
       
-        <link rel="canonical" href="http://localhost:8006/PYC_DOCS/problemas-comunes/dte-sin-sello/">
+        <link rel="canonical" href="https://docs.pyconta.com/problemas-comunes/dte-sin-sello/">
       
       
         <link rel="prev" href="../dte-no-aparece/">
       
       
-        <link rel="next" href="../lentitud-tablas/">
+        <link rel="next" href="../../suscripcion-y-soporte/membresia-vip/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+        
+      
+      
+      <link rel="icon" href="../../assets/img/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -25,10 +28,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -41,7 +44,7 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
@@ -51,7 +54,6 @@
     
       
 
-    
     
     
   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
@@ -83,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dte-sin-sello" class="md-skip">
+        <a href="#solucion-a-problemas-dte-sin-sello-de-recepcion" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -134,7 +136,7 @@
     
     <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan" aria-label="Dark mode" type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden="">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
       </label>
     
@@ -144,7 +146,7 @@
     
     <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="light-blue" aria-label="Light mode" type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden="">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
       </label>
     
@@ -167,7 +169,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
@@ -184,7 +186,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Inicializando búsqueda
@@ -232,7 +234,7 @@
     PYCONTA DOCS
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -246,9 +248,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Inicio
+  
+
     
   </span>
+  
   
 
       </a>
@@ -279,9 +286,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Información Importante
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -290,9 +302,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Información Importante
+            
+  
+    Información Importante
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -306,9 +322,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Certificación de Seguridad CASA nivel 2
+  
+
     
   </span>
+  
   
 
       </a>
@@ -329,9 +350,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Límites del Sistema
+  
+
     
   </span>
+  
   
 
       </a>
@@ -352,9 +378,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Requisitos y Rendimiento
+  
+
     
   </span>
+  
   
 
       </a>
@@ -375,9 +406,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Buenas Prácticas Operativas
+  
+
     
   </span>
+  
   
 
       </a>
@@ -416,9 +452,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Primeros Pasos
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -427,9 +468,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Primeros Pasos
+            
+  
+    Primeros Pasos
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -443,9 +488,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Instalación, Acceso y Requisitos
+  
+
     
   </span>
+  
   
 
       </a>
@@ -466,9 +516,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Registro de Usuario
+  
+
     
   </span>
+  
   
 
       </a>
@@ -489,9 +544,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Registro de Empresa
+  
+
     
   </span>
+  
   
 
       </a>
@@ -512,9 +572,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Licencias y Planes
+  
+
     
   </span>
+  
   
 
       </a>
@@ -553,9 +618,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Flujo de Trabajo
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -564,9 +634,41 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Flujo de Trabajo
+            
+  
+    Flujo de Trabajo
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/parametros-validacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parámetros de Validación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -580,9 +682,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Flujo Completo DTE
+  
+
     
   </span>
+  
   
 
       </a>
@@ -603,9 +710,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Descarga Desde Correo
+  
+
     
   </span>
+  
   
 
       </a>
@@ -626,9 +738,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Sincronización
+  
+
     
   </span>
+  
   
 
       </a>
@@ -649,9 +766,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Importación JSON
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/visor-dte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visor de DTE
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -672,9 +822,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Lector JSON
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/libros-iva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Libros de IVA
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -695,9 +878,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Consulta en Hacienda
+  
+
     
   </span>
+  
   
 
       </a>
@@ -713,14 +901,47 @@
   
   
     <li class="md-nav__item">
-      <a href="../../flujos/exportacion-csv-excel/" class="md-nav__link">
+      <a href="../../flujos/bitacora-actividades/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Exportación CSV y Excel
+    
+  
+    Bitácora de Actividades
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/anexos-de-impuestos-f07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos de Impuestos F07
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -753,7 +974,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked="">
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -761,9 +982,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Problemas Comunes
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -772,9 +998,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Problemas Comunes
+            
+  
+    Problemas Comunes
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -788,9 +1018,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     No Descarga Correos
+  
+
     
   </span>
+  
   
 
       </a>
@@ -811,9 +1046,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     DTE No Aparece
+  
+
     
   </span>
+  
   
 
       </a>
@@ -843,9 +1083,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     DTE Sin Sello
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -856,9 +1101,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     DTE Sin Sello
+  
+
     
   </span>
+  
   
 
       </a>
@@ -876,30 +1126,53 @@
       <span class="md-nav__icon md-icon"></span>
       Tabla de contenidos
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#sintoma" class="md-nav__link">
+  <a href="#por-que-un-dte-puede-llegar-sin-sello" class="md-nav__link">
     <span class="md-ellipsis">
-      Sintoma
+      
+        ¿Por qué un DTE puede llegar sin sello?
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#diagnostico-rapido" class="md-nav__link">
+  <a href="#como-recuperar-el-sello-oficial-con-pyconta" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagnostico rapido
+      
+        Cómo Recuperar el Sello Oficial con PyConta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo Recuperar el Sello Oficial con PyConta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pasos-para-recuperar-el-sello" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pasos para recuperar el sello:
+      
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#solucion" class="md-nav__link">
+  <a href="#que-hacer-si-hacienda-responde-que-el-dte-no-existe-o-fue-rechazado" class="md-nav__link">
     <span class="md-ellipsis">
-      Solucion
+      
+        ¿Qué hacer si Hacienda responde que el DTE no existe o fue rechazado?
+      
     </span>
   </a>
   
@@ -909,52 +1182,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../lentitud-tablas/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Lentitud en Tablas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../duplicados-faltantes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Duplicados o Faltantes
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -990,9 +1217,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Suscripción y Soporte
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1001,9 +1233,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Suscripción y Soporte
+            
+  
+    Suscripción y Soporte
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1017,9 +1253,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Membresía VIP
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1040,9 +1281,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Renovación, Finalización y Upgrade
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1063,9 +1309,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Soporte con PIN
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1104,9 +1355,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Políticas
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1115,9 +1371,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            Políticas
+            
+  
+    Políticas
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1131,9 +1391,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Redención
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1154,9 +1419,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Devolución
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1195,9 +1465,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     FAQ y Glosario
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1206,9 +1481,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            FAQ y Glosario
+            
+  
+    FAQ y Glosario
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1222,9 +1501,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1245,9 +1529,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Glosario
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1286,9 +1575,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Novedades
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1297,9 +1591,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            Novedades
+            
+  
+    Novedades
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1313,9 +1611,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Release Notes
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1355,30 +1658,53 @@
       <span class="md-nav__icon md-icon"></span>
       Tabla de contenidos
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#sintoma" class="md-nav__link">
+  <a href="#por-que-un-dte-puede-llegar-sin-sello" class="md-nav__link">
     <span class="md-ellipsis">
-      Sintoma
+      
+        ¿Por qué un DTE puede llegar sin sello?
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#diagnostico-rapido" class="md-nav__link">
+  <a href="#como-recuperar-el-sello-oficial-con-pyconta" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagnostico rapido
+      
+        Cómo Recuperar el Sello Oficial con PyConta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo Recuperar el Sello Oficial con PyConta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pasos-para-recuperar-el-sello" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pasos para recuperar el sello:
+      
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#solucion" class="md-nav__link">
+  <a href="#que-hacer-si-hacienda-responde-que-el-dte-no-existe-o-fue-rechazado" class="md-nav__link">
     <span class="md-ellipsis">
-      Solucion
+      
+        ¿Qué hacer si Hacienda responde que el DTE no existe o fue rechazado?
+      
     </span>
   </a>
   
@@ -1394,32 +1720,57 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
 
 
-<h1 id="dte-sin-sello">DTE Sin Sello</h1>
-<h2 id="sintoma">Sintoma</h2>
-<p>El DTE aparece sin sello de recepcion.</p>
-<h2 id="diagnostico-rapido">Diagnostico rapido</h2>
+<h1 id="solucion-a-problemas-dte-sin-sello-de-recepcion"><strong>Solución a Problemas: DTE Sin Sello de Recepción</strong></h1>
+<p>Cuando un DTE ingresa a PyConta sin el <strong>Sello de Recepción</strong> oficial del Ministerio de Hacienda, el sistema te permite identificar la causa y recuperarlo automáticamente.</p>
+<hr>
+<h2 id="por-que-un-dte-puede-llegar-sin-sello"><strong>¿Por qué un DTE puede llegar sin sello?</strong></h2>
 <ol>
-<li>Ejecutar consulta en Hacienda.</li>
-<li>Revisar respuesta y estado de actualizacion.</li>
+<li><strong>Emisión en Contingencia</strong>: El emisor del DTE experimentó problemas temporales de conexión con el Ministerio de Hacienda al facturar y envió el documento al cliente antes de que Hacienda generara el sello de recepción.</li>
+<li><strong>Envío Inmediato sin Esperar Validación</strong>: Algunos sistemas de facturación remiten el correo al cliente antes de recibir la confirmación de procesamiento de Hacienda.</li>
+<li><strong>Documento No Procesado por Hacienda</strong>: El DTE no llegó a ser recibido o fue rechazado por la autoridad tributaria.</li>
 </ol>
-<h2 id="solucion">Solucion</h2>
+<hr>
+<h2 id="como-recuperar-el-sello-oficial-con-pyconta"><strong>Cómo Recuperar el Sello Oficial con PyConta</strong></h2>
+<p>PyConta integra la función de <strong>Consulta en Hacienda</strong>, la cual se comunica directamente con el servicio de consulta del Ministerio de Hacienda para solicitar el estado oficial y el sello asignado:</p>
+<h3 id="pasos-para-recuperar-el-sello">Pasos para recuperar el sello:</h3>
 <ol>
-<li>Reintentar consulta.</li>
-<li>Confirmar actualizacion del JSON.</li>
-<li>Escalar si el estado oficial no coincide.</li>
+<li>Dirígete al <strong>Lector JSON</strong> y ubica el DTE sin sello en la tabla.</li>
+<li>Ejecuta la verificación mediante las modalidades detalladas en <a href="../../flujos/consulta-hacienda/">Consulta en Hacienda</a>:</li>
+<li>
+<p><strong>Consulta Individual</strong>: Haz clic derecho sobre la fila del DTE y selecciona <strong>Consultar DTE</strong>. Al procesarse con éxito, se mostrará el cuadro informativo confirmando la obtención y validación del sello de recepción.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/recuperacion-sello-consulta-individual.png" data-desc-position="bottom"><img align="center" alt="Recuperación de sello en consulta individual" src="../../assets/recuperacion-sello-consulta-individual.png" title="Resultado de recuperación de sello en consulta individual"></a></p>
+</li>
+<li>
+<p><strong>Consulta Masiva o Selección Múltiple</strong>: Si tienes varios documentos pendientes, selecciónalos o presiona el botón <strong>Consultar DTEs</strong>. La consola del proceso indicará en tiempo real la recuperación exitosa del sello para cada documento verificado.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/recuperacion-sello-consulta-masiva.png" data-desc-position="bottom"><img align="center" alt="Recuperación de sello en consulta masiva" src="../../assets/recuperacion-sello-consulta-masiva.png" title="Registro en consola de recuperación de sello en consulta masiva"></a></p>
+</li>
+<li>
+<p>Al concluir la consulta exitosa ante Hacienda:</p>
+</li>
+<li>El sistema descarga e incorpora el <strong>Sello de Recepción oficial</strong>.</li>
+<li>Se actualiza automáticamente la metadata en el archivo <code>.json</code> del DTE.</li>
 </ol>
+<hr>
+<h2 id="que-hacer-si-hacienda-responde-que-el-dte-no-existe-o-fue-rechazado"><strong>¿Qué hacer si Hacienda responde que el DTE no existe o fue rechazado?</strong></h2>
+<p>Si la consulta oficial indica que el documento no cuenta con registro válido en Hacienda:
+- Contacta al emisor o proveedor para que reenvíe el DTE debidamente firmado y recibido por Hacienda.
+- Puedes apoyarte en nuestro equipo mediante <a href="../../suscripcion-y-soporte/solicitar-soporte-con-pin/">Soporte con PIN</a>.</p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1466,10 +1817,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   

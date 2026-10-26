@@ -78,6 +78,7 @@ nav:
     - Lector JSON: flujos/lector-json.md
     - Libros de IVA: flujos/libros-iva.md
     - Consulta en Hacienda: flujos/consulta-hacienda.md
+    - Bitácora de Actividades: flujos/bitacora-actividades.md
     - Anexos de Impuestos F07: flujos/anexos-de-impuestos-f07.md
   - Problemas Comunes:
     - No Descarga Correos: problemas-comunes/no-descarga-correos.md

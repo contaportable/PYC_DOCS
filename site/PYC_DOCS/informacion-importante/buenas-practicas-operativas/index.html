@@ -3,11 +3,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentación de PyConta. Python 3.11.12">
+        <meta name="description" content="Recomendaciones y buenas prácticas para la operación segura, ordenada y eficiente de PyConta.">
       
       
       
-        <link rel="canonical" href="http://localhost:8006/PYC_DOCS/informacion-importante/buenas-practicas-operativas/">
+        <link rel="canonical" href="https://docs.pyconta.com/informacion-importante/buenas-practicas-operativas/">
       
       
         <link rel="prev" href="../requisitos-hardware-rendimiento/">
@@ -16,8 +16,11 @@
         <link rel="next" href="../../primeros-pasos/instalacion-acceso/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+        
+      
+      
+      <link rel="icon" href="../../assets/img/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -25,10 +28,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -41,7 +44,7 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
@@ -51,7 +54,6 @@
     
       
 
-    
     
     
   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
@@ -134,7 +136,7 @@
     
     <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan" aria-label="Dark mode" type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden="">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
       </label>
     
@@ -144,7 +146,7 @@
     
     <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="light-blue" aria-label="Light mode" type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden="">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
       </label>
     
@@ -167,7 +169,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
@@ -184,7 +186,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Inicializando búsqueda
@@ -232,7 +234,7 @@
     PYCONTA DOCS
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -246,9 +248,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Inicio
+  
+
     
   </span>
+  
   
 
       </a>
@@ -273,7 +280,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked="">
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -281,9 +288,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Información Importante
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -292,9 +304,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Información Importante
+            
+  
+    Información Importante
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -308,9 +324,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Certificación de Seguridad CASA nivel 2
+  
+
     
   </span>
+  
   
 
       </a>
@@ -331,9 +352,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Límites del Sistema
+  
+
     
   </span>
+  
   
 
       </a>
@@ -354,9 +380,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Requisitos y Rendimiento
+  
+
     
   </span>
+  
   
 
       </a>
@@ -386,9 +417,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Buenas Prácticas Operativas
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -399,9 +435,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Buenas Prácticas Operativas
+  
+
     
   </span>
+  
   
 
       </a>
@@ -419,106 +460,48 @@
       <span class="md-nav__icon md-icon"></span>
       Tabla de contenidos
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objetivo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objetivo
-    </span>
-  </a>
-  
-</li>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#1-operacion-en-despachos-con-multiples-empresas" class="md-nav__link">
     <span class="md-ellipsis">
-      1) Operacion en despachos con multiples empresas
+      
+        1. Operación en Despachos con Múltiples Empresas
+      
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1) Operacion en despachos con multiples empresas">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#recomendacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recomendacion
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#beneficio" class="md-nav__link">
-    <span class="md-ellipsis">
-      Beneficio
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-consulta-de-dte-antes-de-generar-anexos" class="md-nav__link">
+  <a href="#2-consulta-de-dtes-antes-de-generar-anexos-y-libros" class="md-nav__link">
     <span class="md-ellipsis">
-      2) Consulta de DTE antes de generar anexos
+      
+        2. Consulta de DTEs antes de Generar Anexos y Libros
+      
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="2) Consulta de DTE antes de generar anexos">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#verificar-especialmente" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verificar especialmente
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#recomendacion-operativa" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recomendacion operativa
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-uso-de-reglas-de-descarga-por-correo" class="md-nav__link">
+  <a href="#3-configuracion-y-reglas-de-descarga-por-correo" class="md-nav__link">
     <span class="md-ellipsis">
-      3) Uso de reglas de descarga por correo
+      
+        3. Configuración y Reglas de Descarga por Correo
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3) Uso de reglas de descarga por correo">
+    <nav class="md-nav" aria-label="3. Configuración y Reglas de Descarga por Correo">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#recomendacion_1" class="md-nav__link">
+  <a href="#servidores-de-correo-personalizados-imap" class="md-nav__link">
     <span class="md-ellipsis">
-      Recomendacion
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#servidores-de-correo-personalizados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Servidores de correo personalizados
+      
+        Servidores de Correo Personalizados (IMAP)
+      
     </span>
   </a>
   
@@ -532,97 +515,64 @@
         <li class="md-nav__item">
   <a href="#4-resguardo-de-preguntas-de-seguridad" class="md-nav__link">
     <span class="md-ellipsis">
-      4) Resguardo de preguntas de seguridad
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4) Resguardo de preguntas de seguridad">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#recomendacion-critica" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recomendacion critica
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#5-gestion-correcta-de-archivos-en-downloads" class="md-nav__link">
-    <span class="md-ellipsis">
-      5) Gestion correcta de archivos en Downloads
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5) Gestion correcta de archivos en Downloads">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#si-necesitas-extraer-archivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Si necesitas extraer archivos
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
+        4. Resguardo de Preguntas de Seguridad
       
-        <li class="md-nav__item">
-  <a href="#checklist-rapido-de-operacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Checklist rapido de operacion
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-primera-descarga-ilimitada-planes-premium" class="md-nav__link">
+  <a href="#5-gestion-de-archivos-en-la-carpeta-de-trabajo" class="md-nav__link">
     <span class="md-ellipsis">
-      6) Primera descarga ilimitada (Planes premium)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6) Primera descarga ilimitada (Planes premium)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#recomendacion_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recomendación
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#relacionados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Relacionados
+        5. Gestión de Archivos en la Carpeta de Trabajo
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#enlaces-utiles-para-reglas-de-descarga-en-webmails-con-proveedores-comunes" class="md-nav__link">
+  <a href="#6-primera-descarga-en-planes-premium" class="md-nav__link">
     <span class="md-ellipsis">
-      Enlaces útiles para reglas de descarga en webmails con proveedores comunes
+      
+        6. Primera Descarga en Planes Premium
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist-rapido-de-operacion-mensual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist Rápido de Operación Mensual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enlaces Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guias-externas-para-reglas-en-webmail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guías Externas para Reglas en Webmail
+      
     </span>
   </a>
   
@@ -667,9 +617,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Primeros Pasos
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -678,9 +633,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Primeros Pasos
+            
+  
+    Primeros Pasos
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -694,9 +653,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Instalación, Acceso y Requisitos
+  
+
     
   </span>
+  
   
 
       </a>
@@ -717,9 +681,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Registro de Usuario
+  
+
     
   </span>
+  
   
 
       </a>
@@ -740,9 +709,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Registro de Empresa
+  
+
     
   </span>
+  
   
 
       </a>
@@ -763,9 +737,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Licencias y Planes
+  
+
     
   </span>
+  
   
 
       </a>
@@ -804,9 +783,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Flujo de Trabajo
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -815,9 +799,41 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Flujo de Trabajo
+            
+  
+    Flujo de Trabajo
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/parametros-validacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parámetros de Validación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -831,9 +847,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Flujo Completo DTE
+  
+
     
   </span>
+  
   
 
       </a>
@@ -854,9 +875,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Descarga Desde Correo
+  
+
     
   </span>
+  
   
 
       </a>
@@ -877,9 +903,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Sincronización
+  
+
     
   </span>
+  
   
 
       </a>
@@ -900,9 +931,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Importación JSON
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/visor-dte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visor de DTE
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -923,9 +987,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Lector JSON
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/libros-iva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Libros de IVA
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -946,9 +1043,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Consulta en Hacienda
+  
+
     
   </span>
+  
   
 
       </a>
@@ -964,14 +1066,47 @@
   
   
     <li class="md-nav__item">
-      <a href="../../flujos/exportacion-csv-excel/" class="md-nav__link">
+      <a href="../../flujos/bitacora-actividades/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Exportación CSV y Excel
+    
+  
+    Bitácora de Actividades
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/anexos-de-impuestos-f07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos de Impuestos F07
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1010,9 +1145,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Problemas Comunes
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1021,9 +1161,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Problemas Comunes
+            
+  
+    Problemas Comunes
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1037,9 +1181,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     No Descarga Correos
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1060,9 +1209,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     DTE No Aparece
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1083,55 +1237,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     DTE Sin Sello
+  
+
     
   </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../problemas-comunes/lentitud-tablas/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Lentitud en Tablas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../problemas-comunes/duplicados-faltantes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Duplicados o Faltantes
-    
-  </span>
   
 
       </a>
@@ -1170,9 +1283,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Suscripción y Soporte
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1181,9 +1299,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Suscripción y Soporte
+            
+  
+    Suscripción y Soporte
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1197,9 +1319,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Membresía VIP
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1220,9 +1347,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Renovación, Finalización y Upgrade
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1243,9 +1375,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Soporte con PIN
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1284,9 +1421,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Políticas
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1295,9 +1437,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            Políticas
+            
+  
+    Políticas
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1311,9 +1457,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Redención
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1334,9 +1485,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Devolución
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1375,9 +1531,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     FAQ y Glosario
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1386,9 +1547,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            FAQ y Glosario
+            
+  
+    FAQ y Glosario
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1402,9 +1567,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1425,9 +1595,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Glosario
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1466,9 +1641,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Novedades
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1477,9 +1657,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            Novedades
+            
+  
+    Novedades
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1493,9 +1677,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Release Notes
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1535,106 +1724,48 @@
       <span class="md-nav__icon md-icon"></span>
       Tabla de contenidos
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objetivo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objetivo
-    </span>
-  </a>
-  
-</li>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#1-operacion-en-despachos-con-multiples-empresas" class="md-nav__link">
     <span class="md-ellipsis">
-      1) Operacion en despachos con multiples empresas
+      
+        1. Operación en Despachos con Múltiples Empresas
+      
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1) Operacion en despachos con multiples empresas">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#recomendacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recomendacion
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#beneficio" class="md-nav__link">
-    <span class="md-ellipsis">
-      Beneficio
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-consulta-de-dte-antes-de-generar-anexos" class="md-nav__link">
+  <a href="#2-consulta-de-dtes-antes-de-generar-anexos-y-libros" class="md-nav__link">
     <span class="md-ellipsis">
-      2) Consulta de DTE antes de generar anexos
+      
+        2. Consulta de DTEs antes de Generar Anexos y Libros
+      
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="2) Consulta de DTE antes de generar anexos">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#verificar-especialmente" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verificar especialmente
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#recomendacion-operativa" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recomendacion operativa
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-uso-de-reglas-de-descarga-por-correo" class="md-nav__link">
+  <a href="#3-configuracion-y-reglas-de-descarga-por-correo" class="md-nav__link">
     <span class="md-ellipsis">
-      3) Uso de reglas de descarga por correo
+      
+        3. Configuración y Reglas de Descarga por Correo
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3) Uso de reglas de descarga por correo">
+    <nav class="md-nav" aria-label="3. Configuración y Reglas de Descarga por Correo">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#recomendacion_1" class="md-nav__link">
+  <a href="#servidores-de-correo-personalizados-imap" class="md-nav__link">
     <span class="md-ellipsis">
-      Recomendacion
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#servidores-de-correo-personalizados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Servidores de correo personalizados
+      
+        Servidores de Correo Personalizados (IMAP)
+      
     </span>
   </a>
   
@@ -1648,97 +1779,64 @@
         <li class="md-nav__item">
   <a href="#4-resguardo-de-preguntas-de-seguridad" class="md-nav__link">
     <span class="md-ellipsis">
-      4) Resguardo de preguntas de seguridad
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4) Resguardo de preguntas de seguridad">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#recomendacion-critica" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recomendacion critica
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#5-gestion-correcta-de-archivos-en-downloads" class="md-nav__link">
-    <span class="md-ellipsis">
-      5) Gestion correcta de archivos en Downloads
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5) Gestion correcta de archivos en Downloads">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#si-necesitas-extraer-archivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Si necesitas extraer archivos
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
+        4. Resguardo de Preguntas de Seguridad
       
-        <li class="md-nav__item">
-  <a href="#checklist-rapido-de-operacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Checklist rapido de operacion
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-primera-descarga-ilimitada-planes-premium" class="md-nav__link">
+  <a href="#5-gestion-de-archivos-en-la-carpeta-de-trabajo" class="md-nav__link">
     <span class="md-ellipsis">
-      6) Primera descarga ilimitada (Planes premium)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6) Primera descarga ilimitada (Planes premium)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#recomendacion_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Recomendación
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#relacionados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Relacionados
+        5. Gestión de Archivos en la Carpeta de Trabajo
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#enlaces-utiles-para-reglas-de-descarga-en-webmails-con-proveedores-comunes" class="md-nav__link">
+  <a href="#6-primera-descarga-en-planes-premium" class="md-nav__link">
     <span class="md-ellipsis">
-      Enlaces útiles para reglas de descarga en webmails con proveedores comunes
+      
+        6. Primera Descarga en Planes Premium
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist-rapido-de-operacion-mensual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist Rápido de Operación Mensual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enlaces-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enlaces Relacionados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guias-externas-para-reglas-en-webmail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guías Externas para Reglas en Webmail
+      
     </span>
   </a>
   
@@ -1754,105 +1852,96 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
 
 
-<h1 id="buenas-practicas-operativas">Buenas Practicas Operativas</h1>
-<h2 id="objetivo">Objetivo</h2>
-<p>Definir practicas recomendadas para operar PyConta de forma segura, ordenada y eficiente, minimizando errores en descarga, validacion y generacion de anexos.</p>
-<h2 id="1-operacion-en-despachos-con-multiples-empresas">1) Operacion en despachos con multiples empresas</h2>
-<p>Cuando un despacho administra varias empresas desde un mismo correo, se recomienda separar el flujo por buzones o carpetas desde el webmail.</p>
-<h3 id="recomendacion">Recomendacion</h3>
+<h1 id="buenas-practicas-operativas"><strong>Buenas Prácticas Operativas</strong></h1>
+<p>A continuación se presentan las pautas y recomendaciones clave para optimizar el uso de <strong>PyConta</strong>, asegurar la correcta captura de documentos y agilizar la generación de libros de IVA y declaraciones tributarias.</p>
+<hr>
+<h2 id="1-operacion-en-despachos-con-multiples-empresas">1. Operación en Despachos con Múltiples Empresas</h2>
+<p>Cuando administras varias empresas utilizando una misma cuenta de correo principal, se recomienda organizar el flujo mediante carpetas o etiquetas desde tu proveedor de correo (webmail):</p>
 <ol>
-<li>Crear reglas en el webmail para enrutar correos de cada empresa a carpetas especificas.</li>
-<li>En PyConta, configurar cada empresa para que lea unicamente su carpeta asignada.</li>
-<li>Evitar usar una sola carpeta general para todas las empresas.</li>
+<li><strong>Crear reglas en el correo</strong>: Enruta los mensajes de cada empresa hacia carpetas o etiquetas específicas.</li>
+<li><strong>Asignar carpetas en PyConta</strong>: Configura cada empresa en PyConta para que lea únicamente su carpeta o buzón asignado.</li>
+<li><strong>Evitar carpetas compartidas</strong>: No utilices una sola carpeta general para múltiples empresas con el fin de evitar cruces de información y facilitar la conciliación.</li>
 </ol>
-<h3 id="beneficio">Beneficio</h3>
+<hr>
+<h2 id="2-consulta-de-dtes-antes-de-generar-anexos-y-libros">2. Consulta de DTEs antes de Generar Anexos y Libros</h2>
+<p>Antes de cerrar el periodo y generar tus Anexos F07 o Libros de IVA, realiza la consulta oficial de DTEs ante el servicio de consulta del Ministerio de Hacienda:</p>
 <ul>
-<li>Reduce cruces de documentos entre empresas.</li>
-<li>Mejora la trazabilidad de cada descarga.</li>
-<li>Disminuye errores de clasificacion.</li>
+<li><strong>Detectar DTEs Invalidados o Retornados</strong>: Identifica a tiempo cualquier DTE que haya sido invalidado o sujeto a eventos de retorno.</li>
+<li><strong>Recuperar Sellos Faltantes</strong>: Asegura que los documentos recibidos en contingencia incorporen su sello oficial de recepción.</li>
+<li><strong>Verificar Observaciones</strong>: Revisa cualquier notificación tributaria registrada antes de proceder con las salidas finales.</li>
 </ul>
-<h2 id="2-consulta-de-dte-antes-de-generar-anexos">2) Consulta de DTE antes de generar anexos</h2>
-<p>Antes de generar anexos, ejecutar la consulta de DTE para detectar estados relevantes.</p>
-<h3 id="verificar-especialmente">Verificar especialmente</h3>
+<hr>
+<h2 id="3-configuracion-y-reglas-de-descarga-por-correo">3. Configuración y Reglas de Descarga por Correo</h2>
+<p>Para optimizar el proceso de descarga y reducir intervenciones manuales, verifica los siguientes puntos en la configuración:</p>
 <ul>
-<li>DTE ajustado.</li>
-<li>DTE invalidado.</li>
-<li>Observaciones relevantes en el estado del documento.</li>
+<li><strong>Tipos de DTE a procesar</strong>: Verifica que estén activados únicamente los tipos de DTE deseados (Compras y/o Ventas) según el rol de la cuenta vinculada.</li>
+<li><strong>Buzones y carpetas activas</strong>: Comprueba que los buzones o etiquetas donde se reciben las facturas se encuentren debidamente marcados.</li>
+<li><strong>Extracción de DTEs desde enlaces</strong>: Si cuentas con proveedores que envían enlaces web en lugar de adjuntar directamente el archivo <code>.json</code> o los <code>.pdf</code>, configura los remitentes correspondientes para habilitar la extracción automática de DTEs desde enlaces externos seguros.</li>
 </ul>
-<h3 id="recomendacion-operativa">Recomendacion operativa</h3>
-<ol>
-<li>Ejecutar consulta de DTE por el periodo a reportar.</li>
-<li>Corregir o depurar casos observados.</li>
-<li>Generar anexos solo cuando el lote este validado.</li>
-</ol>
-<h2 id="3-uso-de-reglas-de-descarga-por-correo">3) Uso de reglas de descarga por correo</h2>
-<p>Configurar reglas de descarga por correo para automatizar la captura y reducir intervencion manual.</p>
-<h3 id="recomendacion_1">Recomendacion</h3>
-<ul>
-<li>Definir reglas por remitente, asunto o patron util.</li>
-<li>Mantener reglas simples y auditables.</li>
-<li>Revisar periodicamente reglas obsoletas o duplicadas.</li>
-</ul>
-<h3 id="servidores-de-correo-personalizados">Servidores de correo personalizados</h3>
-<p>Para servidores de correo personalizados, es estrictamente importante validar los requisitos de conexión antes de configurar la descarga automatizada:
+<h3 id="servidores-de-correo-personalizados-imap">Servidores de Correo Personalizados (IMAP)</h3>
+<p>Para servidores de correo corporativos o personalizados, valida previamente los parámetros de conexión requeridos:
 - Servidor IMAP (host)
 - Puerto y método de cifrado (SSL/TLS)
 - Credenciales / contraseña (por lo general la autenticación usa la misma contraseña del correo)</p>
-<h2 id="4-resguardo-de-preguntas-de-seguridad">4) Resguardo de preguntas de seguridad</h2>
-<p>Las preguntas de seguridad son el mecanismo principal para recuperar el usuario.</p>
-<h3 id="recomendacion-critica">Recomendacion critica</h3>
+<h2 id="4-resguardo-de-preguntas-de-seguridad">4. Resguardo de Preguntas de Seguridad</h2>
+<p>Las preguntas de seguridad son el mecanismo principal para la recuperación de tu usuario en caso de olvido de credenciales:</p>
 <ul>
-<li>Resguardar preguntas y respuestas en un medio seguro interno del despacho.</li>
-<li>Evitar respuestas ambiguas o que puedan olvidarse.</li>
-<li>Limitar acceso a esta informacion solo a personal autorizado.</li>
+<li>Resguarda las preguntas y respuestas en un gestor o medio seguro interno.</li>
+<li>Utiliza respuestas claras y precisas que puedas recordar fácilmente.</li>
+<li>Limita el acceso a esta información únicamente al personal administrativo autorizado.</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Importante</p>
-<p>Si se pierden las respuestas de seguridad, la recuperacion del usuario puede quedar bloqueada.</p>
+<p>Si se extravían las respuestas a las preguntas de seguridad, la recuperación del acceso a tu usuario no será posible.</p>
 </div>
-<h2 id="5-gestion-correcta-de-archivos-en-downloads">5) Gestion correcta de archivos en Downloads</h2>
-<p>No mover manualmente archivos de la carpeta Downloads utilizada por PyConta durante el flujo normal.</p>
-<h3 id="si-necesitas-extraer-archivos">Si necesitas extraer archivos</h3>
+<hr>
+<h2 id="5-gestion-de-archivos-en-la-carpeta-de-trabajo">5. Gestión de Archivos en la Carpeta de Trabajo</h2>
+<p>Evita mover, renombrar o eliminar manualmente los archivos dentro de las carpetas internas de descarga mientras PyConta se encuentra en ejecución:</p>
 <ul>
-<li>Usar extraccion individual desde Lector JSON.</li>
-<li>Usar extraccion masiva desde Lector JSON.</li>
-<li>Conservar intacta la estructura de trabajo usada para sincronizacion y trazabilidad.</li>
+<li>Utiliza las funciones de <strong>Extraer DTEs</strong> o <strong>Exportar a Excel</strong> desde el <strong>Lector JSON</strong> para generar copias en tus carpetas personales de trabajo.</li>
+<li>Conserva la estructura de directorios generada por el sistema para garantizar la trazabilidad y sincronización continua.</li>
 </ul>
-<h2 id="checklist-rapido-de-operacion">Checklist rapido de operacion</h2>
+<hr>
+<h2 id="6-primera-descarga-en-planes-premium">6. Primera Descarga en Planes Premium</h2>
+<p>Al activar una cuenta en un Plan Premium, dispones de una descarga inicial sugerida con un rango amplio (por ejemplo, 1 año) para construir tu historial base:</p>
+<ul>
+<li><strong>Sin Consumo de Límites Mensuales</strong>: Esta primera descarga inicial histórica no resta ni consume de tus límites mensuales contratados.</li>
+<li><strong>Inicio del Conteo Mensual</strong>: El consumo de tus límites mensuales comenzará a contabilizarse hasta la siguiente descarga efectiva en la que se encuentren nuevos DTEs.</li>
+<li><strong>Captura Integral del Historial</strong>: Aprovecha esta primera ejecución para abarcar todo el periodo histórico que necesites conciliar y auditar.</li>
+<li><strong>Sugerencia Automática de Periodos</strong>: Tras completar la primera sincronización, el sistema registrará el historial procesado y sugerirá de forma automática únicamente los periodos pendientes en las descargas sucesivas.</li>
+</ul>
+<hr>
+<h2 id="checklist-rapido-de-operacion-mensual"><strong>Checklist Rápido de Operación Mensual</strong></h2>
 <ol>
-<li>Confirmar reglas de correo activas por empresa.</li>
-<li>Verificar carpeta asignada por empresa en PyConta.</li>
-<li>Ejecutar consulta de DTE antes de anexos.</li>
-<li>Revisar estados ajustado/invalidado/observaciones.</li>
-<li>Generar anexos solo con lote validado.</li>
-<li>No mover archivos de Downloads fuera del flujo.</li>
+<li>Confirmar que las cuentas de correo y carpetas asignadas a la empresa estén activas.</li>
+<li>Ejecutar la descarga del periodo y realizar la sincronización en el Lector JSON.</li>
+<li>Consultar el estado de los DTEs ante el servicio de consulta de Hacienda para validar sellos y vigencia.</li>
+<li>Revisar el resumen financiero y corroborar compras y ventas en el panel principal.</li>
+<li>Exportar los Libros de IVA en formato Excel y PDF.</li>
+<li>Preparar y validar la tabla de Anexos de Impuestos F07 antes de generar el archivo CSV oficial.</li>
 </ol>
-<h2 id="6-primera-descarga-ilimitada-planes-premium">6) Primera descarga ilimitada (Planes premium)</h2>
-<p>Si tu suscripción corresponde a un plan premium, dispones de una primera descarga ilimitada: puedes descargar todos los DTE dentro del rango de fechas que necesites sin que se consuma tu cuota. El consumo de los límites del plan comenzará a contabilizarse a partir de la descarga siguiente a esa operación inicial.</p>
-<h3 id="recomendacion_2">Recomendación</h3>
-<ul>
-<li>Planificar la primera descarga para incluir todo el histórico o el rango necesario al activar el plan.</li>
-<li>Verificar la integridad y clasificación después de esa descarga inicial y antes de generar anexos.</li>
-<li>Tener en cuenta que cualquier descarga posterior consumirá cuota según lo definido por el plan.</li>
-</ul>
-<h2 id="relacionados">Relacionados</h2>
+<hr>
+<h2 id="enlaces-relacionados"><strong>Enlaces Relacionados</strong></h2>
 <ul>
 <li><a href="../../flujos/descarga-desde-correo/">Descarga Desde Correo</a></li>
-<li><a href="../../flujos/consulta-hacienda/">Consulta en Hacienda</a></li>
 <li><a href="../../flujos/lector-json/">Lector JSON</a></li>
-<li><a href="../../primeros-pasos/licencias-y-planes/">Licencias y Planes</a></li>
+<li><a href="../../flujos/consulta-hacienda/">Consulta en Hacienda</a></li>
+<li><a href="../../flujos/libros-iva/">Generación de Libros de IVA</a></li>
+<li><a href="../../flujos/anexos-de-impuestos-f07/">Anexos de Impuestos F07</a></li>
 </ul>
-<h2 id="enlaces-utiles-para-reglas-de-descarga-en-webmails-con-proveedores-comunes">Enlaces útiles para reglas de descarga en webmails con proveedores comunes</h2>
+<hr>
+<h2 id="guias-externas-para-reglas-en-webmail"><strong>Guías Externas para Reglas en Webmail</strong></h2>
 <ul>
-<li><strong>Outlook:</strong> <a href="https://support.microsoft.com/es-es/office/administrar-mensajes-de-correo-electr%C3%B3nico-mediante-reglas-en-outlook-c24f5dea-9465-4df4-ad17-a50704d66c59">Administrar mensajes y reglas en Outlook</a></li>
-<li><strong>Gmail:</strong> <a href="https://support.google.com/mail/answer/6579?hl=es">Filtros y reglas en Gmail</a></li>
-<li><strong>Yahoo:</strong> <a href="https://es.ayuda.yahoo.com/kb/SLN28071.html">Reglas de filtrado en Yahoo Mail</a></li>
+<li><strong>Microsoft Outlook:</strong> <a href="https://support.microsoft.com/es-es/office/administrar-mensajes-de-correo-electr%C3%B3nico-mediante-reglas-en-outlook-c24f5dea-9465-4df4-ad17-a50704d66c59">Administrar mensajes mediante reglas en Outlook</a></li>
+<li><strong>Google Gmail:</strong> <a href="https://support.google.com/mail/answer/6579?hl=es">Crear reglas para filtrar correos en Gmail</a></li>
+<li><strong>Yahoo Mail:</strong> <a href="https://es.ayuda.yahoo.com/kb/SLN28071.html">Configuración de filtros y reglas en Yahoo Mail</a></li>
 </ul>
 
 
@@ -1860,6 +1949,9 @@
 
 
 
+
+  
+  
 
 
 
@@ -1906,10 +1998,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   

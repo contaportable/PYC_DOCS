@@ -53,6 +53,13 @@ Si tu empresa cuenta con facturas o créditos fiscales tradicionales en papel em
 
 ---
 
+### 6. Anexo de Documentos Invalidados
+PyConta consolida automáticamente los DTEs que han sido objeto de un evento de invalidación oficial durante el periodo tributario:
+- **Cobertura Completa de Tipos de Documento**: Admite e incluye DTEs tipo **01** (Factura Electrónica), **03** (Comprobante de Crédito Fiscal), **11** (Factura de Exportación) y **14** (Factura de Sujeto Excluido - FSEE).
+- **Validación Normativa**: Asegura que los números de control, códigos de generación y fechas de invalidación de sujetos excluidos cumplan estrictamente con las especificaciones técnicas del Ministerio de Hacienda para el F07.
+
+---
+
 ## **Atajos y Ayuda del Editor**
 
 El botón de **Ayuda** en la barra superior resume los atajos de teclado para desplazamiento rápido, selección múltiple, copiado de celdas y confirmación de cambios en la cuadrícula:
@@ -65,9 +72,11 @@ El botón de **Ayuda** en la barra superior resume los atajos de teclado para de
 - Los totales del anexo coinciden con los libros de IVA del mismo periodo.
 - El archivo CSV se genera sin errores de formato para su carga exitosa en Hacienda.
 - Las notas de crédito y DTEs de personas naturales con DUI se encuentran correctamente reflejados.
+- Los documentos de Sujeto Excluido invalidados se reportan con su código de generación y tipo de documento respectivo.
 
 ---
 
 ## **Enlaces Relacionados**
+- [Bitácora de Actividades](bitacora-actividades.md)
 - [Lector JSON](lector-json.md)
 - [Generación de Libros de IVA](libros-iva.md)

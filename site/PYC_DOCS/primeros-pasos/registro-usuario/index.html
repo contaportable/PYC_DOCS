@@ -3,11 +3,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentación de PyConta. Python 3.11.12">
+        <meta name="description" content="Guía paso a paso para el registro inicial de usuario, configuración de cuenta, seguridad y preferencias en PyConta.">
       
       
       
-        <link rel="canonical" href="http://localhost:8006/PYC_DOCS/primeros-pasos/registro-usuario/">
+        <link rel="canonical" href="https://docs.pyconta.com/primeros-pasos/registro-usuario/">
       
       
         <link rel="prev" href="../instalacion-acceso/">
@@ -16,8 +16,11 @@
         <link rel="next" href="../registro-empresa/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+        
+      
+      
+      <link rel="icon" href="../../assets/img/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -25,10 +28,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -41,7 +44,7 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
@@ -51,7 +54,6 @@
     
       
 
-    
     
     
   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
@@ -134,7 +136,7 @@
     
     <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan" aria-label="Dark mode" type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden="">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
       </label>
     
@@ -144,7 +146,7 @@
     
     <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="light-blue" aria-label="Light mode" type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden="">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
       </label>
     
@@ -167,7 +169,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
@@ -184,7 +186,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Inicializando búsqueda
@@ -232,7 +234,7 @@
     PYCONTA DOCS
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -246,9 +248,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Inicio
+  
+
     
   </span>
+  
   
 
       </a>
@@ -279,9 +286,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Información Importante
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -290,9 +302,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Información Importante
+            
+  
+    Información Importante
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -306,9 +322,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Certificación de Seguridad CASA nivel 2
+  
+
     
   </span>
+  
   
 
       </a>
@@ -329,9 +350,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Límites del Sistema
+  
+
     
   </span>
+  
   
 
       </a>
@@ -352,9 +378,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Requisitos y Rendimiento
+  
+
     
   </span>
+  
   
 
       </a>
@@ -375,9 +406,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Buenas Prácticas Operativas
+  
+
     
   </span>
+  
   
 
       </a>
@@ -410,7 +446,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked="">
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -418,9 +454,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Primeros Pasos
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -429,9 +470,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Primeros Pasos
+            
+  
+    Primeros Pasos
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -445,9 +490,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Instalación, Acceso y Requisitos
+  
+
     
   </span>
+  
   
 
       </a>
@@ -477,9 +527,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Registro de Usuario
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -490,9 +545,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Registro de Usuario
+  
+
     
   </span>
+  
   
 
       </a>
@@ -510,40 +570,37 @@
       <span class="md-nav__icon md-icon"></span>
       Tabla de contenidos
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objetivo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objetivo
-    </span>
-  </a>
-  
-</li>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#antes-de-empezar" class="md-nav__link">
     <span class="md-ellipsis">
-      Antes de empezar
+      
+        Antes de Empezar
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#flujo-de-registro-de-usuario" class="md-nav__link">
+  <a href="#flujo-de-registro-paso-a-paso" class="md-nav__link">
     <span class="md-ellipsis">
-      Flujo de registro de usuario
+      
+        Flujo de Registro Paso a Paso
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Flujo de registro de usuario">
+    <nav class="md-nav" aria-label="Flujo de Registro Paso a Paso">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#1-configuracion-de-cuenta" class="md-nav__link">
     <span class="md-ellipsis">
-      1) Configuración de cuenta
+      
+        1. Configuración de Cuenta
+      
     </span>
   </a>
   
@@ -552,7 +609,9 @@
           <li class="md-nav__item">
   <a href="#2-preguntas-de-seguridad" class="md-nav__link">
     <span class="md-ellipsis">
-      2) Preguntas de seguridad
+      
+        2. Preguntas de Seguridad
+      
     </span>
   </a>
   
@@ -561,7 +620,9 @@
           <li class="md-nav__item">
   <a href="#3-configuracion-de-descargas" class="md-nav__link">
     <span class="md-ellipsis">
-      3) Configuración de descargas
+      
+        3. Configuración de Descargas
+      
     </span>
   </a>
   
@@ -570,34 +631,42 @@
           <li class="md-nav__item">
   <a href="#4-datos-personales" class="md-nav__link">
     <span class="md-ellipsis">
-      4) Datos personales
+      
+        4. Datos Personales
+      
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-llenar-ubicacion" class="md-nav__link">
+  <a href="#5-ubicacion" class="md-nav__link">
     <span class="md-ellipsis">
-      5) Llenar ubicación
+      
+        5. Ubicación
+      
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-extra-configuracion-de-fuente" class="md-nav__link">
+  <a href="#6-preferencias-configuracion-de-fuente-y-abreviaturas" class="md-nav__link">
     <span class="md-ellipsis">
-      6) Extra: configuración de fuente
+      
+        6. Preferencias: Configuración de Fuente y Abreviaturas
+      
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#confirmacion-de-registro" class="md-nav__link">
+  <a href="#7-confirmacion-de-registro" class="md-nav__link">
     <span class="md-ellipsis">
-      Confirmación de registro
+      
+        7. Confirmación de Registro
+      
     </span>
   </a>
   
@@ -609,36 +678,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#verificacion" class="md-nav__link">
+  <a href="#verificacion-posterior" class="md-nav__link">
     <span class="md-ellipsis">
-      Verificación
+      
+        Verificación Posterior
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#errores-frecuentes" class="md-nav__link">
+  <a href="#enlaces-relacionados" class="md-nav__link">
     <span class="md-ellipsis">
-      Errores frecuentes
-    </span>
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#diferencias-demo-vs-plan-pago" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diferencias Demo vs Plan pago
-    </span>
-  </a>
-  
-</li>
+        Enlaces Relacionados
       
-        <li class="md-nav__item">
-  <a href="#relacionados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Relacionados
     </span>
   </a>
   
@@ -665,9 +720,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Registro de Empresa
+  
+
     
   </span>
+  
   
 
       </a>
@@ -688,9 +748,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Licencias y Planes
+  
+
     
   </span>
+  
   
 
       </a>
@@ -729,9 +794,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Flujo de Trabajo
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -740,9 +810,41 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Flujo de Trabajo
+            
+  
+    Flujo de Trabajo
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/parametros-validacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parámetros de Validación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -756,9 +858,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Flujo Completo DTE
+  
+
     
   </span>
+  
   
 
       </a>
@@ -779,9 +886,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Descarga Desde Correo
+  
+
     
   </span>
+  
   
 
       </a>
@@ -802,9 +914,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Sincronización
+  
+
     
   </span>
+  
   
 
       </a>
@@ -825,9 +942,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Importación JSON
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/visor-dte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visor de DTE
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -848,9 +998,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Lector JSON
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/libros-iva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Libros de IVA
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -871,9 +1054,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Consulta en Hacienda
+  
+
     
   </span>
+  
   
 
       </a>
@@ -889,14 +1077,47 @@
   
   
     <li class="md-nav__item">
-      <a href="../../flujos/exportacion-csv-excel/" class="md-nav__link">
+      <a href="../../flujos/bitacora-actividades/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Exportación CSV y Excel
+    
+  
+    Bitácora de Actividades
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../flujos/anexos-de-impuestos-f07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos de Impuestos F07
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -935,9 +1156,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Problemas Comunes
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -946,9 +1172,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Problemas Comunes
+            
+  
+    Problemas Comunes
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -962,9 +1192,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     No Descarga Correos
+  
+
     
   </span>
+  
   
 
       </a>
@@ -985,9 +1220,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     DTE No Aparece
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1008,55 +1248,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     DTE Sin Sello
+  
+
     
   </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../problemas-comunes/lentitud-tablas/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Lentitud en Tablas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../problemas-comunes/duplicados-faltantes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Duplicados o Faltantes
-    
-  </span>
   
 
       </a>
@@ -1095,9 +1294,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Suscripción y Soporte
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1106,9 +1310,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Suscripción y Soporte
+            
+  
+    Suscripción y Soporte
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1122,9 +1330,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Membresía VIP
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1145,9 +1358,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Renovación, Finalización y Upgrade
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1168,9 +1386,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Soporte con PIN
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1209,9 +1432,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Políticas
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1220,9 +1448,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            Políticas
+            
+  
+    Políticas
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1236,9 +1468,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Redención
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1259,9 +1496,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Devolución
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1300,9 +1542,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     FAQ y Glosario
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1311,9 +1558,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            FAQ y Glosario
+            
+  
+    FAQ y Glosario
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1327,9 +1578,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1350,9 +1606,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Glosario
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1391,9 +1652,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Novedades
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1402,9 +1668,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            Novedades
+            
+  
+    Novedades
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1418,9 +1688,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Release Notes
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1460,40 +1735,37 @@
       <span class="md-nav__icon md-icon"></span>
       Tabla de contenidos
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objetivo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objetivo
-    </span>
-  </a>
-  
-</li>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#antes-de-empezar" class="md-nav__link">
     <span class="md-ellipsis">
-      Antes de empezar
+      
+        Antes de Empezar
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#flujo-de-registro-de-usuario" class="md-nav__link">
+  <a href="#flujo-de-registro-paso-a-paso" class="md-nav__link">
     <span class="md-ellipsis">
-      Flujo de registro de usuario
+      
+        Flujo de Registro Paso a Paso
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Flujo de registro de usuario">
+    <nav class="md-nav" aria-label="Flujo de Registro Paso a Paso">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#1-configuracion-de-cuenta" class="md-nav__link">
     <span class="md-ellipsis">
-      1) Configuración de cuenta
+      
+        1. Configuración de Cuenta
+      
     </span>
   </a>
   
@@ -1502,7 +1774,9 @@
           <li class="md-nav__item">
   <a href="#2-preguntas-de-seguridad" class="md-nav__link">
     <span class="md-ellipsis">
-      2) Preguntas de seguridad
+      
+        2. Preguntas de Seguridad
+      
     </span>
   </a>
   
@@ -1511,7 +1785,9 @@
           <li class="md-nav__item">
   <a href="#3-configuracion-de-descargas" class="md-nav__link">
     <span class="md-ellipsis">
-      3) Configuración de descargas
+      
+        3. Configuración de Descargas
+      
     </span>
   </a>
   
@@ -1520,34 +1796,42 @@
           <li class="md-nav__item">
   <a href="#4-datos-personales" class="md-nav__link">
     <span class="md-ellipsis">
-      4) Datos personales
+      
+        4. Datos Personales
+      
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-llenar-ubicacion" class="md-nav__link">
+  <a href="#5-ubicacion" class="md-nav__link">
     <span class="md-ellipsis">
-      5) Llenar ubicación
+      
+        5. Ubicación
+      
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-extra-configuracion-de-fuente" class="md-nav__link">
+  <a href="#6-preferencias-configuracion-de-fuente-y-abreviaturas" class="md-nav__link">
     <span class="md-ellipsis">
-      6) Extra: configuración de fuente
+      
+        6. Preferencias: Configuración de Fuente y Abreviaturas
+      
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#confirmacion-de-registro" class="md-nav__link">
+  <a href="#7-confirmacion-de-registro" class="md-nav__link">
     <span class="md-ellipsis">
-      Confirmación de registro
+      
+        7. Confirmación de Registro
+      
     </span>
   </a>
   
@@ -1559,36 +1843,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#verificacion" class="md-nav__link">
+  <a href="#verificacion-posterior" class="md-nav__link">
     <span class="md-ellipsis">
-      Verificación
+      
+        Verificación Posterior
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#errores-frecuentes" class="md-nav__link">
+  <a href="#enlaces-relacionados" class="md-nav__link">
     <span class="md-ellipsis">
-      Errores frecuentes
-    </span>
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#diferencias-demo-vs-plan-pago" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diferencias Demo vs Plan pago
-    </span>
-  </a>
-  
-</li>
+        Enlaces Relacionados
       
-        <li class="md-nav__item">
-  <a href="#relacionados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Relacionados
     </span>
   </a>
   
@@ -1604,85 +1874,96 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
 
 
-<h1 id="registro-de-usuario">Registro de Usuario</h1>
-<h2 id="objetivo">Objetivo</h2>
-<p>Crear y activar la cuenta de usuario que permitirá iniciar sesión en PyConta.</p>
-<h2 id="antes-de-empezar">Antes de empezar</h2>
+<h1 id="registro-de-usuario"><strong>Registro de Usuario</strong></h1>
+<p>El proceso de registro te permite configurar tu cuenta principal de acceso a <strong>PyConta</strong>, estableciendo tus credenciales, parámetros operativos, preguntas de recuperación y preferencias visuales.</p>
+<hr>
+<h2 id="antes-de-empezar"><strong>Antes de Empezar</strong></h2>
 <ul>
-<li>Tener conexión a internet.</li>
-<li>Disponer de una dirección de correo válida para el registro.</li>
-<li>Preparar las capturas del flujo completo de registro para documentar cada paso.</li>
+<li>Disponer de conexión a internet para la activación inicial.</li>
+<li>Contar con una dirección de correo electrónico válida.</li>
 </ul>
-<h2 id="flujo-de-registro-de-usuario">Flujo de registro de usuario</h2>
-<h3 id="1-configuracion-de-cuenta">1) Configuración de cuenta</h3>
-<p>En esta sección se configura la base del usuario y parámetros de operación.</p>
-<p>Índice rápido de este paso:
-- Parámetros de validaciones de contraseña y reglas activas.
-- Regla <strong>"Usar la fecha del correo para insertar en BD"</strong> (activar solo cuando aplique al flujo del cliente).
-- Intervalo de consulta de DTE (segundos): definir un rango operativo estable.
-- Preferencias del asistente: habilitar o deshabilitar recordatorios de incorporación.</p>
+<hr>
+<h2 id="flujo-de-registro-paso-a-paso"><strong>Flujo de Registro Paso a Paso</strong></h2>
+<h3 id="1-configuracion-de-cuenta">1. Configuración de Cuenta</h3>
+<p>En este primer paso se configuran las reglas base de operación del usuario:</p>
+<ul>
+<li><strong>Contraseña y validación</strong>: Establece una contraseña segura.</li>
+<li><strong>Usar fecha del correo para compras</strong>: Permite registrar las compras con la fecha de recepción del correo cuando corresponda a tu flujo de trabajo.</li>
+<li><strong>Corrección inteligente de IVA (DTEs con inconsistencias)</strong>: Habilita el tratamiento tolerante para DTEs donde el IVA difiere de la base gravada por redondeos o fallas del emisor. El sistema admite el documento con estado de advertencia preventiva (<code>⚠️</code>) para no interrumpir la ingesta contable.</li>
+<li><strong>Intervalo de consulta en Hacienda</strong>: Define el tiempo de espera entre peticiones durante consultas masivas.</li>
+<li><strong>Preferencias del asistente</strong>: Habilita o deshabilita los mensajes guiados de bienvenida.</li>
+</ul>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/primeros-pasos/registro-usuario-01-configuracion-cuenta.png" data-desc-position="bottom"><img align="center" alt="Configuración de cuenta" src="../../assets/img/primeros-pasos/registro-usuario-01-configuracion-cuenta.png" title="Configuración de cuenta y parámetros iniciales"></a></p>
-<h3 id="2-preguntas-de-seguridad">2) Preguntas de seguridad</h3>
-<p>Estas preguntas deben ser seguras y fáciles de recordar para el titular de la cuenta.</p>
+<hr>
+<h3 id="2-preguntas-de-seguridad">2. Preguntas de Seguridad</h3>
+<p>Las preguntas de seguridad son el método exclusivo para recuperar el acceso a tu cuenta en caso de olvido de credenciales:</p>
+<ul>
+<li>Selecciona preguntas claras con respuestas precisas que puedas recordar.</li>
+<li>Resguarda las respuestas en un medio interno seguro.</li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">Importante</p>
-<p>Este será el único método de verificación para recuperación de acceso.
-Las respuestas deben resguardarse en un medio interno seguro y con acceso restringido.</p>
+<p>Si se extravían las respuestas a las preguntas de seguridad, la recuperación del acceso a tu usuario no será posible.</p>
 </div>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/primeros-pasos/registro-usuario-02-preguntas-seguridad.png" data-desc-position="bottom"><img align="center" alt="Preguntas de seguridad" src="../../assets/img/primeros-pasos/registro-usuario-02-preguntas-seguridad.png" title="Preguntas de seguridad para recuperación"></a></p>
-<h3 id="3-configuracion-de-descargas">3) Configuración de descargas</h3>
-<p>Aquí se define la ruta donde se descargarán los DTE.</p>
+<hr>
+<h3 id="3-configuracion-de-descargas">3. Configuración de Descargas</h3>
+<p>Define la ubicación en tu computadora donde se almacenarán los archivos descargados:</p>
 <ul>
-<li>Por defecto, la ruta corresponde a la ubicación de instalación.</li>
-<li>Si el cliente lo requiere, se puede cambiar a otra ruta autorizada.</li>
-<li>Si el usuario necesita los DTE sueltos en esa carpeta, debe activar <strong>"Exportar descargas sin cifrado"</strong>.</li>
+<li>Por defecto, se asigna la carpeta de trabajo de la aplicación.</li>
+<li>Puedes seleccionar una ruta personalizada en tu disco si lo requieres.</li>
+<li><strong>Exportar descargas sin cifrado</strong>: Activa esta opción si necesitas disponer de los archivos individuales directamente en dicha carpeta.</li>
 </ul>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/primeros-pasos/registro-usuario-03-configuracion-descargas.png" data-desc-position="bottom"><img align="center" alt="Configuración de descargas" src="../../assets/img/primeros-pasos/registro-usuario-03-configuracion-descargas.png" title="Ruta de descarga y exportación sin cifrado"></a></p>
-<h3 id="4-datos-personales">4) Datos personales</h3>
-<p>Completar los campos obligatorios con información real y vigente.</p>
+<hr>
+<h3 id="4-datos-personales">4. Datos Personales</h3>
+<p>Ingresa tu información de contacto:</p>
 <ul>
-<li>Validar nombres y apellidos.</li>
-<li>Registrar un correo real de uso del usuario.</li>
-<li>Verificar formato de fecha y datos de contacto.</li>
+<li>Nombres y apellidos completos.</li>
+<li>Correo electrónico principal.</li>
+<li>Número de teléfono o contacto.</li>
 </ul>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/primeros-pasos/registro-usuario-04-datos-personales.png" data-desc-position="bottom"><img align="center" alt="Datos personales" src="../../assets/img/primeros-pasos/registro-usuario-04-datos-personales.png" title="Campos obligatorios de datos personales"></a></p>
-<h3 id="5-llenar-ubicacion">5) Llenar ubicación</h3>
-<p>Completar la ubicación y dirección según los datos reales de la empresa o del usuario.</p>
+<hr>
+<h3 id="5-ubicacion">5. Ubicación</h3>
+<p>Completa los datos de ubicación geográfica:</p>
 <ul>
 <li>País, departamento, municipio y distrito.</li>
-<li>Dirección exacta para mantener consistencia documental.</li>
+<li>Dirección para mantener coherencia en los registros.</li>
 </ul>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/primeros-pasos/registro-usuario-05-ubicacion-empresa.png" data-desc-position="bottom"><img align="center" alt="Ubicación según empresa" src="../../assets/img/primeros-pasos/registro-usuario-05-ubicacion-empresa.png" title="Ubicación del usuario según empresa"></a></p>
-<h3 id="6-extra-configuracion-de-fuente">6) Extra: configuración de fuente</h3>
-<p>Opcionalmente, se puede ajustar la fuente para mejorar legibilidad según preferencia del usuario.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/primeros-pasos/registro-usuario-06-configuracion-fuente.png" data-desc-position="bottom"><img align="center" alt="Configuración de fuente" src="../../assets/img/primeros-pasos/registro-usuario-06-configuracion-fuente.png" title="Ajuste opcional de tipografía"></a></p>
-<h3 id="confirmacion-de-registro">Confirmación de registro</h3>
-<p>Al finalizar el formulario, guardar cambios y confirmar el mensaje de éxito.</p>
+<hr>
+<h3 id="6-preferencias-configuracion-de-fuente-y-abreviaturas">6. Preferencias: Configuración de Fuente y Abreviaturas</h3>
+<p>Este panel te permite personalizar la apariencia visual y la visualización de datos en las tablas de DTEs:</p>
+<ul>
+<li><strong>Configuración de Fuente</strong>: Permite seleccionar una tipografía personalizada para toda la aplicación.</li>
+<li><strong>Configuración de Abreviaturas</strong>:</li>
+<li><strong>Abreviar Código de Generación</strong>: Permite compactar la visualización del código en las tablas eligiendo entre mostrar los <em>Primeros dígitos</em> o <em>Últimos dígitos</em>, y estableciendo la cantidad de caracteres visibles (por ejemplo, 8).</li>
+<li><strong>Abreviar Número de Control</strong>: Permite acortar el número de control mostrando únicamente los últimos dígitos (por ejemplo, 5), ahorrando espacio horizontal en las columnas del visor.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/primeros-pasos/registro-usuario-08-preferencias-configuracion-abreviaturas.png" data-desc-position="bottom"><img align="center" alt="Preferencias y configuración de abreviaturas" src="../../assets/img/primeros-pasos/registro-usuario-08-preferencias-configuracion-abreviaturas.png" title="Panel de Preferencias y configuración de abreviaturas"></a></p>
+<hr>
+<h3 id="7-confirmacion-de-registro">7. Confirmación de Registro</h3>
+<p>Al finalizar el formulario, presiona <strong>Guardar Cambios</strong> para completar la creación de tu usuario:</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/primeros-pasos/registro-usuario-07-registro-exitoso.png" data-desc-position="bottom"><img align="center" alt="Usuario registrado con éxito" src="../../assets/img/primeros-pasos/registro-usuario-07-registro-exitoso.png" title="Confirmación final de registro"></a></p>
-<h2 id="verificacion">Verificación</h2>
+<hr>
+<h2 id="verificacion-posterior"><strong>Verificación Posterior</strong></h2>
 <ul>
-<li>Ingresar sin error y visualizar el panel principal.</li>
-<li>Comprobar versión en "Acerca de" (muestra plan y límites).</li>
+<li>Inicia sesión con tu nuevo usuario y accede al panel principal de PyConta.</li>
+<li>Comprueba tu estado de suscripción y límites en la ventana <strong>Acerca de</strong>.</li>
 </ul>
-<h2 id="errores-frecuentes">Errores frecuentes</h2>
+<hr>
+<h2 id="enlaces-relacionados"><strong>Enlaces Relacionados</strong></h2>
 <ul>
-<li>Correo ya registrado: usar recuperación de contraseña o contactar soporte.</li>
-<li>No llega correo de verificación: revisar spam y filtros.</li>
-</ul>
-<h2 id="diferencias-demo-vs-plan-pago">Diferencias Demo vs Plan pago</h2>
-<ul>
-<li>PyConta0: no se solicita clave de activación; límites reducidos aplican automáticamente (ver "Acerca de").</li>
-<li>Plan pago: tras ingresar la clave de activación el usuario obtiene los límites y permisos del plan contratado.</li>
-</ul>
-<h2 id="relacionados">Relacionados</h2>
-<ul>
-<li><a href="../instalacion-acceso/">Instalación, Acceso y Requisitos</a></li>
+<li><a href="../instalacion-acceso/">Instalación y Primer Acceso</a></li>
+<li><a href="../crear-primera-empresa/">Crear Primera Empresa</a></li>
 <li><a href="../licencias-y-planes/">Licencias y Planes</a></li>
 </ul>
 
@@ -1691,6 +1972,9 @@ Las respuestas deben resguardarse en un medio interno seguro y con acceso restri
 
 
 
+
+  
+  
 
 
 
@@ -1737,10 +2021,11 @@ Las respuestas deben resguardarse en un medio interno seguro y con acceso restri
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   

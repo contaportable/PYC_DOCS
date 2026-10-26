@@ -68,6 +68,10 @@ La tabla de visualización presenta en columnas separadas e independientes el **
 Al hacer clic derecho sobre una o varias filas seleccionadas en la tabla, accedes a un menú con herramientas especializadas:
 
 - **Consultar DTE / Consultar DTEs (seleccionados)**: Valida en tiempo real el estado de los documentos ante el servicio de consulta del Ministerio de Hacienda.
+- **¿Por qué tiene advertencia?**: Disponible cuando un DTE presenta el estado de advertencia preventiva (`⚠️`). Abre un diálogo interactivo que detalla la causa exacta de la discrepancia (por ejemplo: IVA reconstruido por redondeo del emisor, sello de recepción no visible en el archivo original o campos de esquema no estándar):
+
+![Explicación de estado de advertencia DTE](../assets/img/flujos/lector-json-16-explicacion-estado-dte-warning.png "Diálogo explicativo de motivos de advertencia e inconsistencias en DTEs"){ align=center }
+
 - **Copiar Datos Fiscales**: Copia rápidamente el Código de Generación, Número de Control, Sello de Recepción o NIT del proveedor al portapapeles.
 - **Descargar Archivo**: Guarda una copia del archivo original del DTE en la ubicación que elijas de tu equipo.
 - **Restablecer Columnas**: Si ajustaste manualmente el ancho de las columnas de la tabla, esta opción restaura instantáneamente la distribución y anchos predeterminados:
@@ -148,6 +152,7 @@ Desde el botón principal de **Libros de IVA**, puedes abrir el módulo de gener
 ---
 
 ## **Enlaces Relacionados**
+- [Bitácora de Actividades](bitacora-actividades.md)
 - [Consulta en Hacienda](consulta-hacienda.md)
 - [Generación de Libros de IVA](libros-iva.md)
 - [Anexos de Impuestos F07](anexos-de-impuestos-f07.md)

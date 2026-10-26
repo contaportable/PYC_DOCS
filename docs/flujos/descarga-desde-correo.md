@@ -49,6 +49,18 @@ El módulo de **Extracción Avanzada** permite establecer reglas de procesamient
     - **Descarga de DTEs directos**: Recupera automáticamente los archivos `.json` y sus representaciones en `.pdf`, emparejándolos de forma consistente.
     - **Descompresión desde enlaces**: Si el enlace apunta a un archivo comprimido (`.zip`, `.rar`, `.7z`), el sistema descarga el paquete y extrae automáticamente los DTEs contenidos.
 
+#### Diálogo Pedagógico de Consentimiento para Enlaces
+Debido a que la inspección de hipervínculos web consume mayor tiempo y ancho de banda en comparación con la lectura de adjuntos directos, PyConta despliega un diálogo informativo y de confirmación antes de iniciar la exploración de enlaces:
+
+![Diálogo de consentimiento para escaneo de enlaces](../assets/img/flujos/descarga-dte-08-dialogo-consentimiento-enlaces.png "Diálogo pedagógico de consentimiento y confirmación para escaneo de enlaces externos"){ align=center }
+
+Este diálogo permite al usuario elegir conscientemente entre:
+- **Solo Adjuntos (Rápido)**: Procesa exclusivamente los archivos adjuntos al correo en segundos.
+- **Escanear Enlaces (Completo)**: Explora hipervínculos externos para recuperar DTEs alojados en portales de proveedores.
+
+!!! tip "Descarte Inteligente y Aceleración de Descargas"
+    Para ahorrar tiempo y ancho de banda, PyConta recuerda de forma instantánea los enlaces que no corresponden a documentos válidos para no volver a explorarlos. Además, filtra los enlaces buscando exclusivamente extensiones de documentos tributarios (`.json`, `.zip`, `.pdf`), descartando automáticamente páginas web publicitarias, imágenes o archivos no relacionados.
+
 ---
 
 ### 4. Selección del Periodo de Descarga Inteligente

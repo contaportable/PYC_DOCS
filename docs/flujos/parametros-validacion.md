@@ -12,9 +12,25 @@ PyConta ofrece opciones de configuración para adaptar el procesamiento, las reg
 
 Estas opciones determinan qué DTEs deben ser aceptados o filtrados al importar y sincronizar:
 
+- **Corrección inteligente de IVA (DTEs con inconsistencias)**: Permite la admisión tolerante de DTEs emitidos por proveedores cuyos sistemas de facturación redondean o calculan el IVA con diferencias menores respecto a la base imponible legal (13%). Al activarse, PyConta admite el documento asignándole el estado de advertencia preventiva (`⚠️`), preservando el cálculo legal y permitiendo su registro sin detener las inserciones masivas.
 - **Inclusión de ambiente de pruebas**: Permite admitir documentos emitidos en ambiente de pruebas (`ambiente: 00`) para fines de capacitación o análisis previo al paso a producción.
 - **Inclusión de documentos no firmados**: Controla si se procesan DTEs que carecen de firma digital.
-- **Inclusión de documentos sin sello**: Permite ingresar DTEs que no traen el sello de recepción visible (útil para posteriormente recuperar el sello oficial mediante la **Consulta DTE**).
+- **Inclusión de documentos sin sello**: Permite ingresar DTEs que no traen el sello de recepción visible (útil para posteriormente recuperar el sello oficial mediante la **Consulta DTE en Hacienda**).
+
+---
+
+## **Estados de Validación Operativa de DTEs**
+
+Al procesar e importar DTEs en PyConta, cada documento se clasifica bajo un estado operativo:
+
+| Estado | Ícono | Descripción | Acción Recomendada |
+| :--- | :---: | :--- | :--- |
+| **Válido / Conforme** | :material-check-circle: | Cumple estrictamente con el esquema tributario y la validación matemática. | Operación normal. |
+| **DTE con Inconsistencias** | ⚠️ | Admitido por tolerancia con anomalías menores (IVA reconstruido, sello no visible o firma recuperada). | Consultar en Hacienda o inspeccionar motivo en el menú contextual. |
+| **Rechazado** | :material-close-circle: | Estructura JSON corrupta, NIT emisor incompatible o documento no perteneciente al periodo. | Verificar archivo original con el emisor. |
+
+!!! note "Transparencia Tributaria"
+    Los DTEs marcados con advertencia (`⚠️`) pueden ser consultados en cualquier momento ante el Ministerio de Hacienda para obtener su estatus definitivo y recuperar su sello de recepción oficial.
 
 ---
 
@@ -32,6 +48,8 @@ Estas opciones determinan qué DTEs deben ser aceptados o filtrados al importar 
 ---
 
 ## **Enlaces Relacionados**
+- [Bitácora de Actividades](bitacora-actividades.md)
 - [Descarga Desde Correo](descarga-desde-correo.md)
+- [Lector JSON](lector-json.md)
 - [Consulta en Hacienda](consulta-hacienda.md)
 - [Buenas Prácticas Operativas](../informacion-importante/buenas-practicas-operativas.md)
