@@ -18,8 +18,8 @@ PyConta permite:
 
 Las funciones de PyConta se concentran en tareas muy concretas:
 
-- Creacion y configuracion de usuario local.
-- Administracion y gestion de empresas.
+- Creación y gestión segura de cuentas de usuario con verificación por correo electrónico.
+- Administración y gestión de empresas.
 - Descarga automatica de archivos JSON y PDF desde correo electronico.
 - Selección de buzones.
 - Sincronizacion de correo para lectura de carpeta Downloads
@@ -29,13 +29,13 @@ Las funciones de PyConta se concentran en tareas muy concretas:
 - Extraccion de datos a Excel.
 - Categorizacion de DTEs por empresa, mes y categoria.
 - Consulta del estado de DTE en Ministerio de Hacienda.
-- Personalización de parámetros de validación y preferencias.
-- Reglas de descarga para correos.
-- Extraccion de DTEs para analisis.
-- Generacion de archivo de metadata para procesamiento de IA.
+- Personalización de parámetros de validación y ventana de preferencias (`Ctrl+,`).
+- Reglas de descarga para correos y emparejamiento PDF-JSON con respaldo OCR.
+- Extracción de DTEs para análisis.
+- Generación de archivo de metadata para procesamiento de IA.
 - Autocompletado inteligente para columnas ISR del anexo F07.
-- Predicciones globales para columnas ISR del anexo F07(compras).
-- Anexos de Impuestos F07.
+- Predicciones globales para columnas ISR del anexo F07 (compras).
+- Anexos de Impuestos F07 e Informe de Donaciones F-960.
 
 ## Objetivo de esta pagina
 

@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/img/favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
     
     
       
@@ -567,6 +567,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../primeros-pasos/preferencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preferencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../primeros-pasos/licencias-y-planes/" class="md-nav__link">
         
   
@@ -996,6 +1024,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#estabilidad-control-de-frecuencia-y-uso-en-servidores-compartidos-rdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estabilidad, Control de Frecuencia y Uso en Servidores Compartidos (RDP)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#trazabilidad-y-resguardo-del-estado-oficial" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1069,6 +1108,34 @@
     
   
     Anexos de Impuestos F07
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../anexo-donaciones-f960/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Informe de Donaciones F-960
   
 
     
@@ -1755,6 +1822,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#estabilidad-control-de-frecuencia-y-uso-en-servidores-compartidos-rdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estabilidad, Control de Frecuencia y Uso en Servidores Compartidos (RDP)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#trazabilidad-y-resguardo-del-estado-oficial" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1840,6 +1918,14 @@
 <p>Si el periodo fiscal consultado se encuentra bloqueado (cerrado contablemente), el sistema restringe la ejecución de consultas que modifiquen la metadata de los documentos para preservar la integridad histórica. Para consultar documentos en un periodo protegido, este debe ser desbloqueado previamente con confirmación interactiva.</p>
 </div>
 <hr>
+<h2 id="estabilidad-control-de-frecuencia-y-uso-en-servidores-compartidos-rdp"><strong>Estabilidad, Control de Frecuencia y Uso en Servidores Compartidos (RDP)</strong></h2>
+<p>Para proteger tus consultas ante límites temporales del servicio del Ministerio de Hacienda (código de espera <code>429</code>):</p>
+<ul>
+<li><strong>Intervalo Inteligente</strong>: En <strong><a href="../../primeros-pasos/preferencias/#4-consultas-a-hacienda">Preferencias &gt; Consultas a Hacienda</a></strong> puedes ajustar el rango de espera aleatorio entre peticiones (recomendado entre <strong>5 y 10 segundos</strong>).</li>
+<li><strong>Coordinación entre Sesiones</strong>: Si trabajas con varias empresas abiertas o en un servidor compartido (<strong>RDP</strong>) con otros usuarios bajo la misma red, PyConta coordina automáticamente los turnos de consulta para reducir saturaciones.</li>
+<li><strong>Protección de Progreso</strong>: Si Hacienda limita temporalmente las peticiones, PyConta pausa las consultas restantes, conserva intactos los estados ya validados y te permite retomar después únicamente sobre los DTEs pendientes.</li>
+</ul>
+<hr>
 <h2 id="trazabilidad-y-resguardo-del-estado-oficial"><strong>Trazabilidad y Resguardo del Estado Oficial</strong></h2>
 <p>Una vez realizada la consulta, la información devuelta por el Ministerio de Hacienda (fecha de consulta, estado tributario, sello oficial y observaciones) queda vinculada al DTE:</p>
 <ul>
@@ -1914,7 +2000,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   

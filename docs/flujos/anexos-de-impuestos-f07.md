@@ -77,6 +77,7 @@ El botón de **Ayuda** en la barra superior resume los atajos de teclado para de
 ---
 
 ## **Enlaces Relacionados**
+- [Informe de Donaciones F-960](anexo-donaciones-f960.md)
 - [Bitácora de Actividades](bitacora-actividades.md)
 - [Lector JSON](lector-json.md)
 - [Generación de Libros de IVA](libros-iva.md)

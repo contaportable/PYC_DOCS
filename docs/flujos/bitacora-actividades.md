@@ -47,7 +47,7 @@ Al acceder a la **Bitácora de Actividades** desde el menú principal de la empr
 1. **Filtrado por Periodo y Rango de Fechas**: Permite delimitar la visualización a días específicos, semanas o el mes contable en curso.
 2. **Filtrado por Módulo o Acción**: Filtra eventos específicos como descargas de correo, consultas MH o traslados.
 3. **Indicadores de Estado Visual**: Los eventos se identifican con íconos de éxito, advertencia o error según su resultado de ejecución.
-4. **Búsqueda Rápida**: Encuentra transacciones por código de generación, identificador de lote o usuario responsable.
+4. **Búsqueda Rápida**: Encuentra transacciones al instante por código de generación, identificador de lote o usuario responsable, optimizada para responder con fluidez incluso en historiales extensos.
 
 ---
 

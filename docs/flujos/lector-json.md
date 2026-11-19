@@ -78,6 +78,8 @@ Al hacer clic derecho sobre una o varias filas seleccionadas en la tabla, accede
 
 ![Restablecer tamaño de columnas](../assets/img/flujos/menu-contextual-restablecer-columnas.png "Opción para restablecer columnas en el menú contextual"){ align=center }
 
+- **Abreviación Rápida desde Cabeceras de Columna**: Al hacer clic derecho sobre los encabezados de la tabla, puedes activar o desactivar al instante la abreviación de **Código de Generación** y **Número de Control** (también configurable con simulador en [Preferencias > Visualización](../primeros-pasos/preferencias.md#5-visualizacion)).
+
 - **Mover DTE / Mover DTEs (seleccionados)**: Permite reasignar compras a otro periodo fiscal.
 
 ![Consulta de DTE y acciones](../assets/img/flujos/lector-json-03-consultar-dte-y-acciones.png "Menú de acciones para consultar DTE"){ align=center }
@@ -144,8 +146,13 @@ El panel superior presenta un análisis visual automático del periodo seleccion
 
 ---
 
-### 7. Acceso a Libros de IVA
-Desde el botón principal de **Libros de IVA**, puedes abrir el módulo de generación de libros fiscales (Consumidor, Compras y Contribuyente) en formatos PDF y Excel.
+### 7. Barra de Estado Inferior y Zoom Tipográfico
+En la parte inferior del **Lector JSON**, la barra de estado muestra en tiempo real el contexto activo (**Periodo | Categoría | Estado de bloqueo `🔒`**), el total de DTEs visibles y los **controles de zoom tipográfico (`- 10pt +`)** para aumentar o reducir el tamaño de letra de la tabla al instante.
+
+---
+
+### 8. Acceso a Libros de IVA y Anexos (F07 y F-960)
+Desde el botón principal de **Libros de IVA**, puedes abrir el módulo de generación de libros fiscales (Consumidor, Compras y Contribuyente) en formatos PDF y Excel. Desde el menú **Anexos**, puedes generar las declaraciones **F07** y el nuevo **[Informe de Donaciones F-960](anexo-donaciones-f960.md)**.
 
 ![Acceso general a Libros de IVA](../assets/img/flujos/libros-iva-01-acceso-general.png "Acceso general a Libros de IVA"){ align=center }
 
@@ -156,3 +163,4 @@ Desde el botón principal de **Libros de IVA**, puedes abrir el módulo de gener
 - [Consulta en Hacienda](consulta-hacienda.md)
 - [Generación de Libros de IVA](libros-iva.md)
 - [Anexos de Impuestos F07](anexos-de-impuestos-f07.md)
+- [Informe de Donaciones F-960](anexo-donaciones-f960.md)

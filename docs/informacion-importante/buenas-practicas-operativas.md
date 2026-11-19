@@ -39,15 +39,12 @@ Para servidores de correo corporativos o personalizados, valida previamente los 
 - Puerto y método de cifrado (SSL/TLS)
 - Credenciales / contraseña (por lo general la autenticación usa la misma contraseña del correo)
 
-## 4. Resguardo de Preguntas de Seguridad
-Las preguntas de seguridad son el mecanismo principal para la recuperación de tu usuario en caso de olvido de credenciales:
+## 4. Seguridad de Cuenta, Correo de Recuperación y Sesiones
+La cuenta de correo vinculada a tu usuario es el medio oficial para verificar tu identidad y recuperar el acceso mediante códigos de verificación de 6 dígitos:
 
-- Resguarda las preguntas y respuestas en un gestor o medio seguro interno.
-- Utiliza respuestas claras y precisas que puedas recordar fácilmente.
-- Limita el acceso a esta información únicamente al personal administrativo autorizado.
-
-!!! warning "Importante"
-    Si se extravían las respuestas a las preguntas de seguridad, la recuperación del acceso a tu usuario no será posible.
+- Mantén activo y accesible el correo principal vinculado a tu usuario de PyConta.
+- En equipos compartidos, utiliza **Opciones > Cambiar de Usuario** para alternar cuentas o **Opciones > Cerrar Sesión** al finalizar tu jornada para proteger tu sesión.
+- Evita ejecutar consultas masivas ante Hacienda de forma simultánea desde múltiples empresas bajo la misma red si deseas prevenir esperas temporales por límite de frecuencia (`429`).
 
 ---
 

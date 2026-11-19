@@ -52,7 +52,7 @@ Al finalizar la descarga, examina la lista de resultados y el contador de archiv
    - **Documento no firmado**: El DTE carece de la firma digital requerida.
    - **Ambiente de pruebas (`00`)**: El comprobante fue generado en un entorno no productivo.
 3. **Determinar la acción a seguir**:
-   - **Ajustar tus preferencias**: Si deseas admitir estos documentos para su revisión contable y posterior regularización de sellos mediante la consulta en Hacienda, puedes habilitar su ingreso desde los [Parámetros de Validación](../flujos/parametros-validacion.md).
+   - **Ajustar tus preferencias**: Si deseas admitir estos documentos para su revisión contable y posterior regularización de sellos mediante la consulta en Hacienda, puedes habilitar su ingreso desde **Opciones > Preferencias (`Ctrl+,`) > Filtros de DTEs** ([Parámetros de Validación](../flujos/parametros-validacion.md)). Si es tu primera descarga y aún no has definido una ruta local, el sistema abrirá primero el asistente rápido de configuración inicial.
    - **Reclamar al emisor**: Si consideras que el documento incumple las normativas fiscales y no debe procesarse con anomalías, comunícate directamente con el proveedor o emisor de la factura para que subsane el problema y reenvíe un DTE válido y firmado.
 
 ---

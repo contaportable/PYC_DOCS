@@ -70,11 +70,15 @@ Para verificar el estado de tu licencia, vigencia y límites actuales:
 
 ---
 
-## **Activación y Renovación de Licencia**
+## **Activación, Autorización y Renovación de Licencia**
 
 1. **Adquisición**: Gestiona tu clave de activación o renovación a través de nuestro equipo de ventas o portal web.
 2. **Ingreso de Clave**: En el panel de tu empresa o desde la ventana de activación, ingresa la clave proporcionada.
-3. **Verificación**: Confirma en la ventana **Acerca de** que el plan y las fechas de vigencia reflejen las condiciones contratadas.
+3. **Verificación Adicional del Titular de la Licencia**: Al utilizar o activar una licencia vinculada a otra cuenta de correo distinta a la sesión actual, el sistema podrá solicitar una verificación adicional ingresando el correo electrónico del titular para validar internamente la autorización de uso en la empresa:
+
+![Verificación adicional del titular de la licencia](../assets/img/primeros-pasos/licencias-planes-06-autorizacion-titular.png "Diálogo de verificación adicional del titular de la licencia"){ align=center }
+
+4. **Verificación y Reconciliación Automática**: Confirma en la ventana **Acerca de** que el plan, las fechas de vigencia y el reinicio mensual de límites reflejen las condiciones contratadas. PyConta sincroniza y reconcilia automáticamente el estado de tu licencia al iniciar sesión.
 
 ---
 

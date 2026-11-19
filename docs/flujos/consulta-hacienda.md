@@ -62,6 +62,16 @@ Si necesitas verificar el estado tributario de un grupo específico de documento
 
 ---
 
+## **Estabilidad, Control de Frecuencia y Uso en Servidores Compartidos (RDP)**
+
+Para proteger tus consultas ante límites temporales del servicio del Ministerio de Hacienda (código de espera `429`):
+
+- **Intervalo Inteligente**: En **[Preferencias > Consultas a Hacienda](../primeros-pasos/preferencias.md#4-consultas-a-hacienda)** puedes ajustar el rango de espera aleatorio entre peticiones (recomendado entre **5 y 10 segundos**).
+- **Coordinación entre Sesiones**: Si trabajas con varias empresas abiertas o en un servidor compartido (**RDP**) con otros usuarios bajo la misma red, PyConta coordina automáticamente los turnos de consulta para reducir saturaciones.
+- **Protección de Progreso**: Si Hacienda limita temporalmente las peticiones, PyConta pausa las consultas restantes, conserva intactos los estados ya validados y te permite retomar después únicamente sobre los DTEs pendientes.
+
+---
+
 ## **Trazabilidad y Resguardo del Estado Oficial**
 
 Una vez realizada la consulta, la información devuelta por el Ministerio de Hacienda (fecha de consulta, estado tributario, sello oficial y observaciones) queda vinculada al DTE:

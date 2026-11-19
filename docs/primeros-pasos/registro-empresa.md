@@ -101,7 +101,7 @@ Vincula los buzones de correo que se utilizarán para la descarga automática de
 Si cuentas con una suscripción a un Plan Premium, introduce tu clave de activación para aplicar los beneficios y cupos del plan contratado:
 
 === "Ingreso de Clave de Activación"
-    Ingresa la clave proporcionada para activar la suscripción en la empresa:
+    Ingresa la clave proporcionada para activar la suscripción en la empresa. Si la licencia pertenece a otro titular, el sistema podrá solicitar una verificación adicional confirmando el correo electrónico del titular:
 
     ![Activación pendiente](../assets/img/primeros-pasos/registro-empresa-09-activacion-pendiente.png "Activación con clave requerida"){ align=center }
 

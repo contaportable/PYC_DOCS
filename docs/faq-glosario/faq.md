@@ -22,4 +22,9 @@ La atención de soporte se brinda de forma remota y personalizada a través de c
 ---
 
 ### ¿Se pueden procesar documentos físicos?
-PyConta está optimizado para procesar DTEs electrónicos en su base de datos. Sin embargo, si cuentas con facturas o créditos fiscales tradicionales en papel emitidos o recibidos en el periodo, puedes ingresarlos manualmente en la tabla de [Anexos de Impuestos F07](../flujos/anexos-de-impuestos-f07.md) para incluirlos en tu declaración de impuestos (no se agregan a los Libros de IVA).
+PyConta está optimizado para procesar DTEs en su base de datos. Sin embargo, si cuentas con facturas o créditos fiscales tradicionales en papel emitidos o recibidos en el periodo, puedes ingresarlos manualmente en la tabla de [Anexos de Impuestos F07](../flujos/anexos-de-impuestos-f07.md) o en el [Informe de Donaciones F-960](../flujos/anexo-donaciones-f960.md) para incluirlos en tu declaración de impuestos (no se agregan a los Libros de IVA).
+
+---
+
+### ¿Cómo recupero mi contraseña si la olvidé?
+Desde la pantalla de inicio de sesión selecciona **¿Olvidaste tu contraseña?**, ingresa tu correo electrónico registrado y valida el código de verificación de 6 dígitos que enviaremos a tu buzón para establecer una nueva contraseña.

@@ -67,6 +67,7 @@ nav:
     - Instalación, Acceso y Requisitos: primeros-pasos/instalacion-acceso.md
     - Registro de Usuario: primeros-pasos/registro-usuario.md
     - Registro de Empresa: primeros-pasos/registro-empresa.md
+    - Preferencias: primeros-pasos/preferencias.md
     - Licencias y Planes: primeros-pasos/licencias-y-planes.md
   - Flujo de Trabajo:
     - Parámetros de Validación: flujos/parametros-validacion.md
@@ -80,6 +81,7 @@ nav:
     - Consulta en Hacienda: flujos/consulta-hacienda.md
     - Bitácora de Actividades: flujos/bitacora-actividades.md
     - Anexos de Impuestos F07: flujos/anexos-de-impuestos-f07.md
+    - Informe de Donaciones F-960: flujos/anexo-donaciones-f960.md
   - Problemas Comunes:
     - No Descarga Correos: problemas-comunes/no-descarga-correos.md
     - DTE No Aparece: problemas-comunes/dte-no-aparece.md

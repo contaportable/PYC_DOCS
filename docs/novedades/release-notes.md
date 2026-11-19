@@ -15,6 +15,39 @@ En esta página se registran los cambios funcionales, mejoras operativas y nueva
 - **Acciones recomendadas:**
 -->
 
+### **Versión 1.2.0** - 2026-11-19
+
+- **Nuevo:**
+  - **Nuevo Sistema de Autenticación y Código de Verificación**: Registro de usuario simplificado con validación de correo mediante código de verificación de 6 dígitos, recuperación de contraseña por correo electrónico (reemplazando las preguntas de seguridad) y revocación segura de sesión al cerrar sesión.
+  - **Cumplimiento Google CASA Nivel 2 y Migración de Cuentas Anteriores**: Asistente post-inicio de sesión para vincular cuentas previas al nuevo método de autenticación segura, con opción temporal de continuar en modo local y botón de acceso rápido (`Completar migración`) en la barra inferior.
+  - **Gestor de Cuentas en el Equipo y Cambio Rápido de Sesión**: Acceso directo desde la pantalla de inicio de sesión (`Cuentas en este equipo`) y desde la barra de estado o menú **Opciones** para alternar entre usuarios (`Cambiar de Usuario`) o cerrar la sesión activa (`Cerrar Sesión`).
+  - **Onboarding Progresivo**: Recopilación escalonada de datos personales (Sesión 3) y ubicación/documentos (Sesión 5) para agilizar el primer registro sin formularios extensos.
+  - **Ventana Modular de Preferencias (`Ctrl+,`)**: Nueva ventana dedicada con navegación lateral en 5 secciones (*Tipografía*, *Almacenamiento*, *Filtros de DTEs*, *Consultas a Hacienda* y *Visualización* con simulador de abreviaciones en tiempo real).
+  - **Configuración Inicial Guiada de Descargas (*Just-In-Time*)**: Diálogo automático la primera vez que se ejecuta una descarga o sincronización sin carpeta configurada.
+  - **Barra de Estado y Controles de Zoom Tipográfico (`- 10pt +`)**: Ajuste rápido del tamaño de letra en tiempo real desde la barra inferior de **Empresas** y **Lector JSON**, junto con el contexto de periodo, categoría, bloqueo y conteo de DTEs.
+  - **Informe de Donaciones F-960 (CDE 15)**: Nuevo anexo tributario accesible desde el menú de **Anexos**, con pre-relleno automático de periodo, validaciones normativas según vigencia y resaltado visual de la columna de nombre/razón social del donante.
+  - **Emparejamiento PDF-JSON mediante OCR**: Lectura óptica de caracteres en español como respaldo automático cuando un PDF adjunto o descargado no contiene texto seleccionable.
+  - **Control Inteligente de Frecuencia ante Hacienda y Entornos RDP**: Coordinación automática de pausas entre consultas masivas (incluso entre múltiples empresas o sesiones en un mismo servidor) y manejo seguro de límites temporales (`429`) preservando los estados ya validados.
+  - **Verificación Adicional y Reconciliación Automática de Licencias**: Confirmación adicional del correo del titular cuando la licencia pertenece a otra cuenta, junto con reconciliación automática de estado y límites de licencias.
+
+- **Mejorado:**
+  - **Menú Contextual en Cabeceras de Tabla**: Clic derecho en los encabezados del **Lector JSON** para activar o desactivar rápidamente la abreviación de Código de Generación y Número de Control.
+  - **Búsqueda Instantánea en Bitácora**: Filtrado fluido sin bloqueos en la interfaz al escribir sobre historiales extensos de auditoría.
+  - **Optimización de Descargas IMAP**: Reducción de carga y volumen innecesario al inspeccionar buzones IMAP.
+  - **Estabilidad Visual y Jerarquía de Ventanas**: Despliegue de diálogos y notificaciones sin parpadeos ni retención indebida de foco, además de estandarización de íconos en Windows.
+
+- **Corregido:**
+  - Manejo seguro de DTEs con nodo receptor nulo y preservación de ceros iniciales en campos de apéndice.
+  - Corrección en selección de fechas desde filtros de tabla y apertura única por instancia en ventanas modales.
+  - Sincronización horaria robusta (NTP) para el reinicio mensual de límites y validación consistente de licencias.
+
+- **Impacto Operativo:**
+  - Mayor seguridad en el acceso, recuperación de cuentas y cumplimiento normativo bajo estándares Google CASA Nivel 2.
+  - Flujo de bienvenida más ágil y control centralizado de preferencias y tipografía desde cualquier pantalla operativa.
+  - Incorporación directa del Informe de Donaciones F-960 y mayor tasa de emparejamiento de respaldos PDF mediante OCR.
+
+---
+
 ### **Versión 1.1.5** - 2026-10-22
 
 - **Nuevo:**

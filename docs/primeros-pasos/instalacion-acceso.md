@@ -37,28 +37,42 @@ Asegúrate de contar con:
 
 ## **Primer Acceso a la Aplicación**
 
-### 1. Pantalla de Carga Inicial
-Al iniciar PyConta, se mostrará una pantalla de carga mientras se inicializan los servicios locales y la base de datos de trabajo:
+### 1. Pantalla de Carga y Panel Principal
+Al iniciar PyConta, accederás al panel principal de empresas, que ahora incorpora una **barra de estado inferior** con el usuario activo y controles rápidos de zoom tipográfico (`- 10pt +`), además del menú superior **Opciones** para gestionar tu perfil, **Preferencias (`Ctrl+,`)**, **Administrar usuarios**, **Bitácora de actividades**, **Cambiar de Usuario** y **Cerrar Sesión**:
 
-![Inicio de sesión y pantalla principal](../assets/img/primeros-pasos/instalacion-acceso-panel-principal.png "Pantalla de carga - estado de inicio"){ align=center }
+![Inicio de sesión y pantalla principal](../assets/img/primeros-pasos/instalacion-acceso-panel-principal.png "Panel principal de PyConta con barra de estado y controles de zoom"){ align=center }
 
 ### 2. Pantalla de Inicio de Sesión
-Si es tu primera vez utilizando la aplicación, podrás crear tu usuario local o iniciar sesión con tus credenciales registradas:
+Si es tu primera vez utilizando la aplicación, podrás crear tu cuenta o iniciar sesión con tus credenciales registradas. Además, desde el botón **Cuentas en este equipo** puedes consultar y seleccionar rápidamente los usuarios registrados en la computadora:
 
-![Pantalla de login con campos obligatorios](../assets/img/primeros-pasos/instalacion-acceso-login.png "Pantalla de login"){ align=center }
+![Pantalla de login con campos obligatorios](../assets/img/primeros-pasos/instalacion-acceso-login.png "Pantalla de inicio de sesión con acceso a cuentas en el equipo"){ align=center }
+
+!!! tip "Persistencia Inteligente y Cambio de Sesión"
+    PyConta recuerda tu sesión de forma segura según el usuario del sistema operativo. Si trabajas en un equipo compartido, puedes usar **Opciones > Cambiar de Usuario** para alternar de cuenta rápidamente, o **Opciones > Cerrar Sesión** para desvincular el acceso activo de este dispositivo.
+
+### 3. Actualización de Cuentas Anteriores (Migración Segura)
+Si utilizabas una versión anterior de PyConta y tenías una cuenta local previa, tras iniciar sesión el sistema te guiará para confirmar tu correo electrónico y vincular tu usuario al nuevo método de autenticación segura mediante un código de verificación de 6 dígitos:
+
+![Migración guiada de cuenta anterior](../assets/img/primeros-pasos/migracion-legacy-01-modal.png "Asistente de actualización de seguridad y vinculación de correo"){ align=center }
+
+Si decides posponer este paso temporalmente para trabajar en modo local, verás el botón **Completar migración** en la barra inferior del panel principal para retomarlo en cualquier momento.
 
 ---
 
 ## **Siguientes Pasos Recomendados**
 
-1. **[Registro de Usuario](registro-usuario.md)**: Configura tu usuario, preguntas de seguridad para recuperación y preferencias generales.
-2. **[Registro de Empresa](registro-empresa.md)**: Registra tu empresa con sus datos fiscales y conecta tus cuentas de correo.
-3. **[Licencias y Planes](licencias-y-planes.md)**: Conoce las diferencias entre el plan Demo y los planes Premium.
+1. **[Registro de Usuario](registro-usuario.md)**: Crea tu cuenta con código de verificación por correo y conoce el completado progresivo de perfil.
+2. **[Preferencias](preferencias.md)**: Personaliza la tipografía, carpeta de descargas, filtros de DTEs y abreviaciones (`Ctrl+,`).
+3. **[Registro de Empresa](registro-empresa.md)**: Registra tu empresa con sus datos fiscales y conecta tus cuentas de correo.
+4. **[Licencias y Planes](licencias-y-planes.md)**: Conoce las diferencias entre el plan Demo y los planes Premium.
 
 ---
 
 ## **Resolución de Problemas Frecuentes**
 
-- **Credenciales no válidas**: Utiliza la opción de recuperación de contraseña respondiendo a tus preguntas de seguridad registradas.
-- **Conexión inestable**: Verifica que tu equipo tenga salida a internet para completar el proceso de autenticación.
+- **Credenciales no válidas / Olvido de contraseña**: Utiliza la opción **¿Olvidaste tu contraseña?** en la pantalla de inicio de sesión para recibir un código de verificación de 6 dígitos en tu correo electrónico y definir una nueva contraseña:
+
+![Recuperación de contraseña con código de verificación](../assets/img/primeros-pasos/recuperacion-contrasena-01-identificacion.png "Solicitud de código de verificación para recuperar contraseña"){ align=center }
+
+- **Conexión inestable**: Verifica que tu equipo tenga salida a internet para completar el proceso de autenticación y verificación por correo.
 - **Soporte asistido**: Si requieres ayuda de nuestro equipo técnico, consulta cómo [Solicitar Soporte con PIN](../suscripcion-y-soporte/solicitar-soporte-con-pin.md).

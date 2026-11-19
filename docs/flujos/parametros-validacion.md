@@ -4,11 +4,11 @@ description: Configuración de parámetros de validación, reglas de descarga y 
 
 # **Parámetros de Validación y Configuración**
 
-PyConta ofrece opciones de configuración para adaptar el procesamiento, las reglas de validación y la descarga de documentos tributarios a las necesidades operativas de tu empresa.
+PyConta ofrece opciones de configuración centralizadas en la ventana **[Preferencias (`Ctrl+,`)](../primeros-pasos/preferencias.md)** (accesible desde **Opciones > Preferencias**) para adaptar el procesamiento, las reglas de validación y la descarga de documentos tributarios a las necesidades operativas de tu empresa.
 
 ---
 
-## **Reglas de Validación de Documentos**
+## **Reglas de Validación de Documentos (Preferencias > Filtros de DTEs)**
 
 Estas opciones determinan qué DTEs deben ser aceptados o filtrados al importar y sincronizar:
 
@@ -16,6 +16,8 @@ Estas opciones determinan qué DTEs deben ser aceptados o filtrados al importar 
 - **Inclusión de ambiente de pruebas**: Permite admitir documentos emitidos en ambiente de pruebas (`ambiente: 00`) para fines de capacitación o análisis previo al paso a producción.
 - **Inclusión de documentos no firmados**: Controla si se procesan DTEs que carecen de firma digital.
 - **Inclusión de documentos sin sello**: Permite ingresar DTEs que no traen el sello de recepción visible (útil para posteriormente recuperar el sello oficial mediante la **Consulta DTE en Hacienda**).
+
+![Preferencias - Filtros de DTEs](../assets/img/flujos/preferencias-03-filtros-dte.png "Configuración de filtros y reglas de validación de DTEs"){ align=center }
 
 ---
 
@@ -27,6 +29,7 @@ Al procesar e importar DTEs en PyConta, cada documento se clasifica bajo un esta
 | :--- | :---: | :--- | :--- |
 | **Válido / Conforme** | :material-check-circle: | Cumple estrictamente con el esquema tributario y la validación matemática. | Operación normal. |
 | **DTE con Inconsistencias** | ⚠️ | Admitido por tolerancia con anomalías menores (IVA reconstruido, sello no visible o firma recuperada). | Consultar en Hacienda o inspeccionar motivo en el menú contextual. |
+| **Límite de consultas (429)** | :material-timer-sand: | El servicio del Ministerio de Hacienda pausó temporalmente las peticiones desde la red actual. | Esperar el enfriamiento automático y reanudar; solo se consultarán DTEs pendientes. |
 | **Rechazado** | :material-close-circle: | Estructura JSON corrupta, NIT emisor incompatible o documento no perteneciente al periodo. | Verificar archivo original con el emisor. |
 
 !!! note "Transparencia Tributaria"

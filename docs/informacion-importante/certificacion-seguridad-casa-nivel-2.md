@@ -26,7 +26,7 @@ Controles aplicados al uso de PyConta:
 - Cifrado en tránsito (HTTPS/TLS) en las comunicaciones con servicios externos.
 - Cifrado en reposo (AES-GCM-256) para la información sensible.
 - Mecanismos de integridad y controles de acceso para proteger identidad y consistencia de datos.
-- Gestión de autenticación y permisos (p. ej. OAuth2) con capacidad de revocación por el cliente.
+- Gestión de autenticación y permisos con capacidad de revocación por el cliente, validación mediante código de verificación de 6 dígitos y cierre de sesión con desvinculación remota del dispositivo.
 
 ## Beneficio para el cliente
 El resultado para el cliente es una experiencia con mayor confianza y menor exposición de información sensible:

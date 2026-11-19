@@ -10,6 +10,11 @@ PyConta automatiza la captura y lectura de DTEs directamente desde tus cuentas d
 
 ## **Flujo de Descarga de DTEs**
 
+!!! info "Configuración Inicial Guiada (*Just-In-Time*)"
+    Si es la primera vez que ejecutas una descarga o sincronización y aún no has definido una carpeta de descargas, PyConta abrirá automáticamente una ventana rápida para que elijas tu ruta de almacenamiento y filtros iniciales antes de continuar:
+
+    ![Configuración inicial de descargas](../assets/img/flujos/descarga-dte-09-configuracion-inicial-jit.png "Asistente rápido de configuración inicial de descargas y filtros"){ align=center }
+
 ### 1. Selección de Cuentas y Buzones Autorizados
 En la configuración de la empresa, dentro de las reglas de descarga de cada cuenta, puedes definir qué carpetas estarán habilitadas para la lectura:
 
@@ -84,7 +89,7 @@ Al iniciar el proceso, la ventana muestra el avance en tiempo real:
 - Conexión segura con el servidor de correo.
 - Detección de adjuntos directos y descompresión automática de paquetes comprimidos (`.zip`, `.rar`, `.7z`).
 - Extracción de DTEs directos y descompresión de paquetes desde enlaces web para remitentes con reglas avanzadas activas.
-- Emparejamiento del archivo `.json` con su respectiva representación en `.pdf`.
+- Emparejamiento del archivo `.json` con su respectiva representación en `.pdf`, incluyendo respaldo de **reconocimiento óptico de caracteres (OCR)** en español cuando un PDF escaneado no contiene texto seleccionable.
 - Validación de firmas y sellos fiscales.
 
 ![Descarga en proceso](../assets/img/flujos/descarga-dte-06-descarga-en-proceso.png "Descarga en proceso con detalle de estados"){ align=center }
